@@ -1,6 +1,9 @@
 html {
   overflow-x: hidden;
 }
+body {
+  background-color: #7de3e5;
+}
 
 /*shutter animation*/
 #shutter{
@@ -279,7 +282,7 @@ html {
   background-image: url(./4.jpg);
 }
 .img4 {
-  background-image: url(./2.jpg);
+  background-image: url(./Hello.jpg);
 }
 
 
@@ -885,14 +888,11 @@ h2 {
 }
 /*# sourceMappingURL=main.css.map */
 
+
 /*paragraph card*/
 @import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
 html,body{
   height:100%
-}
-body {
-  background: linear-gradient(to bottom, rgba(0,5,10,0.4) 0%,rgba(0,0,0,0) 100%);
-  font-family: 'Droid Serif', serif;
 }
 
 .blog-card {
@@ -908,19 +908,19 @@ body {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 0px;
-  box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5);
+  /* box-shadow: 0px 10px 20px -9px rgba(0, 0, 0, 0.5); */
   text-align: center;
   transition:all 0.4s;
   /* background: url(https://unsplash.it/600/800?image=1061) center no-repeat; */
   background-size: 100%;
 }
-.blog-card a{ 
+.blog-card .Top_a{ 
 color:#fff;
   text-decoration:none;
   transition:all 0.2s
 }
 .blog-card .color-overlay {
-  background: rgba(64, 84, 94,0.5);
+  /* background: rgba(64, 84, 94,0.5); */
   width: 550px;
   height: 500px;
   position: absolute;
@@ -930,7 +930,7 @@ color:#fff;
   transition: background 0.3s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
 .blog-card .gradient-overlay {  
-  background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%);
+  /* background-image: linear-gradient(transparent 0%, rgba(0, 0, 0, 0.6) 21%); */
   width: 550px;
   height: 500px;
   position: absolute;
@@ -938,16 +938,16 @@ color:#fff;
   left: 0;
   z-index: 15;
 }
-.blog-card:hover{
+/* .blog-card:hover{
     box-shadow: 0px 18px 20px -9px rgba(0, 10, 30, 0.75);
-}
+} */
 .blog-card:hover .card-info {
   opacity: 1;
   bottom: 100px;
 }
-.blog-card:hover .color-overlay {
+/* .blog-card:hover .color-overlay {
   background: rgba(64, 64, 70,0.8);
-}
+} */
 .blog-card:hover .title-content{
   margin-top:70px
 }
@@ -962,13 +962,13 @@ color:#fff;
   transition:all 0.6s
 }
 
-.blog-card:hover .topNews-h3:after{
+.blog-card:hover h3:after{
  
   animation: changeLetter 0.3s 1 linear;
   width:80%
 }
 
-.blog-card .topNews-h3 {
+.blog-card h3 {
   font-size: 1.9em;
   font-weight: 400;
   letter-spacing: 1px;
@@ -976,14 +976,14 @@ color:#fff;
   margin-bottom: 0;
   display:inline-block;
 }
-.blog-card .topNews-h3 a{  
+/* .blog-card h3 a{  
   text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);  
   transition:all 0.2s
 }
-.blog-card .topNews-h3 a:hover{
+.blog-card h3 a:hover{
   text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
-}
-.topNews-h3:after {
+} */
+h3:after {
   content: " ";
   display: block; 
   width: 10%;
@@ -1004,16 +1004,15 @@ color:#fff;
 }
 
 .intro {
-  width: 170px;
+  width: auto;
   margin: 0 auto;
   color: #ddd;
-  font-style: italic;
   line-height: 18px;
 }
-.intro a{
+.intro .Top_a{
   color: #ddd
 }
-.intro a:hover{
+.intro .Top_a:hover{
   text-decoration:underline
 }
 .card-info {
@@ -1031,22 +1030,24 @@ color:#fff;
   opacity: 0;
   transition: bottom 0.64s, opacity 0.63s cubic-bezier(0.33, 0.66, 0.66, 1);
 }
-
-.card-info a{
+.card-info .Top_a{
   display:block;
   width:100px;
   margin:15px auto;
-  background:#fff;
-  color:#444;
-  padding:3px 10px;
-  border-radius:2px;
-  font-size:0.8em
+  /* background:#fff; */
+  color: #fff;
+  font-size:0.8em;
+  border-radius: 3px;
+  font-size: 100%;
+  box-shadow: 0px 0px 3px #808080;
+  border: white solid 1px;
 }
-.card-info a:hover{
+.card-info .Top_a:hover{
   background: #8e7c49;
   color:#fff;
+  border: none;
 }
-.card-info a:hover span{
+.card-info .Top_a:hover span{
    filter: brightness(10);
    opacity:1
 }
@@ -1070,7 +1071,7 @@ color:#fff;
   width:30px;
   height:15px
 }
-.utility-info a:hover{
+.utility-info .Top_a:hover{
   text-decoration:underline
 }
 .utility-list {
@@ -1111,8 +1112,9 @@ color:#fff;
    filter: brightness(10);
 }
 .icon-black{
-   filter: brightness(0);
-   opacity:0.6
+   filter: brightness(#8e7c49);
+   opacity:0.6;
+   filter: contrast(50%);
 }
 .icon-like:before{
   background-position: -183px -6px;
@@ -1198,27 +1200,27 @@ color:#fff;
   height:100%;
   top:0;
   left:0;
-  background:rgba(23, 23, 31, 0.42);
+  /* background:rgba(23, 23, 31, 0.42); */
   z-index:0
 }
-#profile-links a{
+#profile-links .Top_a{
   font-family: 'Abril Fatface', serif;
   font-size:1.2em
 }
 
 
-.profile-links a[href*=nodws\.com]:before{
+.profile-links .Top_a[href*=nodws\.com]:before{
     content:"\2616";
     color:#0a45b5;
     padding-right:3px
 }
 
-.profile-links a[href*=twitter]:before{
+.profile-links .Top_a[href*=twitter]:before{
     content:"\1f426";
     color:#08c
 }
 
-.profile-links a[href*=dribbble]:before{
+.profile-links .Top_a[href*=dribbble]:before{
     content:"\26BE";
     color:#d055bf
 }
@@ -1252,10 +1254,10 @@ color:#fff;
 .upsell,#pen-as-header-question{
   display:none
 }
-.profile-nav-1 a{
+.profile-nav-1 .Top_a{
   font-size:1.2rem;
 }
-.profile-bio, .profile-nav-1 a.active,.profile-nav-1 a:hover {
+.profile-bio, .profile-nav-1 a.active,.profile-nav-1 .Top_a:hover {
     color: rgba(20, 20, 21, 0.59) !important;
     font-size: 1.2rem
 }
@@ -1303,4 +1305,19 @@ color:#fff;
 }
 .meta{
   box-shadow:none !important
+}
+
+.TopBigTiltle {
+  font-size: 50px;
+  text-shadow: 0px 0px 6px #808080;
+}
+
+.TopBigSubTiltle {
+  font-size: 30px;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0px 0px 5px #808080;
+}
+.card-info {
+  text-shadow: 0px 0px 3px #808080;
 }
