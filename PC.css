@@ -2,7 +2,7 @@ html {
   overflow-x: hidden;
 }
 body {
-  background-color: #7de3e5;
+  background-color: rgb(0,8,97);
 }
 
 /*shutter animation*/
@@ -287,12 +287,12 @@ body {
 
 
 .img_li{
-  animation: slide 14s infinite;/* (a+b)×c=x */
+  animation: slide 24s infinite;/* (a+b)×c=x */
   opacity: 0;
 }
 @keyframes slide{
   0%{opacity: 0;}
-  3.5%{opacity: 1;z-index: 1;}/* b÷x×100=y */
+  2.0%{opacity: 1;z-index: 1;}/* b÷x×100=y */
   25%{opacity: 1;}/* 100÷c=z */
   28.5%{opacity: 0;z-index: 0;}/* y+z */
 }
@@ -371,19 +371,19 @@ body {
   background-color: white;
   display: flex;
   flex-wrap: wrap;
-  border: 2px solid rgb(0,87,184);
-  -webkit-box-shadow: 5px 5px 0 rgb(80, 80, 80);
-  box-shadow: 5px 5px 15px rgb(80, 80, 80);
+  -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
+  box-shadow: 0px 0px 15px rgb(80, 80, 80);
   margin-left: 30px;
   margin-right: 30px;
   margin-top: 17px;
   margin-bottom: 17px;
+  border-radius: 4px;
 }
 .title_box {
   color: #fff;
-  background: rgb(0,87,184);
-  -webkit-box-shadow: 5px 5px 0 rgb(80, 80, 80);
-  box-shadow: 5px 5px 20px rgb(80, 80, 80);
+  background: rgb(0,8,97);
+  -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
+  box-shadow: 0px 0px 20px rgb(80, 80, 80);
   display: table;
   padding-top: 0rem;
   padding-bottom: 0rem;
@@ -392,6 +392,7 @@ body {
   margin-top: 12px;
   margin-left: -15px;
   font-family: "游明朝";
+  border-radius: 4px;
 }
 .time_box {
     margin-left: 13px;
@@ -429,23 +430,25 @@ body {
   flex-wrap: wrap;
 }
 .img-container_shadow {
-  -webkit-box-shadow: 5px 5px 0 rgb(80, 80, 80);
-  box-shadow: 5px 5px 15px rgb(80, 80, 80);
+  -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
+  box-shadow: 0px 0px 20px rgb(80, 80, 80);
   padding-left: 0;
   padding-right: 0;
   margin-top: 20px;
   margin-bottom: 0;
+  border-radius: 5px 5px 5px 5px;
 }
 
 .img-container_h2 {
-  margin-top: -5px;
-  background-color: blue;
+  margin-top: -10px;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   font-size: 20px;
   color: white;
   font-family: "游明朝";
+  background-color: rgb(0,8,97);
+  border-radius: 0px 0px 5px 5px;
 }
 .img-container_a {
   text-decoration: none;
@@ -453,6 +456,7 @@ body {
 
 .img-container_img {
   width: 100%;
+  border-radius: 5px 5px 0px 0px;
 }
 
 
@@ -591,305 +595,52 @@ margin-top: -10px;
   font-family: "Times New Roman";
 }
 
-
-
-/*button animation ect...*/
-*,
-*:before,
-*:after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-/* html {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  font-size: 62.5%;
-} */
-
-.btn_blue,
-a.btn_blue,
-button.btn_blue {
-  font-size: 1.6rem;
-  font-weight: 700;
-  line-height: 1.5;
-  position: relative;
-  display: inline-block;
-  padding: 1rem 4rem;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-  text-align: center;
-  vertical-align: middle;
-  text-decoration: none;
-  letter-spacing: 0.1em;
-  color: #212529;
-  border-radius: 0.5rem;
-  height: 0px;    /*height of button*/ /*<----important*/
-  width: 40px;    /*width of button*/ /*<----important*/
-}
-
-
-a.btn-flat {
-    overflow: hidden;
-  
-    padding: 1.5rem 6rem;
-  
-    color: #fff;
-    border-radius: 0;
-    background: #000;
-  }
-  
-  a.btn-flat .span_button {
-    position: relative;
-    z-index: 1;
-  }
-  
-  a.btn-flat:before {
-    position: absolute;
-    top: 0;
-    left: calc(-150% + 50px);
-  
-    width: 150%;
-    height: 500%;
-  
-    content: '';
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transform: rotate(45deg) translateX(0) translateY(0);
-    transform: rotate(45deg) translateX(0) translateY(0);
-  
-    background: rgb(0,8,97);;
-  }
-  
-  a.btn-flat:after {
-    position: absolute;
-    top: -400%;
-    right: calc(-150% + 50px);
-  
-    width: 150%;
-    height: 500%;
-  
-    content: '';
-    -webkit-transition: all .5s ease-in-out;
-    transition: all .5s ease-in-out;
-    -webkit-transform: rotate(45deg) translateX(0) translateY(0);
-    transform: rotate(45deg) translateX(0) translateY(0);
-  
-    background: rgb(0,8,97);;
-  }
-  
-  a.btn-flat:hover:before {
-    -webkit-transform: rotate(45deg) translateX(0) translateY(-50%);
-    transform: rotate(45deg) translateX(0) translateY(-50%);
-  }
-  
-  a.btn-flat:hover:after {
-    -webkit-transform: rotate(45deg) translateX(0) translateY(50%);
-    transform: rotate(45deg) translateX(0) translateY(50%);
-  }
-  
-
-  /*button_position*/
-  .button_position {
-      text-align: center;
-      /* -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      font-size: 62.5%; */
-  }
-  /*font of button*/
-  .span_button {
-    display: block;
-    width: 190px;
-      font-family: 'Times New Roman', Times, serif;
-      top: -20px; /*position of text*/
-      right: 90px; /*position of text*/
-  }
-
-
-
-/*ticket card*/
-i {
-  opacity: 0;
-  font-size: 18px;
-  color: #fff;
-  will-change: transform;
-  transform: scale(0.1);
-  transition: all 0.2s ease;
-}
-
-h2 {
-  pointer-events: none;
-}
-
-
-.container {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-.container .card {
-  position: relative;
-  width: 500px;
-  height: 200px;
-  background-color: #fff;
-  overflow: hidden;
-  margin-bottom: 4px;
-}
-.container .card:before {
-  content: "";
-  z-index: 0; /*=================================変更　99=============================================*/
-  position: absolute;
-  top: -10px;
-  left: 32px;
-  display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  background-color: #E6E5E1;
-}
-.container .card:after {
-  content: "";
-  z-index: 0; /*=================================変更 99=============================================*/
-  position: absolute;
-  bottom: -10px;
-  left: 32px;
-  display: block;
-  width: 16px;
-  height: 16px;
-  border-radius: 16px;
-  background-color: #E6E5E1;
-}
-.container .card ul {
-  z-index: 99;
-  position: absolute;
-  left: 39px;
-  top: 5px;
-  list-style-type: none;
-}
-.container .card ul li {
-  width: 2px;
-  height: 2px;
-  border-radius: 2px;
-  margin: 6px 0;
-  background-color: #E6E5E1;
-}
-.container .card h2 {
-  z-index: 99;
-  font-family: "Poppins", sans-serif;
-  position: absolute;
-  bottom: 0;
-  right: 130px;
-  font-size: 60px;
-  font-weight: 700;
-  color: #fff;
-}
-.container .card .fa-arrow-right {
-  z-index: 100;
-  position: absolute;
-  right: 75px;
-  bottom: 25px;
-  font-size: 40px;
-  cursor: pointer;
-}
-.container .card p {
-  z-index: 99;
-  position: absolute;
-  top: 20px;
-  right: 70px;
-  color: #333;
-  opacity: 0.7;
-  font-size: 12px;
-  letter-spacing: 1px;
-  -ms-writing-mode: tb-lr;
-      writing-mode: vertical-lr;
-  transition: all 0.2s ease;
-}
-.container .card .pic {
-  z-index: 0; /*====================================================================-chamge value 100*/
-  width: 400px;
-  height: 200px;
-  background-image: url("https://images.unsplash.com/photo-1525543907410-b2562b6796d6?ixlib=rb-0.3.5&s=9ff8e5e718a6a40cbd0e1471235912f4&auto=format&fit=crop&w=3452&q=80");
-  background-size: 100% 100%;
-  filter: grayscale(100%);
-}
-.container .card .social {
-  position: absolute;
-  left: 60px;
-  top: 0;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
+/*More button*/
+.buttonMore{
+  background: rgb(0,8,97);
+  color:#fff;
+  border:none;
+  position:relative;
+  height:40px;
   width: 180px;
-  height: 64px;
-  border-radius: 80px;
+  font-size:1.6em;
+  cursor:pointer;
+  transition:800ms ease all;
+  outline:none;
+  font-family: "Times New Roman";
 }
-.container .card .social i:nth-of-type(1) {
-  transition-delay: 0.4s;
+.buttonMoreDiv {
+  text-align: center;
 }
-.container .card .social i:nth-of-type(2) {
-  transition-delay: 0.3s;
+.buttonMoreSlider{
+  margin-top: -120px;
 }
-.container .card .social i:nth-of-type(3) {
-  transition-delay: 0.2s;
+.buttonMore:hover{
+  background:#fff;
+  color: rgb(0,8,97);
 }
-.container .card .social i:nth-of-type(4) {
-  transition-delay: 0.1s;
+.buttonMore:before,.buttonMore:after{
+  content:'';
+  position:absolute;
+  top:0;
+  right:0;
+  height:2px;
+  width:0;
+  background: rgb(0,8,97);
+  transition:400ms ease all;
 }
-.container .card:hover i {
-  opacity: 1;
-  transform: scale(1);
+.buttonMore:after{
+  right:inherit;
+  top:inherit;
+  left:0;
+  bottom:-0.1px;
 }
-.container .card button {
-  position: absolute;
-  right: 14px;
-  bottom: 14px;
-  width: 30px;
-  height: 30px;
-  background-color: #DA4D1D;
-  border: none;
-  border-radius: 30px;
-  cursor: pointer;
-  outline: none;
-  transition: all 0.3s ease;
-  mix-blend-mode: hard-light;
-}
-.container .card button i {
-  font-size: 3rem;
-}
-.container .card:hover button {
-  transform: scale(16.5);
-}
-.container .card:hover p {
-  color: #fff;
-}
-.container .card:hover .pic {
-  filter: grayscale(0);
-}
-.container .card2 .pic {
-  background-image: url("https://images.unsplash.com/photo-1528785198459-ec50485704c7?ixlib=rb-0.3.5&s=3a2fc3039516555bbb2e9cd2967bd321&auto=format&fit=crop&w=1537&q=80");
-}
-.container .card2 button {
-  background-color: #2b26c3;
+.buttonMore:hover:before,.buttonMore:hover:after{
+  width:100%;
+  transition:800ms ease all;
 }
 
-.dr {
-  position: absolute;
-  bottom: 16px;
-  right: 16px;
-  width: 100px;
-}
-/*# sourceMappingURL=main.css.map */
-
-
-/*paragraph card*/
+/*Topic*/
 @import url(//fonts.googleapis.com/css?family=Abril+Fatface|Droid+Serif:400,700,400italic,700italic);
 html,body{
   height:100%
@@ -983,7 +734,7 @@ color:#fff;
 .blog-card h3 a:hover{
   text-shadow: 0px 8px 20px rgba(0, 0, 0, 0.95);
 } */
-h3:after {
+.TopBigTitleh3:after {
   content: " ";
   display: block; 
   width: 10%;
