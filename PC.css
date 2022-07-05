@@ -5,6 +5,15 @@ body {
   background-color: rgb(0,8,97);
 }
 
+/*width*/
+.width {
+  max-width: 1400px;
+  text-align: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
 /*shutter animation*/
 #shutter{
   width: 100%;
@@ -436,6 +445,7 @@ body {
   padding-right: 0;
   margin-top: 20px;
   margin-bottom: 0;
+  width: 300px;
   border-radius: 5px 5px 5px 5px;
 }
 
@@ -449,9 +459,11 @@ body {
   font-family: "游明朝";
   background-color: rgb(0,8,97);
   border-radius: 0px 0px 5px 5px;
+  width: 300px;
 }
 .img-container_a {
   text-decoration: none;
+  width: 300px;
 }
 
 .img-container_img {
