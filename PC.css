@@ -474,6 +474,8 @@ body {
   margin-bottom: 0;
   width: 300px;
   border-radius: 5px 5px 5px 5px;
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 .img-container_h2 {
@@ -843,7 +845,7 @@ color:#fff;
    filter: brightness(10);
    opacity:1
 }
-.utility-info {
+/* .utility-info {
   position: absolute;
   bottom: 0px;
   left: 0;
@@ -865,8 +867,8 @@ color:#fff;
 }
 .utility-info .Top_a:hover{
   text-decoration:underline
-}
-.utility-list {
+} */
+/* .utility-list {
   list-style-type: none;
   margin: 0 0 10px 20px;
   padding: 0;
@@ -879,9 +881,9 @@ color:#fff;
   display: inline-block;
   
   font-size:0.8em
-}
+} */
 
-.licon{
+/* .licon{
   position:relative;  
    width:23px;
    height:15px;
@@ -899,16 +901,16 @@ color:#fff;
    position:absolute;
    top:-3px;
    left:0;
-}
-.icon-white{
+} */
+/* .icon-white{
    filter: brightness(10);
 }
 .icon-black{
    filter: brightness(#8e7c49);
    opacity:0.6;
    filter: contrast(50%);
-}
-.icon-like:before{
+} */
+/* .icon-like:before{
   background-position: -183px -6px;
 
 }
@@ -922,9 +924,9 @@ color:#fff;
 .icon-tag:before{
   background-position: -33px -6px;
 
-}
+} */
 
-@media (max-width:750px)
+/* @media (max-width:750px)
 {
   .utility-info {
     text-align:center;
@@ -940,12 +942,12 @@ color:#fff;
     box-sizing:border-box;
     margin:0
   }
-}
+} */
 
 @media (max-width:500px){
-  .utility-info li:last-of-type{
+  /* .utility-info li:last-of-type{
     width:100%
-  }
+  } */
   .card-info{
     display:none
   }
@@ -962,9 +964,6 @@ color:#fff;
   font-size:0.8em
 }
 }
-
-
-/*  ================  */
 
 /* ignore this bit :P */
 #profile-badges:after {
