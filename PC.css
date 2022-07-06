@@ -345,8 +345,8 @@ body {
   display: flex;
   flex-wrap: wrap;
   margin: auto;
-  padding-left: 1px;
-  padding-right: 1px;
+  padding-left: 0px;
+  padding-right: 0px;
   font-family: "Arial Black", serif;
 }
 .content-box a {
@@ -428,6 +428,7 @@ body {
   padding-right: 1rem;
   margin-top: 12px;
   margin-left: -15px;
+  font-size: 18px;
   font-family: "游明朝";
   border-radius: 4px;
 }
@@ -435,6 +436,7 @@ body {
     margin-left: 13px;
     margin-top: 20px;
     font-family: "游明朝";
+    font-size: 15px;
 }
 .time_box_margin {
   padding-right: 100%;
@@ -447,6 +449,8 @@ body {
   margin-top: 7px;
   margin-left: -8px;
   font-family: "游明朝";
+  font-size: 17px;
+  text-align: left;
 }
 
 
