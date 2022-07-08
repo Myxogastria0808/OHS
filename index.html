@@ -11,378 +11,6 @@
     <script type="text/javascript" src="./leap_button.js"></script>
     <title>兵庫県立小野高等学校</title>
     <link rel="stylesheet" type="text/css" href="Swiper%20DEMO_files/swiper.css">
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
-      :root {
-        --easing: cubic-bezier(.2, 1, .2, 1);
-        --transition: .8s var(--easing);
-        --color-base: #f8f8f8;
-        --color-gray: #ddd;
-        --color-theme: #f5695f;
-        --color-theme-darken: #f12617;
-        --box-shadow: .8rem .8rem 1.2rem rgba(0, 0, 0, .05), -.8rem -.8rem 1.2rem #fff;
-        --box-shadow-hover: 1rem 1rem 1.5rem rgba(0, 0, 0, .08), -1rem -1rem 1.5rem #fff;
-        --box-shadow-inset: inset .8rem .8rem 1.2rem rgba(0, 0, 0, .05), inset -.8rem -.8rem 1.2rem #fff;
-        --box-shadow-dark: .8rem .8rem 1.2rem rgba(0, 0, 0, .1), -.8rem -.8rem 1.2rem rgba(#fff,.2);
-      }
-
-      .html {
-        line-height: 1.8;
-        height: 100%;
-        word-break: break-word;
-        background-color: var(--color-base);
-        -webkit-appearance: none;
-        -webkit-tap-highlight-color: transparent;
-        overflow-x: hidden;
-      }
-    
-      *,
-      *::before,
-      *::after {
-        -webkit-box-sizing: border-box;
-                box-sizing: border-box;
-      }
-    
-      ::-moz-selection {
-        color: #fff;
-        background: var(--color-theme);
-      }
-    
-      ::selection {
-        color: #fff;
-        background: var(--color-theme);
-      }
-/*     
-      img {
-        border: 0;
-        margin: 0;
-      }
-    
-      figure {
-        margin: 0;
-      }
-    
-      p {
-        margin: 0;
-        padding: 0;
-      }
-    
-      a {
-        text-decoration: none;
-        color: #333;
-      }
-    
-      ul,
-      ol {
-        margin: 0;
-        padding: 0;
-        list-style: none;
-      }
-     */
-      /* h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        font-size: 1.6rem;
-        margin: 0;
-        padding: 0;
-      } */
-    
-      main {
-        display: block;
-      }
-    
-      .l-inner {
-        position: relative;
-        -webkit-box-sizing: content-box;
-                box-sizing: content-box;
-        max-width: 2560px;
-        padding: 0 10rem;
-        font-size: 62.5%;
-      }
-
-      .slide-content {
-        width: 300px;
-        height: 50px;
-      }
-
-      /*--------------------------------slide margin---------------------------------------*/
-      .l-section .l-inner {
-        padding-top: 2rem;
-        padding-bottom: 3rem;
-        margin-left: -80px;
-        padding-left: 0px;
-      }
-    
-      [class*=swiper]:focus {
-        outline: none;
-      }
-    
-      .slide-media,
-      .thumb-media {
-        position: relative;
-        overflow: hidden;
-      }
-      .slide-media img,
-      .thumb-media img {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        -o-object-fit: cover;
-           object-fit: cover;
-      }
-      .slide-media {
-        width: 100%;
-        height: 250px;
-      }
-
-      .swiper-button-prev, .swiper-button-next {
-        display: grid;
-        place-content: center;
-        width: 70px;
-        height: 70px;
-        cursor: pointer;
-        -webkit-transition: var(--transition);
-        transition: var(--transition);
-      }
-      .swiper-button-prev::before, .swiper-button-next::before {
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-        content: "";
-        border-radius: 50%;
-        -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
-        box-shadow: 0px 0px 10px rgb(80, 80, 80);
-      }
-      .swiper-button-prev::after, .swiper-button-next::after {
-        width: 1.2rem;
-        height: 1.2rem;
-        content: "";
-        border: solid rgb(75, 75, 75); /*----------------------------------button carsole color-------------------------------*/
-        border-width: 3px 3px 0 0;
-      }
-      .swiper-button-prev::after {
-        margin-left: 0.4rem;
-        -webkit-transform: rotate(-135deg);
-                transform: rotate(-135deg);
-      }
-      .swiper-button-next::after {
-        margin-right: 0.4rem;
-        -webkit-transform: rotate(45deg);
-                transform: rotate(45deg);
-      }
-      .swiper-button-disabled {
-        pointer-events: none;
-        opacity: 0;
-      }
-    
-      .card02 .swiper {
-        overflow: visible;
-      }
-      /*----------------------------controller section----------------------------------*/
-      .card02 .swiper-controller {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        gap: 1.6rem;
-        -webkit-box-align: center;
-        -webkit-align-items: center;
-            -ms-flex-align: center;
-                align-items: center;
-        -webkit-box-pack: end;
-        -webkit-justify-content: flex-end;
-            -ms-flex-pack: end;
-                justify-content: flex-end;
-        margin-top: 35px;
-        margin-left: 0;
-        width: 112%;
-      }
-      .card02 .swiper-pagination {
-        display: -webkit-box;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-wrap: wrap;
-            -ms-flex-wrap: wrap;
-                flex-wrap: wrap;
-        gap: 1.2rem 0.8rem;
-        -webkit-box-pack: start;
-        -webkit-justify-content: flex-start;
-            -ms-flex-pack: start;
-                justify-content: flex-start;
-        margin: 0 auto 0 0;
-        text-align: center;
-      }
-      .card02 .swiper-pagination-bullet {
-        width: 1.6rem;
-        height: 3px;
-        cursor: pointer;
-        -webkit-transition: var(--transition);
-        transition: var(--transition);
-        vertical-align: top;
-        background-color: var(--color-gray);
-      }
-      .card02 .swiper-pagination-bullet-active {
-        width: 4rem;
-        background-color: #BDA26B;
-      }
-      .card02 .swiper-button-prev, .card02 .swiper-button-next {
-        position: relative;
-        -webkit-flex-shrink: 0;
-            -ms-flex-negative: 0;
-                flex-shrink: 0;
-        margin: 0;
-      }
-      .card02 .swiper-button-disabled {
-        pointer-events: none;
-        opacity: 0.5;
-      }
-      .card02 .swiper-button-disabled::before {
-        -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
-        box-shadow: 0px 0px 20px rgb(80, 80, 80);
-      }
-      .card02 .swiper-slide {
-        width: -webkit-max-content;
-        width: -moz-max-content;
-        width: max-content;
-        text-decoration: none;
-      }
-      .card02 .slide {
-        overflow: hidden;
-        width: 300px; /*-----------------------------side size-----------------------------*/
-        height: 400px;
-        border-radius: 5px;
-        -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
-        box-shadow: 0px 0px 20px rgb(80, 80, 80);
-      }
-      .card02 .slide-media {
-        padding-top: 62.5%;
-      }
-      .card02 .slide-media img {
-        height: calc(100% + 50px);
-        padding-bottom: -30px;
-        -webkit-transform: translateY(-16px);
-                transform: translateY(-16px);
-      }
-      .card02 .slide-content {
-        padding: 3.2rem;
-      }
-      .card02 .slide-date {
-        line-height: 1;
-        display: block;
-        /* color: var(--color-theme); */
-        margin-left: -30px;
-      }
-      .card02 .slide-title {
-        line-height: 1.6;
-        display: -webkit-box;
-        overflow: hidden;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        height: 3.2em;
-        width: 260px;
-        height: 100px;
-        margin-left: -29px;
-        margin-right: -60px;
-        color: black;
-      }
-    
-      @media only screen and (max-width: 1199px) {
-        .l-inner {
-          -webkit-text-size-adjust: 100%;
-        }
-        .l-inner {
-          padding: 0 4rem;
-        }
-        .pc {
-          display: none !important;
-        }
-      }
-      @media only screen and (max-width: 800px) {
-        .controller {
-          display: none;
-        }
-        .swiper-pagination-bullet {
-          display: none;
-        }
-        .swiper-pagination-bullets {
-          display: none;
-        }
-      }
-    
-      @media only screen and (max-width: 599px) {
-        .l-inner {
-          font-size: 50%;
-        }
-        .pc-tab {
-          display: none !important;
-        }
-        .card02 .slide {
-          width: 300px;   /*---------------------------------------card size--------------------------------------------*/
-        }
-        .slide-title {
-          margin-top: 0.5rem;
-          font-size: 1.0rem;
-        }
-        .slide-date {
-          font-size: 0.8rem;
-          margin-top: -40px;
-        }
-      }
-    
-      @media only screen and (min-width: 1200px) {
-        .tab-sp {
-          display: none !important;
-        }
-        .swiper-button-prev::before, .swiper-button-next::before {
-          -webkit-transition: var(--transition);
-          transition: var(--transition);
-        }
-        .swiper-button-prev:hover::before, .swiper-button-next:hover::before {
-          -webkit-transform: scale(1.2);
-                  transform: scale(1.2);
-        }
-        .card02 .slide {
-          -webkit-transition: var(--transition);
-          transition: var(--transition);
-        }
-        .card02 .slide img {
-          -webkit-transition: var(--transition);
-          transition: var(--transition);
-        }
-        .card02 .slide:hover {
-          -webkit-transform: translateY(-16px);
-                  transform: translateY(-16px);
-         -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
-         box-shadow: 0px 0px 20px rgb(80, 80, 80);
-        }
-        .card02 .slide:hover img {
-          -webkit-transform: translateY(0);
-                  transform: translateY(0);
-        }
-      }
-    
-      @media only screen and (min-width: 600px) {
-        .sp {
-          display: none !important;
-        }
-        .slide-title {
-          margin-top: 0.5rem;
-          font-size: 1.0rem;
-        }
-        .slide-date {
-          font-size: 15px;
-          margin-top: -35px;
-        }
-      }
-    </style>
 </head>
 <body>
   <!---------------------The origin of this website`s content`s---------------------->
@@ -400,64 +28,64 @@
   </div>
   <!--------------------------------header--------------------------------------->
   <header>
-  <div class="header">
-    <div class="border">
-    <div class="width">
-      <div class="header__flex">
-        <a href="./PC.html" target="_blank" rel="noopener noreferrer">
-          <img id="logo" src="./navbar_logo.png">
-        </a>
-          <nav>
-            <ul>
-              <a class="a_header" href="./PC.html" target="blank">
-                <a_1 class="a3" href="#"><li>受験生</li></a_1>
-              </a>
-              <a class="a_header" href="./PC.html" target="blank">
-                <a_1 class="a3" href="#"><li>在校生</li></a_1>
-              </a>                
-              <a class="a_header" href="./PC.html" target="blank">
-                <a_1 class="a3" href="#"><li>卒業生</li></a_1>
-              </a>                
-              <a  href="./PC.html" target="blank">
-                <a_1 class="a3" href="#"><li>保護者</li></a_1>
-              </a>
-              <a  href="./PC.html" target="blank">
-                <a_1 class="a3" href="#"><li>同窓会</li></a_1>
-              </a>
-            </ul>
-        </div>
-      </div>
-      </div>
-      <div class="width">
-        <div class="header__flex">
-            <nav>
-              <ul>
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>学校紹介</li></a_1>
+    <div class="header PC">
+      <div class="border PC">
+      <div class="width PC">
+        <div class="header__flex PC">
+          <a class="PC" href="./PC.html" target="_blank" rel="noopener noreferrer">
+            <img id="logo" src="./navbar_logo.png">
+          </a>
+            <nav class="PC">
+              <ul class="PC">
+                <a class="a_header PC" href="./PC.html" target="blank">
+                  <a_1 class="a3 PC" href="#"><li class="PC">受験生</li></a_1>
                 </a>
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>教育内容</li></a_1>
-                </a> 
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>食堂営業</li></a_1>
-                </a>     
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>学校生活</li></a_1>
-                </a>            
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>探究活動</li></a_1>
+                <a class="a_header PC" href="./PC.html" target="blank">
+                  <a_1 class="a3 PC" href="#"><li class="PC">在校生</li></a_1>
                 </a>                
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>国際交流</li></a_1>
+                <a class="a_header PC" href="./PC.html" target="blank">
+                  <a_1 class="a3 PC" href="#"><li class="PC">卒業生</li></a_1>
+                </a>                
+                <a class="PC"  href="./PC.html" target="blank">
+                  <a_1 class="a3 PC" href="#"><li class="PC">保護者</li></a_1>
                 </a>
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>進路状況</li></a_1>
-                </a>
-                <a class="a_header" href="./PC.html" target="blank">
-                  <a_1 class="a3" href="#"><li>事務連絡</li></a_1>
+                <a class="PC"  href="./PC.html" target="blank">
+                  <a_1 class="a3 PC" href="#"><li class="PC">同窓会</li></a_1>
                 </a>
               </ul>
           </div>
+        </div>
+        </div>
+        <div class="width PC">
+          <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+              <nav class="PC">
+                <ul class="PC">
+                  <a class="a_header PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">学校紹介</li></a_1>
+                  </a>
+                  <a class="a_header PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">教育内容</li></a_1>
+                  </a> 
+                  <a class="a_header PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">食堂営業</li></a_1>
+                  </a>     
+                  <a class=" PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">学校生活</li></a_1>
+                  </a>            
+                  <a class="a_header PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">探究活動</li></a_1>
+                  </a>                
+                  <a class="a_header PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">国際交流</li></a_1>
+                  </a>
+                  <a class="a_header PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">進路状況</li></a_1>
+                  </a>
+                  <a class="a_header PC" href="./PC.html" target="blank">
+                    <a_1 class="a3 PC" href="#"><li class="PC">事務連絡</li></a_1>
+                  </a>
+                </ul>
+          </div> <!--------------------------------------------display none------------------------->
           <div class="header_animation_indent"></div>
     </div>
   </div>
