@@ -1379,7 +1379,7 @@ main {
   -webkit-justify-content: flex-end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  margin-top: 35px;
+  margin-top: -284px;
   margin-left: 0;
   width: 112%;
 }
