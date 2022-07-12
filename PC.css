@@ -603,11 +603,11 @@ html,body{
 
 
 /*Origin of Top*/
-.br_top {
+/* .br_top {
   display: block;
   content: "";
   margin-top: -3.5px;
-}
+} */
 
 /*Parallax*/
 /* #container {
@@ -619,6 +619,8 @@ html,body{
 .img_ul{
   list-style: none;
   position: relative;
+  top: 0;
+  left: 0;
 }
 .img_li{
   position: absolute;
@@ -633,6 +635,8 @@ html,body{
   height: auto; */
 
   /* width: 2000px; */
+  top: 0;
+  left: 0;
   height: 100vh;
   min-height: 100vh;
   /* min-width: 2000px; */
@@ -643,6 +647,8 @@ html,body{
 }
 .img_img::before {
   position: fixed;
+  top: 0;
+  left: 0;
 }
 .img1 {
   background-image: url(./IMG_E9587.JPG);
