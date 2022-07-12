@@ -170,7 +170,7 @@ html,body{
  }
  @media screen and (min-width: 799px) {
   .mobile {
-    display: none;
+    display: none!important;
   }
  }
 
