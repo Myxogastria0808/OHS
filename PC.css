@@ -8,6 +8,7 @@ html,body{
   overflow-x: hidden;
   padding-left: 0px;
   padding-right: 0px;
+  margin: 0;
 }
 /*width*/
 .width {
@@ -223,6 +224,8 @@ html,body{
    .border{
     position: relative;
     font-size: 18px;
+    padding-left: 0px;
+    padding-right: 0px;
   }
 
   .border:before{
@@ -246,6 +249,8 @@ html,body{
      display: flex;
      height:60px;
      align-items: center;
+     padding-left: 0px;
+     padding-right: 10px;
    }
    .header__flex nav {
      margin-left: auto;
@@ -291,7 +296,7 @@ html,body{
   height: 70px;
   width: 260px;
   margin-bottom: -10px;
-  margin-left: -10px;
+  margin-left: 0px;
 }
 
 
@@ -316,6 +321,7 @@ html,body{
 
 .logo_mobile {
   height: 50px;
+  padding-left: 8px;
 }
 
 .section-center{
@@ -740,7 +746,95 @@ html,body{
   font-family: Roman;
 }
 
-/*Announcement*/
+
+/*---------------------------------------Features-----------------------------------------------*/
+* {
+  padding: 0;
+  margin: 0;
+  /* overflow-x: hidden; */
+} 
+.Features_cursor {
+  cursor: none;
+  outline: 0;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.shapes {
+position: relative;
+height: 200px;
+width: 100%;
+background: #c4302b;
+overflow: hidden;
+outline: 0;
+}
+.content {
+/* position: absolute; */
+left: 0;
+top: 0;
+display: flex;
+align-items: center;
+justify-content: center;
+width: 100%;
+height: 200px;
+background: #fff;
+mix-blend-mode: screen;
+outline: 0;
+}
+.features_h1 {
+font-size: 100px;
+color: #000;
+margin: 0;
+text-align: center;
+font-family: 'IBM Plex Sans', sans-serif;
+outline: 0;
+}
+.cursor {
+position: fixed;
+background: #ff0800;
+width: 0px;
+height: 0px;
+border-radius: 50%;
+will-change: transform;
+user-select: none;
+pointer-events: none;
+z-index: 100000;
+margin: -10px 0 0 -20px;
+outline: 0;
+}
+.shape {
+will-change: transform;
+position: absolute;
+border-radius: 50%;
+outline: 0;
+height: 100vh;
+width: 100vw;
+background: #c4302b;
+overflow: hidden;
+}
+.shape.shape-1 {
+background: #f9655a;
+width: 800px;
+height: 800px;
+margin: -325px 0 0 -325px;
+outline: 0;
+}
+.shape.shape-2 {
+background: #ff0800;
+width: 500px;
+height: 500px;
+margin: -220px 0 0 -220px;
+outline: 0;
+}
+.shape.shape-3 {
+background: #000;
+width: 250px;
+height: 250px;
+margin: -135px 0 0 -135px;
+outline: 0;
+}
+
+/*--------------------------------------Announcement-----------------------------------*/
 .Announcement_a {
   text-decoration: none;
   color: black;
@@ -795,7 +889,7 @@ html,body{
 }
 
 
-/*OHS Events*/
+/*----------------------------------OHS Events---------------------------------------*/
 .calender {
   display: block;
   margin: 0 auto;
@@ -803,7 +897,7 @@ html,body{
   height: 600px;
 }
 
-/*OHS HighLight*/
+/*-------------------------------------------OHS HighLigh------------------------------------------*/
 .img-container {
   display: flex;
   justify-content: space-around;
@@ -876,7 +970,7 @@ html,body{
   }
 }
 
-/*footer*/
+/*----------------------------------------footer---------------------------------------------------------------*/
 .footer {
   padding-top: 20px;
   background: rgb(0,8,97);
@@ -1009,7 +1103,7 @@ margin-top: -10px;
   font-family: "Times New Roman";
 }
 
-/*More button*/
+/*----------------------------------------More button---------------------------------*/
 .buttonMore{
   background: rgb(0,8,97);
   color:#fff;
@@ -1056,7 +1150,7 @@ margin-top: -10px;
   transition:800ms ease all;
 }
 
-/*Topic*/
+/*--------------------------------------------Topic--------------------------------------------------*/
 .blog-card {
   max-width: 550px;
   width:100%;
@@ -1506,25 +1600,11 @@ color:#fff;
 }
 
 /*Daily Life*/
-@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@400;700&display=swap");
-:root {
-  --easing: cubic-bezier(.2, 1, .2, 1);
-  --transition: .8s var(--easing);
-  --color-base: #f8f8f8;
-  --color-gray: #ddd;
-  --color-theme: #f5695f;
-  --color-theme-darken: #f12617;
-  --box-shadow: .8rem .8rem 1.2rem rgba(0, 0, 0, .05), -.8rem -.8rem 1.2rem #fff;
-  --box-shadow-hover: 1rem 1rem 1.5rem rgba(0, 0, 0, .08), -1rem -1rem 1.5rem #fff;
-  --box-shadow-inset: inset .8rem .8rem 1.2rem rgba(0, 0, 0, .05), inset -.8rem -.8rem 1.2rem #fff;
-  --box-shadow-dark: .8rem .8rem 1.2rem rgba(0, 0, 0, .1), -.8rem -.8rem 1.2rem rgba(#fff,.2);
-}
-
 .html {
   line-height: 1.8;
   height: 100%;
   word-break: break-word;
-  background-color: var(--color-base);
+  background-color: #f8f8f8;
   -webkit-appearance: none;
   -webkit-tap-highlight-color: transparent;
   overflow-x: hidden;
@@ -1537,13 +1617,11 @@ color:#fff;
 }
 
 ::-moz-selection {
-  color: #fff;
-  background: var(--color-theme);
+  z-index: -10;
 }
 
 ::selection {
-  color: #fff;
-  background: var(--color-theme);
+  z-index: -10;
 }
 /*
 img {
@@ -1639,8 +1717,8 @@ main {
   width: 70px;
   height: 70px;
   cursor: pointer;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+  transition: .8s cubic-bezier(.2, 1, .2, 1);
 }
 .swiper-button-prev::before, .swiper-button-next::before {
   position: absolute;
@@ -1717,10 +1795,10 @@ main {
   width: 1.6rem;
   height: 3px;
   cursor: pointer;
-  -webkit-transition: var(--transition);
-  transition: var(--transition);
+  -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+  transition: .8s cubic-bezier(.2, 1, .2, 1);
   vertical-align: top;
-  background-color: var(--color-gray);
+  background-color: #ddd;
 }
 .card02 .swiper-pagination-bullet-active {
   width: 4rem;
@@ -1771,7 +1849,7 @@ main {
 .card02 .slide-date {
   line-height: 1;
   display: block;
-  /* color: var(--color-theme); */
+  /* color: #f5695f; */
   margin-left: -30px;
 }
 .card02 .slide-title {
@@ -1836,20 +1914,20 @@ main {
     display: none !important;
   }
   .swiper-button-prev::before, .swiper-button-next::before {
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
+    -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    transition: .8s cubic-bezier(.2, 1, .2, 1);
   }
   .swiper-button-prev:hover::before, .swiper-button-next:hover::before {
     -webkit-transform: scale(1.2);
             transform: scale(1.2);
   }
   .card02 .slide {
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
+    -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    transition: .8s cubic-bezier(.2, 1, .2, 1);
   }
   .card02 .slide img {
-    -webkit-transition: var(--transition);
-    transition: var(--transition);
+    -webkit-transition: .8s cubic-bezier(.2, 1, .2, 1);
+    transition: .8s cubic-bezier(.2, 1, .2, 1);
   }
   .card02 .slide:hover {
     -webkit-transform: translateY(-16px);
