@@ -748,137 +748,451 @@ html,body{
 
 
 /*---------------------------------------Features-----------------------------------------------*/
-* {
-  padding: 0;
-  margin: 0;
-  /* overflow-x: hidden; */
-} 
-.Features_cursor {
-  cursor: none;
-  outline: 0;
-  padding-left: 0px;
-  padding-right: 0px;
-}
 
-.shapes {
-position: relative;
-height: 200px;
-width: 100%;
-overflow: hidden;
-outline: 0;
-}
-.content {
-/* position: absolute; */
-left: 0;
-top: 0;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 100%;
-height: 200px;
-background: #fff;
-mix-blend-mode: screen;
-outline: 0;
+/*--------------------------features title---------------------*/
+.features_h1_div {
+  text-align: left !important;
+  z-index: 10;
 }
 .features_h1 {
-font-size: 100px;
-/* color: #000; */
-margin: 0;
-text-align: center;
-font-family: 'IBM Plex Sans', sans-serif;
-outline: 0;
+  font-family: "Source Code Pro";
+  color: blue;
+  font-size: 70px;
+
+  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
+  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #FFCC70);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  /* background-size: 300% auto; */
+  /* animation: gradientEffect 2.5s infinite alternate; */
 }
-.cursor {
-position: fixed;
-width: 0px;
-height: 0px;
-border-radius: 50%;
-will-change: transform;
-user-select: none;
-pointer-events: none;
-z-index: 100000;
-margin-right: 30px;
-margin-top: 50px;
-outline: 0;
+/* @keyframes gradientEffect {
+  from {background-position: left}
+  to {background-position: right}
+} */
+
+.features_top {
+  margin-top: -50px;
 }
-  .shape {
-    will-change: transform;
-    position: absolute;
-    border-radius: 50%;
-    outline: 0;
-    height: 100vh;
-    width: 100vw;
+.features_center {
+  margin-top: 100px;
+  margin-bottom: 0px;
+}
+.features_bottom {
+  margin-top: -30px;
+  margin-bottom: 0px;
+}
+/*------------------------------wave-----------------------------------------*/
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
+
+/* :root {
+    --text-color: hsla(210, 50%, 85%, 1);
+    --shadow-color: hsla(210, 40%, 52%, .4);
+    --btn-color: hsl(210, 80%, 42%);
+    --bg-color: #141218;
+  } */
+
+/* * {
+  box-sizing: border-box;
+} */
+
+/* html, body {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--bg-color);
+} */
+
+/* button {
+  position:relative;
+  padding: 10px 20px;  
+  border: none;
+  background: none;
+  cursor: pointer;
+  
+  font-family: "Source Code Pro";
+  font-weight: 900;
+  text-transform: uppercase;
+  font-size: 30px;  
+  color: hsla(210, 50%, 85%, 1);
+  
+  background-color: hsl(210, 80%, 42%);
+  box-shadow: hsla(210, 40%, 52%, .4) 2px 2px 22px;
+  border-radius: 4px; 
+  z-index: 0;  
+  overflow: hidden;   
+}
+
+button:hover {
+    background-color: rgba(0, 255, 255, 0);
+    color: rgb(0, 128, 255);
+} */
+
+/* button:focus {
+  outline-color: transparent;
+  box-shadow: var(--btn-color) 2px 2px 22px;
+}
+
+.right::after, button::after {
+  content: var(--content);
+  display: block;
+  position: absolute;
+  white-space: nowrap;
+  padding: 40px 40px;
+  pointer-events:none;
+}
+
+button::after{
+  font-weight: 200;
+  top: -30px;
+  left: -20px;
+}  */
+
+/* .right, .left {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+.right {
+  left: 66%;
+}
+.left {
+  right: 66%;
+}
+.right::after {
+  top: -30px;
+  left: calc(-66% - 20px);
+  
+  background-color: var(--bg-color);
+  color:transparent;
+  transition: transform .4s ease-out;
+  transform: translate(0, -90%) rotate(0deg)
+}
+
+button:hover .right::after {
+  transform: translate(0, -47%) rotate(0deg)
+}
+
+button .right:hover::after {
+  transform: translate(0, -50%) rotate(-7deg)
+}
+
+button .left:hover ~ .right::after {
+  transform: translate(0, -50%) rotate(7deg)
+} */
+
+/* bubbles */
+/* button::before {
+  content: '';
+  pointer-events: none;
+  opacity: .6;
+  background:
+    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, hsla(210, 50%, 85%, 1) 3px, hsla(210, 50%, 85%, 1) 4px, transparent 4px),
+    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, hsla(210, 50%, 85%, 1) 3px, hsla(210, 50%, 85%, 1) 4px, transparent 4px),
+    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, hsla(210, 50%, 85%, 1) 5px, hsla(210, 50%, 85%, 1) 6px, transparent 6px);
+
+  width: 100%;
+  height: 300%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  animation: bubbles 5s linear infinite both;
+}
+
+@keyframes bubbles {
+  from {
+    transform: translate();
+  }
+  to {
+    transform: translate(0, -66.666%);
+  }
+} */
+
+/*-----------------------wave-----------------------*/
+/*========= レイアウトのためのCSS ===============*/
+
+#wrapper{
+  width:100%;
+  height: 300px;
+    /* display: flex; */
+    /* justify-content: center;
+    align-items: center; */
     overflow: hidden;
-    }
-    .shape.shape-1 {
-    width: 800px;
-    height: 800px;
-    margin: -325px 0 0 -325px;
-    outline: 0;
-    }
-    .shape.shape-2 {
-    width: 500px;
-    height: 500px;
-    margin: -220px 0 0 -220px;
-    outline: 0;
-    }
-    .shape.shape-3 {
-    width: 250px;
-    height: 250px;
-    margin: -135px 0 0 -135px;
-    outline: 0;
-    }
+    position: relative;
+    background: rgb(88, 222, 255);
+}
 
-    /*classG*/
-    .classG_cursor {
-      background: #ff0800;
-    }
-    .classG_shapes {
-      background: #c4302b;
-    }
-    .classG_shape-1 {
-      background: #f9655a;
-    }
-    .classG_shape-2 {
-      background: #ff0800;
-    }
-    .classG_shape-3 {
-      background: rgb(74, 0, 0);
-    }
+/*========= waveを描画するエリア設定 ===============*/
 
-    /*classIH*/
-    .classIH_cursor {
-      background: #0015d4;
-    }
-    .classIH_shapes {
-      background: #000e88;
-    }
-    .classIH_shape-1 {
-      background: #0084ff;
-    }
-    .classIH_shape-2 {
-      background: #0015d4;
-    }
-    .classIH_shape-3 {
-      background: rgb(3, 0, 52);
-    }
+canvas{
+    position: absolute;
+    bottom: 0;
+    left:0;
+    width: 100%;
+    height: 300px;
+}
 
-    /*classA_F*/
-    .classA_F_cursor {
-      background: #00ac11;
-    }
-    .classA_F_shapes {
-      background: #015315;
-    }
-    .classA_F_shape-1 {
-      background: #55ff00;
-    }
-    .classA_F_shape-2 {
-      background: #00ac11;
-    }
-    .classA_F_shape-3 {
-      background: rgb(0, 61, 21);
-    }
+
+/*-----------------------------------------sky-----------------------------------------------*/
+/* body{
+  background: #0CF;
+  overflow: hidden;
+} */
+.sky {
+  position: relative;
+  z-index: 10;
+}
+.container_sky {
+    width: 100%;
+    /* max-width: 1200px; */
+    height: 300px;
+    margin: 0 auto;
+    background: rgb(88, 222, 255);
+    overflow: hidden;
+  }
+  /* img.bird1{
+    opacity: 0;
+    width: 200px;
+    height: 200px;
+    animation-name: bird1;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+    animation-delay: 0s; 
+    animation-iteration-count: infinite; 
+    animation-direction:normal;
+  } */
+  /* @keyframes bird1 {
+  0% {transform:translate(1024px,50px);opacity:1.0;}
+  100% {transform:translate(-600px,100px);opacity:1.0;}
+  } */
+  img.cloud1{
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    animation-name: cloud1; /*必須ーキーフレーム名*/
+    animation-duration: 30s; /*必須ーアニメーション一回分の時間の長さ*/
+    animation-timing-function: linear; /*アニメーションのタイミング*/
+    animation-delay: 1s; /*アニメーションがいつ始まるかを指定*/
+    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
+    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+  }
+  @keyframes cloud1 {
+  0% {transform:translate(1200px,10px);opacity:0.8;}
+  50% {transform:translate(400px,100px);opacity:0.6;}
+  100% {transform:translate(-600px,150px);opacity:0.8;}
+  }
+  img.cloud2{
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    animation-name: cloud2; /*必須ーキーフレーム名*/
+    animation-duration: 30s; /*必須ーアニメーション一回分の時間の長さ*/
+    animation-timing-function: linear; /*アニメーションのタイミング*/
+    animation-delay: 3s; /*アニメーションがいつ始まるかを指定*/
+    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
+    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+  }
+  @keyframes cloud2 {
+  0% {transform:translate(1200px,100px);opacity:0.8;}
+  50% {transform:translate(400px,150px);opacity:0.6;}
+  100% {transform:translate(-600px,40px);opacity:0.8;}
+  }
+  
+  img.cloud3{
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    animation-name: cloud3; /*必須ーキーフレーム名*/
+    animation-duration: 40s; /*必須ーアニメーション一回分の時間の長さ*/
+    animation-timing-function: linear; /*アニメーションのタイミング*/
+    animation-delay: 5s; /*アニメーションがいつ始まるかを指定*/
+    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
+    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+  }
+  @keyframes cloud3 {
+  0% {transform:translate(1000px,100px);opacity:0.8;}
+  50% {transform:translate(200px,30px);opacity:0.6;}
+  100% {transform:translate(-600px,50px);opacity: 0;}
+  }
+  img.cloud4{
+    opacity: 0;
+    width: 150px;
+    height: 150px;
+    animation-name: cloud4; /*必須ーキーフレーム名*/
+    animation-duration: 45s; /*必須ーアニメーション一回分の時間の長さ*/
+    animation-timing-function: linear; /*アニメーションのタイミング*/
+    animation-delay: 2s; /*アニメーションがいつ始まるかを指定*/
+    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
+    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+  }
+  @keyframes cloud4 {
+  0% {transform:translate(1000px,200px);opacity:0.8;}
+  50% {transform:translate(200px,100px);opacity:0.6;}
+  100% {transform:translate(-600px,150px);opacity: 0;}
+  }
+  
+  
+  
+  /*-------------------Sun Animation-------------------------*/
+  
+  .container-sun{
+    text-align:center;
+    margin-top: -230px;
+  }
+  /* the svg element */
+  .svg-sun{
+    width:100px;
+    height:100px;
+  
+    -webkit-transform-origin: center center;
+    -moz-transform-origin: 50% 50%;
+    -o-transform-origin: center center;
+    -ms-transform-origin: center center;
+    transform-origin:50% 50%;
+  
+  -webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+  -moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+  -o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
+  -ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
+  animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
+  
+  }
+  /* the circle element in the svg itself */
+  #sun{
+    stroke-width:18;
+    stroke-dasharray:2;
+    stroke-dashoffset:2;
+  }
+  /* animation for the sun glowing effect */
+  @-webkit-keyframes sun-glow { 
+      0% { fill: #f1c40f; stroke:#f1c40f;}
+      50% { fill: #e67e22; stroke:#e67e22;}
+      100% { fill: #f1c40f; stroke:#f1c40f;}
+  }
+  @-moz-keyframes sun-glow { 
+      0% { fill: #f1c40f; stroke:#f1c40f;}
+      50% { fill: #e67e22; stroke:#e67e22;}
+      100% { fill: #f1c40f; stroke:#f1c40f;}
+  }
+  @-o-keyframes sun-glow { 
+      0% { fill: #f1c40f; stroke:#f1c40f;}
+      50% { fill: #e67e22; stroke:#e67e22;}
+      100% { fill: #f1c40f; stroke:#f1c40f;}
+  }
+  @-ms-keyframes sun-glow { 
+      0% { fill: #f1c40f; stroke:#f1c40f;}
+      50% { fill: #e67e22; stroke:#e67e22;}
+      100% { fill: #f1c40f; stroke:#f1c40f;}
+  }
+  @keyframes sun-glow { 
+      0% { fill: #f1c40f; stroke:#f1c40f;}
+      50% { fill: #e67e22; stroke:#e67e22;}
+      100% { fill: #f1c40f; stroke:#f1c40f;}
+  }
+  
+  /* start spin animation */
+  @-webkit-keyframes spin{
+      100% {
+          -webkit-transform: rotate(360deg);
+      }
+  }
+  @-moz-keyframes spin{
+      100% {
+          -moz-transform: rotate(360deg);
+      }
+  }
+  @-o-keyframes spin{
+      100% {
+          -o-transform: rotate(360deg);
+      }
+  }
+  @-ms-keyframes spin{
+      100% {
+          -ms-transform: rotate(360deg);
+      }
+  }
+  @keyframes spin{
+      100% {
+          transform: rotate(360deg);
+      }
+  }
+
+  /*-----------------------------------------sea---------------------------------*/
+/* body{
+  background: #0CF;
+  overflow: hidden;
+} */
+.container_sea{
+  width: 100%;
+  /* max-width: 1200px; */
+  height: 300px;
+  margin: 0 auto;
+  background: rgb(40, 206, 241);
+  overflow: hidden;
+}
+/* img.bird1{
+  opacity: 0;
+  width: 200px;
+  height: 200px;
+  animation-name: bird1;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 0s; 
+  animation-iteration-count: infinite; 
+  animation-direction:normal;
+} */
+/* @keyframes bird1 {
+0% {transform:translate(1024px,50px);opacity:1.0;}
+100% {transform:translate(-600px,100px);opacity:1.0;}
+} */
+img.fish1{
+  opacity: 0;
+  width: 200px;
+  animation-name: fish1; /*必須ーキーフレーム名*/
+  animation-duration: 30s; /*必須ーアニメーション一回分の時間の長さ*/
+  animation-timing-function: linear; /*アニメーションのタイミング*/
+  animation-delay: 1s; /*アニメーションがいつ始まるかを指定*/
+  animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
+  animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+}
+@keyframes fish1 {
+0% {transform:translate(1200px,10px);opacity:0.8;}
+50% {transform:translate(400px,100px);opacity:0.6;}
+100% {transform:translate(-600px,150px);opacity:0.8;}
+}
+img.fish2{
+  opacity: 0;
+  width: 200px;
+  animation-name: fish2; /*必須ーキーフレーム名*/
+  animation-duration: 35s; /*必須ーアニメーション一回分の時間の長さ*/
+  animation-timing-function: linear; /*アニメーションのタイミング*/
+  animation-delay: 2s; /*アニメーションがいつ始まるかを指定*/
+  animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
+  animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+}
+@keyframes fish2 {
+0% {transform:translate(1200px,100px);opacity:0.8;}
+50% {transform:translate(200px,150px);opacity:0.6;}
+100% {transform:translate(-600px,40px);opacity:0.8;}
+}
+img.fish3{
+  opacity: 0;
+  width: 400px;
+  animation-name: fish3; /*必須ーキーフレーム名*/
+  animation-duration: 35s; /*必須ーアニメーション一回分の時間の長さ*/
+  animation-timing-function: linear; /*アニメーションのタイミング*/
+  animation-delay: 5s; /*アニメーションがいつ始まるかを指定*/
+  animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
+  animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+}
+@keyframes fish3 {
+0% {transform:translate(1200px,250px);opacity:0.8;}
+50% {transform:translate(400px,100px);opacity:0.6;}
+100% {transform:translate(-700px,60px);opacity:0.8;}
+}
 
 /*--------------------------------------Announcement-----------------------------------*/
 .Announcement_a {
