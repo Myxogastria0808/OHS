@@ -749,451 +749,136 @@ html,body{
 
 
 /*---------------------------------------Features-----------------------------------------------*/
+/* @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Rubik:400,900); */
 
-/*--------------------------features title---------------------*/
-.features_h1_div {
-  text-align: left !important;
-  z-index: 10;
-}
-.features_h1 {
-  font-family: "Source Code Pro";
-  color: blue;
-  font-size: 70px;
-
-  background: linear-gradient(90deg, #4158D0, #C850C0 30%, #FFCC70);
-  background: -webkit-linear-gradient(0deg, #4158D0, #C850C0 30%, #FFCC70);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  /* background-size: 300% auto; */
-  /* animation: gradientEffect 2.5s infinite alternate; */
-}
-/* @keyframes gradientEffect {
-  from {background-position: left}
-  to {background-position: right}
+.features{box-sizing: border-box;}
+/* body, html { height: 100%; min-height: 100%; } */
+/* body {
+   background: linear-gradient(#f6f7fc 0%, #d5e1e8 40%);
+   transform-style: preserve-3d;
+   transform: perspective(800px);
+   font-family: 'Lato', sans-serif;
 } */
 
-.features_top {
-  margin-top: -50px;
-}
-.features_center {
-  margin-top: 100px;
-  margin-bottom: 0px;
-}
-.features_bottom {
-  margin-top: -30px;
-  margin-bottom: 0px;
-}
-/*------------------------------wave-----------------------------------------*/
-@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,900');
-
-/* :root {
-    --text-color: hsla(210, 50%, 85%, 1);
-    --shadow-color: hsla(210, 40%, 52%, .4);
-    --btn-color: hsl(210, 80%, 42%);
-    --bg-color: #141218;
-  } */
-
-/* * {
-  box-sizing: border-box;
-} */
-
-/* html, body {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: var(--bg-color);
-} */
-
-/* button {
-  position:relative;
-  padding: 10px 20px;  
-  border: none;
-  background: none;
-  cursor: pointer;
-  
-  font-family: "Source Code Pro";
-  font-weight: 900;
-  text-transform: uppercase;
-  font-size: 30px;  
-  color: hsla(210, 50%, 85%, 1);
-  
-  background-color: hsl(210, 80%, 42%);
-  box-shadow: hsla(210, 40%, 52%, .4) 2px 2px 22px;
-  border-radius: 4px; 
-  z-index: 0;  
-  overflow: hidden;   
+#card-container{
+    max-width: 1200px;
+   width: 100%;
+   /* height: 350px; */
+   /* position:absolute; */
+   top: 50%; left: 50%;
+   /* margin: -175px 0 0 -350px; */
 }
 
-button:hover {
-    background-color: rgba(0, 255, 255, 0);
-    color: rgb(0, 128, 255);
-} */
+#card-container .pg{position:absolute;height:450px; width:40%; right:-10px;bottom:0px;z-index:2}
+#card-container .pg > img{height:450px;}
 
-/* button:focus {
-  outline-color: transparent;
-  box-shadow: var(--btn-color) 2px 2px 22px;
+.shine {
+/* position: absolute; */
+top: 0; left: 0; right: 0; bottom: 0;
+background: linear-gradient(90deg, rgba(0,0,0,.4) 0%,rgba(0,0,0,.2) 60%);
+z-index: 1;
 }
-
-.right::after, button::after {
-  content: var(--content);
-  display: block;
-  position: absolute;
-  white-space: nowrap;
-  padding: 40px 40px;
-  pointer-events:none;
-}
-
-button::after{
-  font-weight: 200;
-  top: -30px;
-  left: -20px;
-}  */
-
-/* .right, .left {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-}
-.right {
-  left: 66%;
-}
-.left {
-  right: 66%;
-}
-.right::after {
-  top: -30px;
-  left: calc(-66% - 20px);
-  
-  background-color: var(--bg-color);
-  color:transparent;
-  transition: transform .4s ease-out;
-  transform: translate(0, -90%) rotate(0deg)
-}
-
-button:hover .right::after {
-  transform: translate(0, -47%) rotate(0deg)
-}
-
-button .right:hover::after {
-  transform: translate(0, -50%) rotate(-7deg)
-}
-
-button .left:hover ~ .right::after {
-  transform: translate(0, -50%) rotate(7deg)
-} */
-
-/* bubbles */
-/* button::before {
-  content: '';
-  pointer-events: none;
-  opacity: .6;
-  background:
-    radial-gradient(circle at 20% 35%,  transparent 0,  transparent 2px, hsla(210, 50%, 85%, 1) 3px, hsla(210, 50%, 85%, 1) 4px, transparent 4px),
-    radial-gradient(circle at 75% 44%, transparent 0,  transparent 2px, hsla(210, 50%, 85%, 1) 3px, hsla(210, 50%, 85%, 1) 4px, transparent 4px),
-    radial-gradient(circle at 46% 52%, transparent 0, transparent 4px, hsla(210, 50%, 85%, 1) 5px, hsla(210, 50%, 85%, 1) 6px, transparent 6px);
-
-  width: 100%;
-  height: 300%;
-  top: 0;
-  left: 0;
-  position: absolute;
-  animation: bubbles 5s linear infinite both;
-}
-
-@keyframes bubbles {
-  from {
-    transform: translate();
-  }
-  to {
-    transform: translate(0, -66.666%);
-  }
-} */
-
-/*-----------------------wave-----------------------*/
-/*========= レイアウトのためのCSS ===============*/
-
-#wrapper{
-  width:100%;
-  height: 300px;
-    /* display: flex; */
-    /* justify-content: center;
-    align-items: center; */
-    overflow: hidden;
-    position: relative;
-    background: rgb(88, 222, 255);
-}
-
-/*========= waveを描画するエリア設定 ===============*/
-
-canvas{
-    position: absolute;
-    bottom: 0;
-    left:0;
-    width: 100%;
-    height: 300px;
-}
+button{color:#fff;}
 
 
-/*-----------------------------------------sky-----------------------------------------------*/
-/* body{
-  background: #0CF;
-  overflow: hidden;
-} */
-.sky {
-  position: relative;
-  z-index: 10;
+/*G*/
+#features-card-1 {
+   animation: backIH 60s infinite;
+   color:#fff;
+   padding:30px;
+   width:100%;
+   height:100%;
+   padding-top: 0px;
+   padding-bottom: 5px;
+   /* position:absolute; */
+   z-index:1;
+   background:url(./nc244111.gif) 100% center;
+   box-shadow: 
+     0px 45px 100px rgba(0, 0, 0, .4),
+     inset 0 0 0 1000px rgba(27, 49, 156, 0.6);
 }
-.container_sky {
-    width: 100%;
-    /* max-width: 1200px; */
-    height: 300px;
-    margin: 0 auto;
-    background: rgb(88, 222, 255);
-    overflow: hidden;
-  }
-  /* img.bird1{
-    opacity: 0;
-    width: 200px;
-    height: 200px;
-    animation-name: bird1;
-    animation-duration: 10s;
-    animation-timing-function: linear;
-    animation-delay: 0s; 
-    animation-iteration-count: infinite; 
-    animation-direction:normal;
-  } */
-  /* @keyframes bird1 {
-  0% {transform:translate(1024px,50px);opacity:1.0;}
-  100% {transform:translate(-600px,100px);opacity:1.0;}
-  } */
-  img.cloud1{
-    opacity: 0;
-    width: 150px;
-    height: 150px;
-    animation-name: cloud1; /*必須ーキーフレーム名*/
-    animation-duration: 30s; /*必須ーアニメーション一回分の時間の長さ*/
-    animation-timing-function: linear; /*アニメーションのタイミング*/
-    animation-delay: 1s; /*アニメーションがいつ始まるかを指定*/
-    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
-    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
-  }
-  @keyframes cloud1 {
-  0% {transform:translate(1200px,10px);opacity:0.8;}
-  50% {transform:translate(400px,100px);opacity:0.6;}
-  100% {transform:translate(-600px,150px);opacity:0.8;}
-  }
-  img.cloud2{
-    opacity: 0;
-    width: 150px;
-    height: 150px;
-    animation-name: cloud2; /*必須ーキーフレーム名*/
-    animation-duration: 30s; /*必須ーアニメーション一回分の時間の長さ*/
-    animation-timing-function: linear; /*アニメーションのタイミング*/
-    animation-delay: 3s; /*アニメーションがいつ始まるかを指定*/
-    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
-    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
-  }
-  @keyframes cloud2 {
-  0% {transform:translate(1200px,100px);opacity:0.8;}
-  50% {transform:translate(400px,150px);opacity:0.6;}
-  100% {transform:translate(-600px,40px);opacity:0.8;}
-  }
-  
-  img.cloud3{
-    opacity: 0;
-    width: 150px;
-    height: 150px;
-    animation-name: cloud3; /*必須ーキーフレーム名*/
-    animation-duration: 40s; /*必須ーアニメーション一回分の時間の長さ*/
-    animation-timing-function: linear; /*アニメーションのタイミング*/
-    animation-delay: 5s; /*アニメーションがいつ始まるかを指定*/
-    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
-    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
-  }
-  @keyframes cloud3 {
-  0% {transform:translate(1000px,100px);opacity:0.8;}
-  50% {transform:translate(200px,30px);opacity:0.6;}
-  100% {transform:translate(-600px,50px);opacity: 0;}
-  }
-  img.cloud4{
-    opacity: 0;
-    width: 150px;
-    height: 150px;
-    animation-name: cloud4; /*必須ーキーフレーム名*/
-    animation-duration: 45s; /*必須ーアニメーション一回分の時間の長さ*/
-    animation-timing-function: linear; /*アニメーションのタイミング*/
-    animation-delay: 2s; /*アニメーションがいつ始まるかを指定*/
-    animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
-    animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
-  }
-  @keyframes cloud4 {
-  0% {transform:translate(1000px,200px);opacity:0.8;}
-  50% {transform:translate(200px,100px);opacity:0.6;}
-  100% {transform:translate(-600px,150px);opacity: 0;}
-  }
-  
-  
-  
-  /*-------------------Sun Animation-------------------------*/
-  
-  .container-sun{
-    text-align:center;
-    margin-top: -230px;
-  }
-  /* the svg element */
-  .svg-sun{
-    width:100px;
-    height:100px;
-  
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: 50% 50%;
-    -o-transform-origin: center center;
-    -ms-transform-origin: center center;
-    transform-origin:50% 50%;
-  
-  -webkit-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
-  -moz-animation: spin 25s linear infinite, sun-glow 3s 0s linear infinite;
-  -o-animation:spin 25s linear infinite, sun-glow 3s 0s linear infinite;
-  -ms-animation: spin 25s linear infinite, sun-glow 3s 0s ease-in-out infinite;
-  animation: spin 25s linear infinite,sun-glow 3s 0s linear infinite;
-  
-  }
-  /* the circle element in the svg itself */
-  #sun{
-    stroke-width:18;
-    stroke-dasharray:2;
-    stroke-dashoffset:2;
-  }
-  /* animation for the sun glowing effect */
-  @-webkit-keyframes sun-glow { 
-      0% { fill: #f1c40f; stroke:#f1c40f;}
-      50% { fill: #e67e22; stroke:#e67e22;}
-      100% { fill: #f1c40f; stroke:#f1c40f;}
-  }
-  @-moz-keyframes sun-glow { 
-      0% { fill: #f1c40f; stroke:#f1c40f;}
-      50% { fill: #e67e22; stroke:#e67e22;}
-      100% { fill: #f1c40f; stroke:#f1c40f;}
-  }
-  @-o-keyframes sun-glow { 
-      0% { fill: #f1c40f; stroke:#f1c40f;}
-      50% { fill: #e67e22; stroke:#e67e22;}
-      100% { fill: #f1c40f; stroke:#f1c40f;}
-  }
-  @-ms-keyframes sun-glow { 
-      0% { fill: #f1c40f; stroke:#f1c40f;}
-      50% { fill: #e67e22; stroke:#e67e22;}
-      100% { fill: #f1c40f; stroke:#f1c40f;}
-  }
-  @keyframes sun-glow { 
-      0% { fill: #f1c40f; stroke:#f1c40f;}
-      50% { fill: #e67e22; stroke:#e67e22;}
-      100% { fill: #f1c40f; stroke:#f1c40f;}
-  }
-  
-  /* start spin animation */
-  @-webkit-keyframes spin{
-      100% {
-          -webkit-transform: rotate(360deg);
-      }
-  }
-  @-moz-keyframes spin{
-      100% {
-          -moz-transform: rotate(360deg);
-      }
-  }
-  @-o-keyframes spin{
-      100% {
-          -o-transform: rotate(360deg);
-      }
-  }
-  @-ms-keyframes spin{
-      100% {
-          -ms-transform: rotate(360deg);
-      }
-  }
-  @keyframes spin{
-      100% {
-          transform: rotate(360deg);
-      }
-  }
 
-  /*-----------------------------------------sea---------------------------------*/
-/* body{
-  background: #0CF;
-  overflow: hidden;
-} */
-.container_sea{
-  width: 100%;
-  /* max-width: 1200px; */
-  height: 300px;
-  margin: 0 auto;
-  background: rgb(40, 206, 241);
-  overflow: hidden;
+#features-card-1 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
+#features-card-1 .text-block .features_h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
+#features-card-1 .text-block .features_h1 .features_small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
+#features-card-1 .text-block .features_h3{margin:0;font-weight:700;}
+#features-card-1 .text-block p{font-weight:300; width:60%}
+#features-card-1 .text-block .features_button{transition: all .35s cubic-bezier(.37,.26,.35,1);border:4px solid #fff; padding:10px; background:transparent;font-family: 'Rubik', sans-serif;text-transform:uppercase; font-weight:700; cursor:pointer;}
+#features-card-1 .text-block .features_button:hover{background:#251db5}
+
+@keyframes backIH {
+   0%   { background-size:100% }
+   50%   { background-size:130% }
+   100%   { background-size:100% }
+ }
+
+
+
+/*IH*/
+#features-card-2 {
+   animation: backIH 60s infinite;
+   color:#fff;
+   padding:30px;
+   width:100%;
+   height:100%;
+   padding-top: 0px;
+   padding-bottom: 5px;
+   /* position:absolute; */
+   z-index:1;
+   background:url(./back.jpg) 100% center;
+   box-shadow: 
+     0px 45px 100px rgba(0, 0, 0, .4),
+     inset 0 0 0 1000px rgba(156,27,27,.6);
+  text-align: center;
 }
-/* img.bird1{
-  opacity: 0;
-  width: 200px;
-  height: 200px;
-  animation-name: bird1;
-  animation-duration: 10s;
-  animation-timing-function: linear;
-  animation-delay: 0s; 
-  animation-iteration-count: infinite; 
-  animation-direction:normal;
-} */
-/* @keyframes bird1 {
-0% {transform:translate(1024px,50px);opacity:1.0;}
-100% {transform:translate(-600px,100px);opacity:1.0;}
-} */
-img.fish1{
-  opacity: 0;
-  width: 200px;
-  animation-name: fish1; /*必須ーキーフレーム名*/
-  animation-duration: 30s; /*必須ーアニメーション一回分の時間の長さ*/
-  animation-timing-function: linear; /*アニメーションのタイミング*/
-  animation-delay: 1s; /*アニメーションがいつ始まるかを指定*/
-  animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
-  animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
+
+#features-card-2 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
+#features-card-2 .text-block .features_h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
+#features-card-2 .text-block .features_h1 .features_small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
+#features-card-2 .text-block .features_h3{margin:0;font-weight:700;}
+#features-card-2 .text-block p{font-weight:300; width:60%}
+#features-card-2 .text-block .features_button{transition: all .35s cubic-bezier(.37,.26,.35,1);border:4px solid #fff; padding:10px; background:transparent;font-family: 'Rubik', sans-serif;text-transform:uppercase; font-weight:700; cursor:pointer;}
+#features-card-2 .text-block .features_button:hover{background:#B51D2A}
+
+@keyframes backIH {
+   0%   { background-size:150% }
+   50%   { background-size:350% }
+   100%   { background-size:150% }
+ }
+
+
+
+/*normal*/
+#features-card-3 {
+   animation: backA_F 60s infinite;
+   color:#fff;
+   padding:30px;
+   width:100%;
+   height:100%;
+   padding-top: 0px;
+   padding-bottom: 5px;
+   /* position:absolute; */
+   z-index:1;
+   background:url(./wallpaper1-3.gif) 100% center;
+   box-shadow: 
+     0px 45px 100px rgba(0, 0, 0, .4),
+     inset 0 0 0 1000px rgba(94, 27, 156, 0.6);
 }
-@keyframes fish1 {
-0% {transform:translate(1200px,10px);opacity:0.8;}
-50% {transform:translate(400px,100px);opacity:0.6;}
-100% {transform:translate(-600px,150px);opacity:0.8;}
-}
-img.fish2{
-  opacity: 0;
-  width: 200px;
-  animation-name: fish2; /*必須ーキーフレーム名*/
-  animation-duration: 35s; /*必須ーアニメーション一回分の時間の長さ*/
-  animation-timing-function: linear; /*アニメーションのタイミング*/
-  animation-delay: 2s; /*アニメーションがいつ始まるかを指定*/
-  animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
-  animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
-}
-@keyframes fish2 {
-0% {transform:translate(1200px,100px);opacity:0.8;}
-50% {transform:translate(200px,150px);opacity:0.6;}
-100% {transform:translate(-600px,40px);opacity:0.8;}
-}
-img.fish3{
-  opacity: 0;
-  width: 400px;
-  animation-name: fish3; /*必須ーキーフレーム名*/
-  animation-duration: 35s; /*必須ーアニメーション一回分の時間の長さ*/
-  animation-timing-function: linear; /*アニメーションのタイミング*/
-  animation-delay: 5s; /*アニメーションがいつ始まるかを指定*/
-  animation-iteration-count: infinite; /*アニメーションの繰り返し回数*/
-  animation-direction:normal;/*アニメーションを反転再生させるかどうかを指定*/
-}
-@keyframes fish3 {
-0% {transform:translate(1200px,250px);opacity:0.8;}
-50% {transform:translate(400px,100px);opacity:0.6;}
-100% {transform:translate(-700px,60px);opacity:0.8;}
-}
+
+#features-card-3 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
+#features-card-3 .text-block .features_h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
+#features-card-3 .text-block .features_h1 .features_small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
+#features-card-3 .text-block .features_h3{margin:0;font-weight:700;}
+#features-card-3 .text-block p{font-weight:300; width:60%}
+#features-card-3 .text-block .features_button{transition: all .35s cubic-bezier(.37,.26,.35,1);border:4px solid #fff; padding:10px; background:transparent;font-family: 'Rubik', sans-serif;text-transform:uppercase; font-weight:700; cursor:pointer;}
+#features-card-3 .text-block .features_button:hover{background:#b51dab}
+
+@keyframes backA_F {
+   0%   { background-size:100% }
+   50%   { background-size:130% }
+   100%   { background-size:100% }
+ }
 
 /*--------------------------------------Announcement-----------------------------------*/
 .Announcement_a {
