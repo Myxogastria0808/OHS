@@ -1,0 +1,81 @@
+/*----------------------------------OHS Events---------------------------------------*/
+/* .calender {
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  height: 600px;
+} */
+
+.calender.container {
+    max-width: 1040px;
+    margin: 30px auto;
+    border: 5px solid #CCC;
+    height: 470px;
+    overflow: hidden;
+  }
+  .calender.swiper {
+    margin: 0 auto 30px;
+    /* background-color: #CCC; */
+  }
+  .calender.tab-menu {
+    border-bottom: 1px solid #CCC;
+    background-color: #CCC;
+  }
+  .calender.tab-menu .calender.swiper-slide {
+    width: auto;
+    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  
+  .calender.calender-contents-cover {
+   overflow: scroll;
+   height: 429px;
+   margin-top: -28px;
+  }
+  
+  .calender.tab-contents {
+    margin: 30px auto;
+  }
+  .calender.swiper-slide-thumb-active {
+    border-bottom: 2px solid rgb(9, 8, 53);
+    color: rgb(9, 8, 53) !important;
+    font-weight: bold;
+  }
+  
+  /*calender list*/
+  ul.calender {
+   padding: 0;
+   position: relative;
+  }
+  
+  li.calender {
+   color: black;
+   border-left: solid 6px orange;/*左側の線*/
+   background: whitesmoke;/*背景色*/
+   margin-bottom: 3px;/*下のバーとの余白 */
+   line-height: 1.5;
+   padding: 0.5em;
+   list-style-type: none!important;/*ポチ消す*/
+   display: flex;
+  }
+  
+  /*calender_date*/
+  .calender.calender_date_margin {
+   padding-top: 4px;
+   padding-left: 5px;
+   margin-left: 40px;
+  }
+  .calender.calender_date {
+   background-color: orange;
+   height: 35px !important;
+   width: 35px !important;
+   border-radius: 50%;
+   text-align: center;
+   position: absolute;
+  }
+  .calender.calender_date_number {
+   padding-top: 4px;
+  }
