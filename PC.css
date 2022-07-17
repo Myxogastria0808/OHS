@@ -74,12 +74,7 @@ html,body{
 #loader.loaded {
   animation: fadeOut 3s forwards;
 }
-
 /*---------------------実験区域----------------------------*/
-.shutter_1_h1 {
-  color: #359ef9;
-  margin-top: 110px;
-}
 
 .shutter_1 {
   -webkit-box-sizing: border-box;
@@ -218,9 +213,9 @@ html,body{
   animation-delay: 450ms;
 }
 
-.loader--reflect .bar {
+/* .loader--reflect .bar {
   animation-name: bar-reflect;
-}
+} */
 
 @keyframes bar {
   0% {
