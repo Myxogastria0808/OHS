@@ -745,8 +745,8 @@ html,body{
   color: #ececee;
   transition: all 250ms linear;
   text-decoration: none;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
 .nav_mobile .ul_mobile .li_mobile .a_mobile:hover{
   text-decoration: none;
@@ -1157,6 +1157,8 @@ z-index: 1;
   margin-top: 17px;
   margin-bottom: 17px;
   border-radius: 4px;
+  padding-right: 12px;
+  padding-left: 12px;
 }
 .title_box {
   color: #fff;
@@ -1169,7 +1171,7 @@ z-index: 1;
   padding-left: 1rem;
   padding-right: 1rem;
   margin-top: 12px;
-  margin-left: -15px;
+  /* margin-left: -15px; */
   font-size: 18px;
   font-family: "游明朝";
   border-radius: 4px;
@@ -1184,15 +1186,17 @@ z-index: 1;
   padding-right: 100%;
 }
 .content_box {
-  padding-left: 10px;
-  padding-right: 10px;
+  /* padding-left: 10px; */
+  /* padding-right: 10px; */
   padding-bottom: 2px;
   overflow-wrap: normal;
   margin-top: 7px;
-  margin-left: -8px;
+  /* margin-left: -8px; */
   font-family: "游明朝";
-  font-size: 17px;
+  font-size: 16px;
   text-align: left;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 
@@ -1257,7 +1261,7 @@ ul.calender {
 
 li.calender {
  color: black;
- border-left: solid 6px orange;/*左側の線*/
+ border-left: solid 6px #CCC;
  background: whitesmoke;/*背景色*/
  margin-bottom: 4px;/*下のバーとの余白 */
  line-height: 1.5;
@@ -1272,9 +1276,10 @@ li.calender {
  padding-top: 4px;
  padding-left: 5px;
  margin-left: 48px;
+ font-size: 16px;
 }
 .calender.calender_date {
- background-color: orange;
+ background-color: rgb(0, 8, 97);
  height: 43px !important;
  width: 43px !important;
  border-radius: 50%;
@@ -1284,6 +1289,7 @@ li.calender {
 }
 .calender.calender_date_number {
  padding-top: 10px;
+ color: white;
 }
 
 /*-------------------------------------------OHS HighLigh------------------------------------------*/
@@ -1314,7 +1320,7 @@ li.calender {
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
-  font-size: 20px;
+  font-size: 16px;
   color: white;
   font-family: "游明朝";
   background-color: rgb(0,8,97);
@@ -1376,14 +1382,14 @@ li.calender {
 .p_footer {
   margin-top: -2px;
   margin-bottom: -2px;
-  font-size: 15px;
+  font-size: 16px;
   color: white;
   font-family: "Times New Roman";
 }
 .p_footer_num {
   margin-top: -2px;
   margin-bottom: -2px;
-  font-size: 18px;
+  font-size: 16px;
   color: white;
   font-family: "Times New Roman";
 }
@@ -1424,7 +1430,7 @@ margin-top: -10px;
   font-family: "Times New Roman";
 }
 .inner-content-box_footer {
-  font-size: 1rem;
+  font-size: 16px;
 }
 @media only screen and (min-width: 485px){
   .br_new_line {
@@ -1488,6 +1494,11 @@ margin-top: -10px;
 }
 .small_footer {
   font-size: 12px;
+  color: white;
+  font-family: "Times New Roman";
+}
+.small_footer_en {
+  font-size: 16px;
   color: white;
   font-family: "Times New Roman";
 }

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./pop.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal-overlay closed" id="modal-overlay"></div>
+<div class="modal closed" id="modal">
+        <button class="close-button" id="close-button">✕</button>
+        <!-- <div class="modal-guts"> -->
+          <!-- <h4 class="pop_h4">ポップアップウィンドウ</h4> -->
+          <div class="pop_p_div">
+            <h4 class="pop_h4">ポップアップウィンドウ</h4>
+            <p class="pop_p">このが表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。ぎゅｋｊｂｄｚそっが表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。ぎゅｋｊｂｄｚそっが表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。ぎゅｋｊｂｄｚそっが表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。ぎゅｋｊｂｄｚそっが表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。ぎゅｋｊｂｄｚそっが表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。ぎゅｋｊｂｄｚそっ窓が表示されている間は窓の外の操作はできません。ウィンドウを閉じて操作して下さい。ぎゅｋｊｂｄｚそっこここここここここここここここここここここｋｄｚｇｒとぇ０９いおｋｓｇｊｗ３ｒ０ｑ９あおｊふぇ３ｑ０９あおｊｆ４ｗ０９おｋふぇｊｗｔｒ３ｑ０あおｆｊｔ４うぇう</p>
+          </div>
+
+        <!-- </div> -->
+
+</div>
+
+
+
+<a id="open-button" class="open-button">ポップアップ表示</a>
+
+<script>
+    var modal = document.querySelector("#modal");
+    var modalOverlay = document.querySelector("#modal-overlay");
+    var closeButton = document.querySelector("#close-button");
+    var openButton = document.querySelector("#open-button");
+    
+    //閉じるボタン
+    closeButton.addEventListener("click", function () {
+      modal.classList.toggle("closed");
+      modalOverlay.classList.toggle("closed");
+    });
+    
+    //開くボタン
+    openButton.addEventListener("click", function () {
+      modal.classList.toggle("closed");
+      modalOverlay.classList.toggle("closed");
+    });
+    </script>
+</body>
+</html>
