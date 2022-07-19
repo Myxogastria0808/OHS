@@ -696,23 +696,47 @@ html,body{
   opacity: 0;
   visibility: hidden;
   transform: translateY(30px);
-  transition: all 250ms linear;
+  transition: all 600ms linear;
 }
 .nav_mobile .ul_mobile .li_mobile:nth-child(1){
-  transition-delay: 200ms;
+  transition-delay: 600ms;
 }
 .nav_mobile .ul_mobile .li_mobile:nth-child(2){
-  transition-delay: 150ms;
+  transition-delay: 550ms;
 }
 .nav_mobile .ul_mobile .li_mobile:nth-child(3){
-  transition-delay: 100ms;
+  transition-delay: 500ms;
 }
 .nav_mobile .ul_mobile .li_mobile:nth-child(4){
+  transition-delay: 450ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(5){
+  transition-delay: 400ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(6){
+  transition-delay: 350ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(7){
+  transition-delay: 300ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(8){
+  transition-delay: 250ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(9){
+  transition-delay: 200ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(10){
+  transition-delay: 150ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(11){
+  transition-delay: 100ms;
+}
+.nav_mobile .ul_mobile .li_mobile:nth-child(12){
   transition-delay: 50ms;
 }
-.nav_mobile .ul_mobile .li_mobile a{
+.nav_mobile .ul_mobile .li_mobile .a_mobile{
   font-family: 'Montserrat', sans-serif;
-  font-size: 9vh;
+  font-size: 5vh;
   text-transform: uppercase;
   line-height: 1.2;
   font-weight: 800;
@@ -720,12 +744,15 @@ html,body{
   position: relative;
   color: #ececee;
   transition: all 250ms linear;
-}
-.nav_mobile .ul_mobile .li_mobile a:hover{
   text-decoration: none;
-  color: #ffeba7;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
-.nav_mobile .ul_mobile .li_mobile a:after{
+.nav_mobile .ul_mobile .li_mobile .a_mobile:hover{
+  text-decoration: none;
+  color: #BDA26B;
+}
+/* .nav_mobile .ul_mobile .li_mobile a:after{
   display: block;
   position: absolute;
   top: 50%;
@@ -737,7 +764,7 @@ html,body{
   background-color: #353746;
   opacity: 0.8;
   transition: width 250ms linear;
-}
+} */
 .nav_mobile .ul_mobile .li_mobile a:hover:after{
   width: 100%;
 }
@@ -762,6 +789,30 @@ html,body{
 }
 .menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(4){
   transition-delay: 1640ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(5){
+  transition-delay: 1720ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(6){
+  transition-delay: 1800ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(7){
+  transition-delay: 1880ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(8){
+  transition-delay: 1960ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(9){
+  transition-delay: 2040ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(10){
+  transition-delay: 2120ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(11){
+  transition-delay: 2200ms;
+}
+.menu-icon:checked ~ .nav_mobile .ul_mobile .li_mobile:nth-child(12){
+  transition-delay: 2280ms;
 }
 
 
@@ -937,6 +988,7 @@ html,body{
   text-align: center;
   color: rgb(0,8,97);
   font-family: Roman;
+  font-family: 30px;
 }
 
 /*subtitle*/
@@ -1609,7 +1661,7 @@ color:#fff;
   text-decoration:underline
 }
 .card-info {
-   box-sizing: border-box;
+  box-sizing: border-box;
   padding: 0;
   width: 100%;
   position: absolute;
@@ -1617,6 +1669,7 @@ color:#fff;
   left: 0;
   margin: 0 auto;
   padding: 0 50px;
+  /* font-size: 16px; */
   font-style: 16px;
   line-height: 24px;
   z-index: 20;
@@ -1629,7 +1682,8 @@ color:#fff;
   margin:15px auto;
   /* background:#fff; */
   color: #fff;
-  font-size:0.8em;
+  /* font-size:0.8em; */
+  font-size: 16px;
   border-radius: 3px;
   font-size: 100%;
   box-shadow: 0px 0px 3px #808080;
@@ -2188,6 +2242,7 @@ main {
   display: block;
   /* color: #f5695f; */
   margin-left: -30px;
+  font-size: 15px;
 }
 .card02 .slide-title {
   line-height: 1.6;
@@ -2241,7 +2296,6 @@ main {
     font-size: 1.0rem;
   }
   .slide-date {
-    font-size: 0.8rem;
     margin-top: -40px;
   }
 }
@@ -2287,7 +2341,6 @@ main {
     font-size: 1.0rem;
   }
   .slide-date {
-    font-size: 15px;
     margin-top: -35px;
   }
 }
