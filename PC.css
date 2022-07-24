@@ -135,7 +135,7 @@
   max-width: 600px;
   background: white;
   padding-top: 20px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   border-radius: 10px;
   margin-top: 0px;
   margin-bottom: 0px;
@@ -181,14 +181,15 @@
 }
 
 .modal-padding {
-  padding-left: 23px;
-  padding-right: 23px;
+  padding-left: 10px;
+  padding-right: 10px;
   height: 100%;
   overflow: hidden;
+  border-radius: 10px;
 }
 
 .closed_div_p_scroll {
-  height: 100%;
+  height: 90%;
   overflow-y: scroll;
   background-color: white;
   border-radius: 10px;
