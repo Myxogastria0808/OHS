@@ -206,8 +206,8 @@
     <h1 class="main_label">Daily Life</h1>
     <h2 class="subtitle">小野高生の学校生活</h2>
 
-    <div class="l-wrapper">
-      <main>
+<div class="l-wrapper">
+  <main>
       <div id="demo02" class="card02 l-section">
         <div class="l-inner">
 
@@ -218,7 +218,7 @@
 
 
 
-              <a href="#" class="js-modal-open swiper-slide swiper-slide-active"  data-target="modal01" style="margin-right: 32px;" role="group">
+              <a class="js-modal-open swiper-slide swiper-slide-active"  data-target="modal01" style="margin-right: 32px;" role="group">
                 <article class="slide">
                   <div class="slide-media img-cover"><img src="./DSC_0380.JPG" alt=""></div>
                   <div class="slide-content">
@@ -229,7 +229,7 @@
               </a>
 
 
-              <a href="#" class="js-modal-open swiper-slide swiper-slide-active"  data-target="modal02" style="margin-right: 32px;" role="group">
+              <a class="js-modal-open swiper-slide swiper-slide-active"  data-target="modal02" style="margin-right: 32px;" role="group">
                 <article class="slide">
                   <div class="slide-media img-cover"><img src="./DSC_0380.JPG" alt=""></div>
                   <div class="slide-content">
@@ -240,7 +240,7 @@
               </a>
 
 
-              <a href="#" class="js-modal-open swiper-slide swiper-slide-active"  data-target="modal03" style="margin-right: 32px;" role="group">
+              <a class="js-modal-open swiper-slide swiper-slide-active"  data-target="modal03" style="margin-right: 32px;" role="group">
                 <article class="slide">
                   <div class="slide-media img-cover"><img src="./DSC_0380.JPG" alt=""></div>
                   <div class="slide-content">
@@ -369,12 +369,7 @@
 
 
 
-
-
-
-
-
-
+<!--------------------------------modal window area start-------------------------------------------->
 
       <div id="modal01" class="PopUp modal js-modal">
         <div class="PopUp modal-bg js-modal-close">
@@ -467,12 +462,6 @@
         </div>
       </div>
 
-
-
-
-
-
-
       <div id="modal02" class="PopUp modal js-modal">
         <div class="PopUp modal-bg js-modal-close">
         </div>
@@ -544,6 +533,10 @@
                 未来を少しでも君といたいから叫ぼう
                 <br>
                 今日の日をいつか思い出せ 未来の僕ら
+                <br>
+                <br>
+                <br>
+                <br>
               </p>
             </div>
           </div>
@@ -571,55 +564,22 @@
           </div>
         </div>
       </div>
-    
-      <script>
-        // モーダルウィンドウを開く
-        $('.js-modal-open').on('click', function(){
-          var target = $(this).data('target');
-          var modal = document.getElementById(target);
-          scrollPosition = $(window).scrollTop();
-    
-          $('body').addClass('fixed').css({'top': -scrollPosition});
-          $(modal).fadeIn();
-          return false;
-        });
-    
-        // モーダルウィンドウを閉じる
-        $('.js-modal-close').on('click', function(){
-          $('body').removeClass('fixed');
-          window.scrollTo( 0 , scrollPosition );
-          $('.js-modal').fadeOut();
-          return false;
-        });
-      </script>
-    
+<!--------------------------------modal window area END-------------------------------------------->
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+<!-------------------------button area--------------------------->
       <div class="buttonMoreSlider buttonMoreDiv">
         <button class="buttonMore">More</button>
       </div>
-
+<!-------------------------button area--------------------------->
  </main>
 </div><!-- /wrapper -->
 
 
 
       <script src="Swiper%20DEMO_files/swiper-bundle.js"></script>
-      <!--Daily Life js start-->
+      <!--Daily Life slider js start-->
       <script>
         const mySwiper = new Swiper('.card02 .swiper', {
           slidesPerView: 'auto',
@@ -640,8 +600,30 @@
           },
         });
       </script>
-      <!--Daily Life js END-->
+      <!--Daily Life slider js END-->
 
+      <!--Daily Life modal js start-->
+      <script>
+        // モーダルウィンドウを開く
+        $('.js-modal-open').on('click', function(){
+          var target = $(this).data('target');
+          var modal = document.getElementById(target);
+          scrollPosition = $(window).scrollTop();
+    
+          $('body').addClass('fixed').css({'top': -scrollPosition});
+          $(modal).fadeIn();
+          return false;
+        });
+    
+        // モーダルウィンドウを閉じる
+        $('.js-modal-close').on('click', function(){
+          $('body').removeClass('fixed');
+          window.scrollTo( 0 , scrollPosition );
+          $('.js-modal').fadeOut();
+          return false;
+        });
+      </script>
+      <!--Daily Life modal js END-->
 
 
       <!----------------------------------------Features-------------------------------------->
@@ -655,10 +637,6 @@
 <!--dummy element----------------------------------------------------------------------------->
     <div class="dummy features" id="card-container" data-offset="2"></div>
 <!--dummy element----------------------------------------------------------------------------->
-
-
-
-
 
 <a class="features_a" href="#">
     <div class="features" id="card-container" data-offset="2">
@@ -682,10 +660,7 @@
    </div>
 </a>
 
-
-
 <br>
-
 
 <a class="features_a" href="#">
 <div class="features" id="card-container" data-offset="2">
@@ -706,9 +681,7 @@
 </div>
 </a>
 
-
 <br>
-
 
 <a class="features_a" href="#">
 <div class="features" id="card-container" data-offset="2">
@@ -729,7 +702,6 @@
 </div>
 </a>
 
-
 </div>
     <!----------------------------------------Announcement-------------------------------------->
     <br>
@@ -738,7 +710,7 @@
       <h1 class="main_label">Announcement</h1>
       <h2 class="subtitle">事務室や先生方からの連絡</h2>
       <br>
-      <a class="Announcement_a" hre>
+      <a class="Announcement_a" href="./PC.html" target="blank">
         <div class="big_box">
           <h2 class="title_box">加島校長の部屋</h2>
           <p class="time_box">2022.2.20</p>
@@ -777,56 +749,6 @@
     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-    <!----------------------------------------1ブロック---------------------------------------------------->
-    <div class="modal-overlay closed" id="modal-overlay-1"></div>
-    <div class="modal closed" id="modal-1">
-      <button class="close-button" id="close-button-1">✕</button>
-        <div class="pop_p_div">
-          <h4 class="pop_h4">君が代</h4>
-          <p class="pop_p"> 
-            君が代は
-            <br>
-            千代に八千代に
-            <br>
-            さざれ石の
-            <br>
-            いわおとなりて
-            <br>
-            こけのむすまで
-          </p>
-        </div>
-    </div>
-
-
-
-    <script>
-      var modal_1 = document.querySelector("#modal-1");
-      var modalOverlay_1 = document.querySelector("#modal-overlay-1");
-      var closeButton_1 = document.querySelector("#close-button-1");
-      var openButton_1 = document.querySelector("#open-button-1");
-      
-      //閉じるボタン
-      closeButton_1.addEventListener("click", function () {
-        modal_1.classList.toggle("closed");
-        modalOverlay_1.classList.toggle("closed");
-      });
-      
-      //開くボタン
-      openButton_1.addEventListener("click", function () {
-        modal_1.classList.toggle("closed");
-        modalOverlay_1.classList.toggle("closed");
-      });
-      </script>
     <!----------------------------------------Calendar---------------------------------->
     <br>
     <br>
