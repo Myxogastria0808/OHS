@@ -111,7 +111,7 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 92%;
+  height: 100%;
   width: 100%;
 }
 
@@ -119,7 +119,7 @@
 .modal-bg{
   position: absolute;
   height: 100vh;
-  width: 100%;
+  width: 100vw;
   background: rgba(0, 0, 0, 0.8);
 }
 
@@ -137,7 +137,7 @@
   padding-top: 20px;
   padding-bottom: 20px;
   border-radius: 10px;
-  margin-top: 25px;
+  margin-top: 0px;
   margin-bottom: 0px;
   overflow-y: hidden;
   background-color: antiquewhite;
