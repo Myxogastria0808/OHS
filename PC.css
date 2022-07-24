@@ -1,4 +1,4 @@
-.modal {
+/* .modal {
   display: block;
   width: 100%;
   max-width: 600px;
@@ -8,7 +8,7 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  /* margin: -200px 0 0 -200px; */
+  margin: -200px 0 0 -200px;
   background: white;
   box-shadow: 0 0 60px 10px rgba(0, 0, 0, 0.9);
   overflow-y: scroll;
@@ -89,9 +89,127 @@
       padding-left: 10px;
       padding-right: 10px;
       margin-top: 45px;
-  }
+  } */
 
 
+
+
+
+
+
+
+  /* これが無いとモーダルウィンドウ表示の際に余白が出る */
+.PopUp {
+  margin: 0;
+  padding: 0;
+  z-index: 1100;
+}
+
+/* モーダル全体(背景＋本体) */
+.modal{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 92%;
+  width: 100%;
+}
+
+/* モーダル背景 */
+.modal-bg{
+  position: absolute;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/* モーダル本体 */
+.modal-content{
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* overflow: scroll;  */
+  height: 92%;/* これが無いと「overflow:scroll」が利かない */
+  width: 100%;/* これが無いと「overflow:scroll」が利かない */
+  max-width: 600px;
+  background: white;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-radius: 10px;
+  margin-top: 25px;
+  margin-bottom: 0px;
+  overflow-y: hidden;
+  background-color: antiquewhite;
+}
+
+/* モーダルウィンドウ表示中に記事本体を固定 */
+/* body.fixed {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	left: 0;
+} */
+
+.closed_div_PopUp {
+  height: 40px;
+  width: 40px;
+  background-color: black;
+  position: absolute; 
+  right: 0;   
+  border-radius: 10px;
+  /* text-align: center; */
+}
+
+.closed_cover_PopUp {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  text-decoration: none;
+}
+
+
+.closed_p_PopUp {
+  margin-left: 8px;
+  margin-top: -5px;
+  font-size: 30px;
+  color: white;
+}
+
+.closed_div_chr_PopUp {
+  font-size: 30px;
+}
+
+.modal-padding {
+  padding-left: 23px;
+  padding-right: 23px;
+  height: 100%;
+  overflow: hidden;
+}
+
+.closed_div_p_scroll {
+  height: 100%;
+  overflow-y: scroll;
+  background-color: white;
+  border-radius: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+
+  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-width: auto;
+}
+.closed_div_p_scroll::-webkit-scrollbar {
+  width: 10px;
+}
+.closed_div_p_scroll::-webkit-scrollbar-track {
+  background-color: darkgrey;
+  border-radius: 100px;
+}
+.closed_div_p_scroll::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+  box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+  border-radius: 100px;
+}
 
 
 
