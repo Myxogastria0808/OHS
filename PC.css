@@ -170,14 +170,14 @@
 
 
 .closed_p_PopUp {
-  margin-left: 7px;
-  margin-top: -4px;
+  margin-left: 8px;
+  margin-top: -4.5px;
   font-size: 30px;
   color: white;
 }
 
 .closed_div_chr_PopUp {
-  font-size: 30px;
+  font-size: 24px;
 }
 
 .modal-padding {
