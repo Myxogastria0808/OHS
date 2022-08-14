@@ -20,25 +20,25 @@ window.addEventListener("load", function(){
   //   scale: 0.9,
   // });
   gsap.set(".js-item04", {
-    scale: 0, width: "75%", height: "50%", left: "12.5%", top: "25%",
+    scale: 0, width: "80%", height: "80%", left: "12.5%", top: "25%",
   });
   gsap.set(".js-item05", {
-    scale: 0, width: "75%", height: "50%", left: "12.5%", top: "25%",
+    scale: 0, width: "80%", height: "80%", left: "12.5%", top: "25%",
   });
   gsap.set(".js-item07", {
-    scale: 0, width: "75%", height: "50%", left: "12.5%", top: "25%",
+    scale: 0, width: "80%", height: "80%", left: "12.5%", top: "25%",
   });
   gsap.set(".js-item08", {
-    scale: 0, width: "75%", height: "50%", left: "12.5%", top: "25%",
+    scale: 0, width: "80%", height: "80%", left: "12.5%", top: "25%",
   });
   gsap.set(".js-item09", {
-    scale: 0, width: "75%", height: "50%", left: "12.5%", top: "25%",
+    scale: 0, width: "80%", height: "80%", left: "12.5%", top: "25%",
   });
   gsap.set(".js-item10", {
-    scale: 0, width: "75%", height: "50%", left: "12.5%", top: "25%",
+    scale: 0, width: "80%", height: "80%", left: "12.5%", top: "25%",
   });
   gsap.set(".js-item11", {
-    scale: 0, width: "75%", height: "50%", left: "12.5%", top: "25%",
+    scale: 0, width: "80%", height: "80%", left: "12.5%", top: "25%",
   });
   gsap.set(".js-item06", {
     scale: 0, width: "100%", height: "100%", left: 0, top: 0,
@@ -49,15 +49,15 @@ window.addEventListener("load", function(){
     scrollTrigger: {
       trigger: area, //トリガー
       start: "top top", //開始位置
-      end: "+=4000", //終了位置
+      end: "+=10000", //終了位置
       scrub: true, //ピン留め
       pin: true, //スクロール量に応じて動かす
     }
   });
 
   //要素を順に拡大する
-  tl.to(".js-waku01", { scale: 1.2, duration: 0.5},"-=0.5")
-    .to(".js-waku01", { opacity: 0, duration: 0.2 }, "-=0.1")
+  tl.to(".js-waku01", { scale: 40, duration: 4.5},"-=3")
+    .to(".js-waku01", { opacity: 0, duration: 0.2 }, "-=1")
     .to(".js-waku02", { scale: 1.2, duration: 0.5}, "<" )
     .to(".js-item04", { scale: 1, left: "-37.5%", top: "5%", duration: 1 },"-=0.5")
     .to(".js-item04", { opacity: 0, duration: 0.2 }, "-=0.2")
