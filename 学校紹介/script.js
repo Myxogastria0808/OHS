@@ -56,8 +56,8 @@ window.addEventListener("load", function(){
   });
 
   //要素を順に拡大する
-  tl.to(".js-waku01", { scale: 40, duration: 4.5},"-=3")
-    .to(".js-waku01", { opacity: 0, duration: 0.2 }, "-=1")
+  tl.to(".js-waku01", { scale: 20, duration: 0.8},"-=1")
+    .to(".js-waku01", { opacity: 0, duration: 0.2 }, "-=0.5")
     .to(".js-waku02", { scale: 1.2, duration: 0.5}, "<" )
     .to(".js-item04", { scale: 1, left: "-37.5%", top: "5%", duration: 1 },"-=0.5")
     .to(".js-item04", { opacity: 0, duration: 0.2 }, "-=0.2")
