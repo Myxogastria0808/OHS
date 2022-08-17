@@ -740,7 +740,7 @@ html {
 
   .width {
     max-width: 1024px;
-    text-align: center;
+    text-align: left;
     margin-left: auto;
     margin-right: auto;
   }
