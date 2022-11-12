@@ -103,3 +103,6 @@ body, html {
   margin: auto;
   text-align: center;
 }
+span {
+  display: inline-block;
+}
