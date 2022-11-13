@@ -1,0 +1,372 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #de8ba3;
+}
+.top {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./mirai46.png);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#title {
+    background-image: url(./title.png);
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    margin-left: -36px;
+    padding-right: auto;
+    padding-left: auto;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+  }
+  span {
+    display: inline-block;
+  }
+  .sub-title {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+  }
+  .sub-sub-title {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
+  }
+  .caution {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  }
+  .div-url {
+    width: 100%;
+    text-align: center;
+  }
+  .url {
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    font-size: 25px;
+  }
+  .content {
+    width: 90%;
+    max-width: 1024px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  .l-wrapper_01 {
+    margin: 1rem auto;
+    width: 95%;
+    max-width: 400px;
+  }
+  
+  .l-wrapper_01:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    transition: all .5s;
+  }
+  
+  .card_01 {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+    color: #212121;
+    text-decoration: none;
+  }
+  
+  .card__header_01 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card__title_01 {
+    padding: 1rem 1.5rem 0;
+    font-size: 1.6rem;
+    order: 1;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .card__thumbnail_01 {
+    margin: 0;
+    order: 0;
+  }
+  
+  .card__image_01 {
+    width: 100%;
+  }
+  
+  .card__body_01 {
+    padding: 0 1.5rem;
+  }
+  
+  .card__text_01 {
+    font-size: .8rem;
+    text-align:center;
+    text-decoration: none;
+      padding-bottom: 0;
+  }
+  
+  .card__text2_01 {
+    font-size: .8rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .card__text_01 + .card__text_01 {
+    margin-top: .5rem;
+  }
+  
+  .card__footer_01 {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  .button_01 {
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+    text-align: center;
+    font-size: 18px;
+  }
+  
+  .button_01 a {
+    text-decoration: none;
+  }
+  
+  .button_01.-compact {
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background-color: #4f96f6;
+    color: #fff;
+    font-weight: bold;
+      text-decoration: none;
+  }
+  
+  .button_01.-compact:hover,
+  .button_01.-compact:focus {
+    background-color: #6bb6ff;
+  }
+
+
+
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 1rem;
+  }
+  
+  /* 以下あしらいの実装 */
+  * {
+    box-sizing: border-box;
+  }
+
+  section {
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 1rem;
+  }
+  
+  section > * + * {
+    margin-top: 2rem;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* これが無いとモーダルウィンドウ表示の際に余白が出る */
+.PopUp {
+    margin: 0;
+    padding: 0;
+    z-index: 1100;
+  }
+  
+  /* モーダル全体(背景＋本体) */
+  .modal{
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+  }
+  
+  /* モーダル背景 */
+  .modal-bg{
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* モーダル本体 */
+  .modal-content{
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    /* overflow: scroll;  */
+    height: 92%;/* これが無いと「overflow:scroll」が利かない */
+    width: 100%;/* これが無いと「overflow:scroll」が利かない */
+    max-width: 600px;
+    background: white;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    overflow-y: hidden;
+    background-color: antiquewhite;
+  }
+  
+  /* モーダルウィンドウ表示中に記事本体を固定 */
+  /* body.fixed {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+  } */
+  
+  .closed_div_PopUp {
+    height: 40px;
+    width: 40px;
+    background-color: black;
+    position: absolute; 
+    right: 0;   
+    border-radius: 10px;
+    /* text-align: center; */
+  }
+  
+  .closed_cover_PopUp {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+  }
+  
+  
+  .closed_p_PopUp {
+    margin-left: 8px;
+    margin-top: -1px;
+    font-size: 30px;
+    color: white;
+    position: fixed;
+  }
+  
+  .closed_div_chr_PopUp {
+    font-size: 24px;
+  }
+  
+  .modal-padding {
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+  }
+  
+  .closed_div_p_scroll {
+    height: 90%;
+    overflow-y: scroll;
+    background-color: white;
+    border-radius: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+  
+    scrollbar-color: #6969dd #e0e0e0;
+    scrollbar-width: auto;
+  }
+  .closed_div_p_scroll::-webkit-scrollbar {
+    width: 10px;
+  }
+  .closed_div_p_scroll::-webkit-scrollbar-track {
+    background-color: darkgrey;
+    border-radius: 100px;
+  }
+  .closed_div_p_scroll::-webkit-scrollbar-thumb {
+    background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+    box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
+    border-radius: 100px;
+  }
