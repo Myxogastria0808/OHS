@@ -706,12 +706,12 @@ html {
 }
  
 .flex_test-item:nth-child(1) {
-    background-color:  #2196F3; /* 背景色指定 */
+    background-color:  #2196F3;
     flex-grow: 1;
 }
  
 .flex_test-item:nth-child(2) {
-    background-color:  #4CAF50; /* 背景色指定 */
+    background-color:  #4CAF50;
     flex-grow: 1;
 }
 
