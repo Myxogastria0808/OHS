@@ -665,82 +665,259 @@ div.PC {
     transition-delay: 2280ms;
   }
   
-/*---------------------------------------------------------------*/
-html {
-    overflow-x: hidden;
-}
-  
-#top_img {
-    height: 500px;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: 0px;
-    object-fit: cover;
-}
-  /*respose of h1*/
-  /*main label*/
-.main_label {
-    text-align: center;
-    color: rgb(0,8,97);
-    font-family: Roman;
-}
-
-
-.flex_test-box {
-    background-color: #eee;
-    padding:  10px;          /* 余白指定 */
-    align-items:stretch;        /* 縦の位置指定 */
-    justify-content:center;
-}
-@media screen and (min-width: 800px) {
-    .flex_test-box {
-        display: flex;
-    }
-}
- 
-.flex_test-item {
-    padding: 10px;
-    color:  #fff;               /* 文字色 */
-    margin:  10px;              /* 外側の余白 */
-    /* border-radius:  10px; */
-}
- 
-.flex_test-item:nth-child(1) {
-    background-color: rgb(0, 8, 97);
-    flex-grow: 1;
-}
- 
-.flex_test-item:nth-child(2) {
-    background-color:  #4CAF50;
-    flex-grow: 1;
-}
-
-
-.flex_title {
-    text-align: center;
-    background-color: rgb(118, 192, 0);
-    /* border-radius:  10px; */
-    font-size: 30px;
-}
-
-.office_ul {
-    padding: 0;
-    position: relative;
-  }
-  
-  .office_ul .office_li {
-    color: #2d8fdd;
-    border-left: solid 6px rgb(103, 167, 1);/*左側の線*/
-    background: #f1f8ff;
-    margin-bottom: 3px;/*下のバーとの余白*/
-     line-height: 1.5;
-    padding: 0.5em;
-    list-style-type: none!important;/*ポチ消す*/
-  }
 
   .width {
     max-width: 1024px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  background-color: #ffffff;
+}
+.top {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(./top.jpg);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-section {
+margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+#title-img {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+width: 100%;
+max-width: 600px;
+}
+
+
+.l-wrapper_01 {
+    margin: 1rem auto;
+    width: 95%;
+    max-width: 400px;
+  }
+  
+  .l-wrapper_01:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+    transition: all .5s;
+  }
+  
+  .card_01 {
+    background-color: #fff;
+    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
+    color: #212121;
+    text-decoration: none;
+  }
+  
+  .card__header_01 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .card__title_01 {
+    padding: 1rem 1.5rem 0;
+    font-size: 19px;
+    order: 1;
+    margin-bottom: 0.6rem;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .card__thumbnail_01 {
+    margin: 0;
+    order: 0;
+  }
+  
+  .card__image_01 {
+    width: 100%;
+  }
+  
+  .card__body_01 {
+    padding: 0 1.5rem;
+  }
+  
+  .card__text_01 {
+    font-size: .8rem;
+    text-align:center;
+    text-decoration: none;
+      padding-bottom: 0;
+  }
+  
+  .card__text2_01 {
+    font-size: .8rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  
+  .card__text_01 + .card__text_01 {
+    margin-top: .5rem;
+  }
+  
+  .card__footer_01 {
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+  }
+  
+  .button_01 {
+    font-size: 17px;
+    display: inline-block;
+    text-decoration: none;
+    transition: background-color .3s ease-in-out;
+    text-align: center;
+  }
+  
+  .button_01 a {
+    text-decoration: none;
+  }
+  
+  .button_01.-compact {
+    padding: .5rem 1rem;
+    border-radius: .25rem;
+    background-color: #4f96f6;
+    color: #fff;
+    font-weight: bold;
+      text-decoration: none;
+  }
+  
+  .button_01.-compact:hover,
+  .button_01.-compact:focus {
+    background-color: #6bb6ff;
+  }
+
+
+
+
+  .container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
+    gap: 1rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+
+  .section {
+    max-width: 1024px;
+    margin: 0 auto;
+    box-sizing: content-box;
+    padding: 1rem;
+  }
+  
+  .section > * + * {
+    margin-top: 2rem;
+  }
+
+  .h1-title {
+    text-align: center;
+    font-size: 40px;
   }
