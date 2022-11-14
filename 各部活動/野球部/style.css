@@ -647,160 +647,121 @@ div.PC {
     margin-left: auto;
     margin-right: auto;
   }
-
 /*=========================================================================================================*/
 html, body {
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #955253;
+}
+.width {
+  max-width: 1024px;
+  text-align: center;
+  margin: auto;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 .top {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./top.jpg);
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+section {
   margin: 0;
   padding: 0;
   height: 100vh;
-  width: 100%;
-  background-image: url(./top.jpg);
-  background-position: top;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-.top-section {
-margin: 0;
-padding: 0;
-height: 100vh;
-display: flex;
-justify-content: center;
-align-items: center; 
+  display: flex;
+  justify-content: center;
+  align-items: center; 
 }
 #title-img {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-width: 100%;
-max-width: 600px;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
 }
-
-
-.l-wrapper_01 {
-    margin: 1rem auto;
-    width: 95%;
-    max-width: 400px;
+span {
+  display: inline-block;
+}
+  .sub-title {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
   }
-  
-  .l-wrapper_01:hover {
-    transform: translateY(-3px);
-    box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
-    transition: all .5s;
+  .sub-sub-title {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
   }
-  
-  .card_01 {
-    background-color: #fff;
-    box-shadow: 0 0 8px rgba(0, 0, 0, .16);
-    color: #212121;
-    text-decoration: none;
-  }
-  
-  .card__header_01 {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .card__title_01 {
-    padding: 1rem 1.5rem 0;
-    font-size: 19px;
-    order: 1;
-    margin-bottom: 0.6rem;
-    font-weight: bold;
-    text-decoration: none;
-  }
-  
-  .card__thumbnail_01 {
-    margin: 0;
-    order: 0;
-  }
-  
-  .card__image_01 {
+  /* .caution {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  } */
+  /* .div-url {
     width: 100%;
-  }
-  
-  .card__body_01 {
-    padding: 0 1.5rem;
-  }
-  
-  .card__text_01 {
-    font-size: .8rem;
-    text-align:center;
-    text-decoration: none;
-      padding-bottom: 0;
-  }
-  
-  .card__text2_01 {
-    font-size: .8rem;
-    margin-top: 0;
-    margin-bottom: 2rem;
-  }
-  
-  .card__text_01 + .card__text_01 {
-    margin-top: .5rem;
-  }
-  
-  .card__footer_01 {
-    padding: 1rem;
-    border-top: 1px solid #ddd;
-  }
-  
-  .button_01 {
-    font-size: 17px;
-    display: inline-block;
-    text-decoration: none;
-    transition: background-color .3s ease-in-out;
     text-align: center;
   }
-  
-  .button_01 a {
-    text-decoration: none;
-  }
-  
-  .button_01.-compact {
-    padding: .5rem 1rem;
-    border-radius: .25rem;
-    background-color: #4f96f6;
-    color: #fff;
-    font-weight: bold;
-      text-decoration: none;
-  }
-  
-  .button_01.-compact:hover,
-  .button_01.-compact:focus {
-    background-color: #6bb6ff;
-  }
-
-
-
-
-  .container{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
-    gap: 1rem;
-  }
-  
-  * {
-    box-sizing: border-box;
-  }
-
-  .section {
+  .url {
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    font-size: 25px;
+  } */
+  .content {
+    width: 90%;
     max-width: 1024px;
-    margin: 0 auto;
-    box-sizing: content-box;
-    padding: 1rem;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
   }
-  
-  .section > * + * {
-    margin-top: 2rem;
+  .center {
+    text-align: center;
+  }
+  .left {
+    text-align: left;
+  }
+  .small {
+    width: 90%;
+    max-width: 1024px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
   }
 
-  .h1-title {
-    text-align: center;
-    font-size: 40px;
+
+
+  .ul {
+    list-style:none;/*デフォルトの指定を解除*/
+    margin:0;/*デフォルトの指定を解除*/
+    padding:0;/*デフォルトの指定を解除*/
+    display:table;
+    width:100%;/*幅を指定*/
+    max-width: 1024px;
+    table-layout:fixed;/*中の要素の幅を均等に*/
+  }
+  .li {
+    padding: 10px;
+    display:table-cell;
+    vertical-align:middle;/*縦方向を中央揃え*/
+    text-align:center;/*横方向を中央揃え*/
+  }
+  .img-li {
+    width: 95%;
+    max-width: 250px;
   }
