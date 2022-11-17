@@ -699,7 +699,7 @@ span {
     padding-top: 10px;
     text-align: center;
     color: white;
-    font-size: 25px;
+    font-size: 22px;
   }
   /* .caution {
     padding-top: 10px;
@@ -764,4 +764,52 @@ span {
   .img-li {
     width: 95%;
     max-width: 250px;
+  }
+
+  
+  .p-schedule {
+    width: 90%;
+    max-width: 1024px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-align: left;
+    text-decoration:underline;
+  }
+  .div-schedule {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #955c5c;
+  }
+
+  .year-cover {
+    width: 100%;
+    max-width: 300px;
+    height: 28px;
+    background-color: #3a1c1c;
+    box-shadow: 0 10px 15px 0 rgba(43, 43, 43, 0.5);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .u {
+    width: 90%;
+    max-width: 1024px;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
   }
