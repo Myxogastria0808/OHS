@@ -9,13 +9,13 @@ html, body {
     padding: 0;
     height: 100vh;
     width: 100%;
-    background-image: url(./mirai46.png);
+    background-image: url(./mirai03.webp);
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
 }
 #title {
-    background-image: url(./title.png);
+    background-image: url(./title.webp);
     height: 100%;
     margin: 0;
     padding: 0;
