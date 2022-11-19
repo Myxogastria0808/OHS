@@ -1,0 +1,110 @@
+html, body {
+    top: 0;
+    left: 0;
+    margin: 0;
+    font-family: 游明朝;
+}
+.area{
+    overflow: hidden;
+  }
+  .wrap{
+    position: relative;
+    height: 100vh;
+  }
+  .item{
+    align-items: center;
+    color: #fff;
+  }
+  .item01{
+    height: 100vh;
+    width: 100%;
+    background-image: url(./top.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background: black; 
+  }
+  .item02{ background: #f8b633; }
+  .item03{ background: #f8b633; }
+  .item04{ background: #8cc561; }
+  .item05{ background: #56aa59; }
+  .item06{ background: #3d6b35; }
+  .item07{ background: black; }
+  .item08{ background: black; }
+  .item09{ background: black; }
+  .item10{ background: black; }
+  
+  .item02,
+  .item03,
+  .item04,
+  .item05,
+  .item06,
+  .item07,
+  .item08,
+  .item09,
+  .item10{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+  }
+  .item_top_slide {
+    display: flex;
+    justify-content: left;
+    font-weight: bold;
+  }
+  .top_title {
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .top-margin {
+    height: 10px;
+  }
+  .top_child {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    text-align: left;
+  }
+  @media screen and (max-width: 500px) {
+    .item_top_slide {
+      font-size: 65px;
+    }
+  }
+  @media screen and (min-width: 501px) and (max-width: 800px) {
+    .item_top_slide {
+      font-size: 80px;
+    }
+  }
+  @media screen and (min-width: 801px) {
+    .item_top_slide {
+      font-size: 100px;
+    }
+  }
+  .item_story_slide {
+    justify-content: center;
+    font-size: 8vh;
+    font-weight: bold;
+    display: flex;
+  }
+
+  div.wrap {
+    background-image: url(./background.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+  
+.item_story_card {
+  justify-content: center;
+  text-align: center;
+  font-size: 5vh;
+  font-weight: bold;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .item_class_slide {
+    font-size: 10vw;
+  }
+}

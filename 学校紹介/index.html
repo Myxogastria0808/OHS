@@ -1,385 +1,480 @@
 <!DOCTYPE html>
-<html lang="ja">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" type="text/css" href="./sass/style.css">
+    <script  src="./scroll_effect.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/gsap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.10.4/ScrollTrigger.min.js"></script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" type="text/css" href="./style.css">
-    <script type="text/javascript" src="./script.js"></script>
-        <!-----------------------------------header---------------------------------------------->
-        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script type="text/javascript" src="../loading.js"></script>
-        <script type="text/javascript" src="../leap_button.js"></script>
-    <title>Document</title>
+    <!-----------------------------------header---------------------------------------------->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="../loading.js"></script>
+    <script type="text/javascript" src="../leap_button.js"></script>
+    <title>学校紹介</title>
 </head>
 <body>
-      <!-------------------------shutter animation---------------------------------->
-      <div id="loader" class="shutter_1">
-        <div id="cloud"></div>
-        <div id="eclipse"></div>
-      </div>
-      <!-------------------------Pageleap animation---------------------------------->
-      <div id="page_top">
-        <a id="leap_a" href="#">
-            <div class="fluid"></div>
-        </a>
-      </div>
-    <!--------------------------------header--------------------------------------->
-    <header>
-      <div class="header">
-        <div class="border PC">
-        <div class="width width_padding PC">
-          <div class="header__flex PC">
-            <a class="PC" href="../index.html" target="_blank" rel="noopener noreferrer">
-              <img id="logo" src="../navbar_logo.png">
+        <!-------------------------shutter animation---------------------------------->
+        <div id="loader" class="shutter_1">
+            <div id="cloud"></div>
+            <div id="eclipse"></div>
+          </div>
+          <!-------------------------Pageleap animation---------------------------------->
+          <div id="page_top">
+            <a id="leap_a" href="#">
+                <div class="fluid"></div>
             </a>
-              <nav class="PC">
-                <ul class="PC">
-                  <a class="a_header PC" href="./PC.html" target="blank">
-                    <a_1 class="a3 PC" href="#"><li class="PC">受験生</li></a_1>
-                  </a>
-                  <a class="a_header PC" href="./PC.html" target="blank">
-                    <a_1 class="a3 PC" href="#"><li class="PC">在校生</li></a_1>
-                  </a>
-                  <a class="a_header PC" href="./PC.html" target="blank">
-                    <a_1 class="a3 PC" href="#"><li class="PC">卒業生</li></a_1>
-                  </a>
-                  <a class="PC"  href="./PC.html" target="blank">
-                    <a_1 class="a3 PC" href="#"><li class="PC">保護者</li></a_1>
-                  </a>
-                  <a class="PC"  href="./PC.html" target="blank">
-                    <a_1 class="a3 PC" href="#"><li class="PC">同窓会</li></a_1>
-                  </a>
-                </ul>
-              </nav>
+          </div>
+        <!--------------------------------header--------------------------------------->
+        <header>
+          <div class="header">
+            <div class="border PC">
+            <div class="width width_padding PC">
+              <div class="header__flex PC">
+                <a class="PC" href="../index.html" target="_blank" rel="noopener noreferrer">
+                  <img id="logo" src="../navbar_logo.png">
+                </a>
+                  <nav class="PC">
+                    <ul class="PC">
+                      <a class="a_header PC" href="./PC.html" target="blank">
+                        <a_1 class="a3 PC" href="#"><li class="PC">受験生</li></a_1>
+                      </a>
+                      <a class="a_header PC" href="./PC.html" target="blank">
+                        <a_1 class="a3 PC" href="#"><li class="PC">在校生</li></a_1>
+                      </a>
+                      <a class="a_header PC" href="./PC.html" target="blank">
+                        <a_1 class="a3 PC" href="#"><li class="PC">卒業生</li></a_1>
+                      </a>
+                      <a class="PC"  href="./PC.html" target="blank">
+                        <a_1 class="a3 PC" href="#"><li class="PC">保護者</li></a_1>
+                      </a>
+                      <a class="PC"  href="./PC.html" target="blank">
+                        <a_1 class="a3 PC" href="#"><li class="PC">同窓会</li></a_1>
+                      </a>
+                    </ul>
+                  </nav>
+                </div>
+              </div>
+              </div>
+              <div class="width PC">
+                <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
+                    <nav class="PC">
+                      <ul class="PC">
+                        <a class="a_header PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">学校紹介</li></a_1>
+                        </a>
+                        <a class="a_header PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">教育内容</li></a_1>
+                        </a>
+                        <a class="a_header PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">食堂営業</li></a_1>
+                        </a>
+                        <a class=" PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">学校生活</li></a_1>
+                        </a>
+                        <a class="a_header PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">探究活動</li></a_1>
+                        </a>
+                        <a class="a_header PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">国際交流</li></a_1>
+                        </a>
+                        <a class="a_header PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">進路状況</li></a_1>
+                        </a>
+                        <a class="a_header PC" href="./PC.html" target="blank">
+                          <a_1 class="a3 PC" href="#"><li class="PC">事務連絡</li></a_1>
+                        </a>
+                      </ul>
+                    </nav>
+                </div> <!--------------------------------------------display none------------------------->
+                <div class="header_animation_indent"></div>
+          </div>
+          <!-------------------------------------hamburger ect...----------------------------------------------------------->
+          <a class="mobile logo_mobile" href="./PC.html" target="_blank" rel="noopener noreferrer">
+            <img class="mobile logo_mobile" src="./navbar_logo.png">
+          </a>
+            <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
+            <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
+            <nav class="nav_mobile mobile">
+              <ul class="pt-5 ul_mobile">
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">受験生</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">在校生</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">卒業生</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">保護者</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/" target="blank">蜻蛉会</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">学校紹介</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">教育内容</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">食堂営業</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">探究活動</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">国際交流</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">進路状況</a></li>
+                <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">事務連絡</a></li>
+              </ul>
+            </nav>
+      </header>
+
+      <!------------------------------mainss-------------------------------->
+      <div class="item item_top_slide item01">
+          <div class="top_title">
+            <div class="top_child">
+              時代を
+            </div>
+            <div class="top-margin"></div>
+            <div class="top_child">
+              拓く力を
+            </div>
+            <div class="top-margin"></div>
+            <div class="top_child">
+              育てる
             </div>
           </div>
-          </div>
-          <div class="width PC">
-            <div class="header__flex PC"> <!-------------------------------------display none----------------------------->
-                <nav class="PC">
-                  <ul class="PC">
-                    <a class="a_header PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">学校紹介</li></a_1>
-                    </a>
-                    <a class="a_header PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">教育内容</li></a_1>
-                    </a>
-                    <a class="a_header PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">食堂営業</li></a_1>
-                    </a>
-                    <a class=" PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">学校生活</li></a_1>
-                    </a>
-                    <a class="a_header PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">探究活動</li></a_1>
-                    </a>
-                    <a class="a_header PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">国際交流</li></a_1>
-                    </a>
-                    <a class="a_header PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">進路状況</li></a_1>
-                    </a>
-                    <a class="a_header PC" href="./PC.html" target="blank">
-                      <a_1 class="a3 PC" href="#"><li class="PC">事務連絡</li></a_1>
-                    </a>
-                  </ul>
-                </nav>
-            </div> <!--------------------------------------------display none------------------------->
-            <div class="header_animation_indent"></div>
+
       </div>
-      <!-------------------------------------hamburger ect...----------------------------------------------------------->
-      <a class="mobile logo_mobile" href="./PC.html" target="_blank" rel="noopener noreferrer">
-        <img class="mobile logo_mobile" src="./navbar_logo.png">
+      <div class="item item_title_slide item02">
+        <span class="title_span scroll_layer">
+          羽
+          <br>
+          ば
+          <br>
+          た
+          <br>
+          く
+        </span>
+        <span class="title_span scroll_layer">
+          精
+          <br>
+          神
+          <br>
+          で
+          <br>
+          世
+          <br>
+          界
+          <br>
+          に
+        </span>
+        <span class="title_span scroll_layer">
+          明
+          <br>
+          ・
+          <br>
+          浄
+          <br>
+          ・
+          <br>
+          直
+          <br>
+          の
+        </span>
+      </div>
+
+
+<br>
+<br>
+<br>
+<br>
+<div class="card-container">
+  <div class="card u-clearfix">
+    <div class="card-body">
+      <!-- <span class="card-number card-circle subtle">01</span>
+      <span class="card-author subtle">John Smith</span> -->
+      <h2 class="card-title">校長挨拶</h2>
+      <h3 class="card-subtitle">加嶋　幸彦 (令和4年4月1日)</h3>
+      <span class="card-description subtle">
+        ようこそ、本校のWebサイトをご覧いただきありがとうございます。 さて、本校は、江戸時代後期、旧小野藩の藩校「帰正館」を源流とし、１９０２年(明治３５年)に旧制小野中学校が設置されて以来、今年で１２０年の歴史を誇る伝統校であり、約２９，０００人の卒業生が様々な分野で広く活躍しております。校是「明・浄・直」の精神を貫き、明朗で心が広く、清廉潔白でかつ心に暗い陰りをもたず、直の精神を育んできました。先行き不透明で「予測困難な時代」と言われる昨今、答えのない様々な課題の解決に向けて果敢に挑戦し創造する姿勢こそ、これからの時代に不可欠であり、校是のもと、様々な教育活動を取り組んでいくことが大切だと考えています。 これか...
+      </span>
+      <a href="##" class="js-modal-open a-read" data-target="modal01">
+        <div class="card-read card-read-border">Read More</div>
       </a>
-        <input class="menu-icon mobile" type="checkbox" id="menu-icon" name="menu-icon"/>
-        <label for="menu-icon" class="mobile" style="top: 25px; right: 25px;"></label>
-        <nav class="nav_mobile mobile">
-          <ul class="pt-5 ul_mobile">
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">受験生</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">在校生</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">卒業生</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">保護者</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="http://www.pure.ne.jp/~seirei/" target="blank">蜻蛉会</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">学校紹介</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">教育内容</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">食堂営業</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">探究活動</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">国際交流</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="#" target="blank">進路状況</a></li>
-            <li class="li_mobile mobile"><a class="a_mobile mobile" href="./事務連絡/index.html" target="blank">事務連絡</a></li>
-          </ul>
-        </nav>
-  </header>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <div class="item item_top_slide item01"><span>
-        時代を
-        <br>
-        拓く力を
-        <br>
-        育てる
-    </span></div>
-    <div class="item item_title_slide item02">
-    <span class="title_span">
-        羽
-        <br>
-        ば
-        <br>
-        た
-        <br>
-        く
-    </span>
-    <span class="title_span">
-        精
-        <br>
-        神
-        <br>
-        で
-        <br>
-        世
-        <br>
-        界
-        <br>
-        に
-    </span>
-    <span class="title_span">
-        明
-        <br>
-        ・
-        <br>
-        浄
-        <br>
-        ・
-        <br>
-        直
-        <br>
-        の
-    </span>
+      <!-- <span class="card-tag card-circle subtle">C</span> -->
     </div>
-    <div class="area js-area">
-      <div class="wrap">
-         <!-- ↓　アニメーションさせる要素 -->
-         <div class="item item01 item_story_slide js-item js-waku01">
-            <span>
-                紡
-                <br>
-                が
-                <br>
-                れ
-                <br>
-                る
-                <br>
-                歴
-                <br>
-                史
-            </span>
-         </div>
-         <!-- <div class="item item02 js-item js-waku02"></div> -->
-         <div class="item item04 item_story_card js-item js-item04"><span>
-            明治35年
-            <br>
-            兵庫県立小野中学校開校
-         </span></div>
-         <div class="item item05 item_story_card js-item js-item05"><span>
-            明治23年
-            <br>
-            兵庫県立小野小野高校に改名
-         </span></div>
-         <div class="item item07 item_story_card js-item js-item07"><span>
-            昭和21年
-            <br>
-            家庭科設置
-            <br>
-            昭和25年
-            <br>
-            商業科設置
-         </span></div>
-         <div class="item item07 item_story_card js-item js-item08"><span>
-            昭和61年
-            <br>
-            理数コース設置
-            <br>
-            平成7年
-            <br>
-            国際経済科設置
-         </span></div>
-         <div class="item item07 item_story_card js-item js-item09"><span>
-            平成14年
-            <br>
-            創立100周年
-         </span></div>
-         <div class="item item07 item_story_card js-item js-item09"><span>
-            平成14年
-            <br>
-            創立100周年
-         </span></div>
-         <div class="item item07 item_story_card js-item js-item10"><span>
-            平成15年
-            <br>
-            科学総合コース設置
-         </span></div>
-         <div class="item item07 item_story_card js-item js-item11"><span>
-            平成31年
-            <br>
-            SSHの指定を受ける
-         </span></div>
-         <div class="item item06 item_story_card js-item js-item06"><span>
-            令和2年
-            <br>
-            科学探究科
-            <br>
-            ビジネス探究科
-            <br>
-            誕生
-         </span></div>
-          <!-- ↑　アニメーションさせる要素 -->
+    <img src="./kashima_1.jpg" alt="" class="card-media" />
+  </div>
+</div>
+
+    <!----------------------------------modal window----------------------------------------------------->
+    <div id="modal01" class="PopUp modal js-modal">
+      <div class="PopUp modal-bg js-modal-close">
       </div>
-   </div>
-
-    <div class="item item_class_slide item03">
-    スーパーサイエンスハイスクール指定校
-     <div class="img_div">
-        <img id="Outline_img" src="./SSHロゴ.png">
-     </div>
-     小野高校の飽くなき探究心はこれからも
+      <div class="PopUp modal-content">
+        <div class="PopUp modal-padding">
+          <div class="PopUp closed_cover_PopUp">
+            <div class="PopUp closed_div_chr_PopUp">校長挨拶</div>
+            <a href="#" class="PopUp js-modal-close">
+                <div class="PopUp closed_div_PopUp">
+                    <p class="PopUp closed_p_PopUp">✕</p>
+                </div>
+            </a>
+          </div>
+          <div class="PopUp closed_div_p_scroll">
+            <br>
+            <p class="PopUp PopUp-content">
+              　ようこそ、本校のWebサイトをご覧いただきありがとうございます。 さて、本校は、江戸時代後期、旧小野藩の藩校「帰正館」を源流とし、１９０２年(明治３５年)に旧制小野中学校が設置されて以来、今年で１２０年の歴史を誇る伝統校であり、約２９，０００人の卒業生が様々な分野で広く活躍しております。校是「明・浄・直」の精神を貫き、明朗で心が広く、清廉潔白でかつ心に暗い陰りをもたず、直の精神を育んできました。先行き不透明で「予測困難な時代」と言われる昨今、答えのない様々な課題の解決に向けて果敢に挑戦し創造する姿勢こそ、これからの時代に不可欠であり、校是のもと、様々な教育活動を取り組んでいくことが大切だと考えています。 これからの時代を担う生徒が人間力を培い、地元あるいは国内外で活躍するため、卒業時、生徒にどのような資質・能力を身に付けることが必要かを教職員同士で議論し、グラデュエーションポリシー「次代を拓く‘ONOProgress’～人間力を育む９つの力～」を策定しました。 本校では、習熟度別授業や少人数での選択授業、個別面談の実施など生徒個々に寄り添い、学習や生活への支援に取り組むとともに、他校に先立ちＩＣＴを活用した学習等を推進しています。また、授業等で身につけた知識・技能を活かし、思考力、判断力、表現力を育み、学びを深める探究活動や、蜻蛉祭や体育大会などの学校行事、部活動など、人との繋がりを大切にし仲間と支え合い、切磋琢磨できる環境を整えています。 文部科学省「スーパーサイエンスハイスクール」指定事業も１期４年目となり、高校３年間を見通した「探究プログラム」を構築し、大学や教育施設、海外の高等学校との連携もオンラインと対面との「ハイブリッド形式」により充実しており、今年度、その成果を全校的な取組として広げていくこととしております。普通科、科学探究科、ビジネス探究科の３学科を有する本県唯一の県立高校として、全県のリーディングスクールとしての役割を担い、人間力を育ててまいります。 また、創立１２０周年を記念して４月、１１月にそれぞれ講演会を実施することとしています。本校のある「小野」の歴史を振り返るとともに、これからの時代を担う生徒にとって、希望と勇気のわく有意義な内容になるものと考えております。 今後ともご支援賜りますようよろしくお願いします。
+            </p>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- <div class="item item01"><span>7</span></div>
-    <div class="item item02"><span>8</span></div>
-    <div class="item item03"><span>9</span></div> -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!----------------------------------modal window----------------------------------------------------->
 
-    
-    <!-- partial:index.partial.html -->
-<div class="timeline-container" id="timeline-1">
-   <div class="timeline-header">
-     <h2 class="timeline-header__title">年間行事</h2>
-     <h3 class="timeline-header__subtitle">躍動する小野高生</h3>
-   </div>
-   <div class="timeline">
-     <div class="timeline-item" data-text="入学式">
-       <div class="timeline__content"><img class="timeline__img" src="./1279944_s.jpg"/>
-         <h2 class="timeline__content-title">入学式</h2>
-         <p class="timeline__content-desc"></p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="歓迎遠足">
-       <div class="timeline__content"><img class="timeline__img" src="./1288246_s.jpg"/>
-         <h2 class="timeline__content-title">歓迎遠足</h2>
-         <p class="timeline__content-desc"></p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="蜻蛉祭">
-       <div class="timeline__content"><img class="timeline__img" src="./1792047_s.jpg"/>
-         <h2 class="timeline__content-title">蜻蛉祭</h2>
-         <p class="timeline__content-desc"></p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="体育祭">
-       <div class="timeline__content"><img class="timeline__img" src="./23027_s.jpg"/>
-         <h2 class="timeline__content-title">体育祭</h2>
-         <p class="timeline__content-desc"></p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="合唱祭">
-       <div class="timeline__content"><img class="timeline__img" src="./24117110_s.jpg"/>
-         <h2 class="timeline__content-title">合唱祭</h2>
-         <p class="timeline__content-desc"></p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="修学旅行">
-       <div class="timeline__content"><img class="timeline__img" src="./456013_s.jpg"/>
-         <h2 class="timeline__content-title">修学旅行</h2>
-         <p class="timeline__content-desc"></p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="卒業式">
-       <div class="timeline__content"><img class="timeline__img" src="./23027_s.jpg"/>
-         <h2 class="timeline__content-title">卒業式</h2>
-         <p class="timeline__content-desc"></p>
-       </div>
-     </div>
-     <!-- <div class="timeline-item" data-text="FATHER OF THE TURKS">
-       <div class="timeline__content"><img class="timeline__img" src="http://www.volpeypir.com/upload/3732.jpg"/>
-         <h2 class="timeline__content-title">1920</h2>
-         <p class="timeline__content-desc">
-           On April 23, 1920, the GrandNational Assembly was inaugurated. Mustafa Kemal Pasha was elected to its Presidency.
-           Fighting on many fronts, he led his forces to victory against rebels and invadingarmies. Following the Turkish triumph at the two major battles at Inonu in Western Turkey,the Grand National Assembly conferred on Mustafa Kemal Pasha the title ofCommander-in-Chief with the rank of Marshal.
-         </p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="FATHER OF THE TURKS">
-       <div class="timeline__content"><img class="timeline__img" src="http://sanatkaravani.com/wp-content/uploads/2015/11/ataturk-4.jpg"/>
-         <h2 class="timeline__content-title">1922</h2>
-         <p class="timeline__content-desc">At the end of August 1922, the Turkish armieswon their ultimate victory. Within a few weeks, the Turkish mainland was completelyliberated, the armistice signed, and the rule of the Ottoman dynasty abolished</p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="FATHER OF THE TURKS">
-       <div class="timeline__content"><img class="timeline__img" src="https://turkcetarih.com/wp-content/uploads/2015/05/Atat%C3%BCrkveCumhuriyet.jpg"/>
-         <h2 class="timeline__content-title">1923</h2>
-         <p class="timeline__content-desc">In July 1923, the national government signed the Lausanne Treaty with Great Britain,France, Greece, Italy, and others. In mid-October, Ankara became the capital of the new Turkish State. On October 29, the Republic was proclaimed and Mustafa Kemal Pasha wasunanimously elected President of the Republic.</p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="FATHER OF THE TURKS">
-       <div class="timeline__content"><img class="timeline__img" src="https://pbs.twimg.com/media/Cw69H8pXUAEaSqa.jpg"/>
-         <h2 class="timeline__content-title">1934</h2>
-         <p class="timeline__content-desc">
-           The account of Atatürk's fifteen year Presidency is a saga of dramatic modernization.With indefatigable determination, he created a new political and legal system, abolished the Caliphate and made both government and education secular, gave equal rights to women,changed the alphabet and the attire, and advanced the arts and the sciences, agricultureand industry.
-           In 1934, when the surname law was adopted, the national parliament gave him the name <i><strong>"Atatürk" (Father of the Turks)</strong></i>
-         </p>
-       </div>
-     </div>
-     <div class="timeline-item" data-text="FATHER OF THE TURKS">
-       <div class="timeline__content"><img class="timeline__img" src="http://www.bik.gov.tr/wp-content/uploads/2016/11/20161110_2_20037273_15856882.jpg?fit=1024%2C863"/>
-         <h2 class="timeline__content-title">1938</h2>
-         <p class="timeline__content-desc">On November 10, 1938, following an illness of a few months, the national liberator and the Father of modern Turkey died. But his legacy to his people and to the world endures.</p>
-       </div>
-     </div> -->
-   </div>
- </div>
+   <br>
+   <br>
+   <h2 class="h2-title-setting">年間行事</h2>
+
+     <div class="body">
+      <div class="carousel">
+        <figure>
+          <a href="##" class="pmd_1_root">
+            <img src="./入学.png" alt="">
+          </a>
+          <a href="##" class="pmd_2_root">
+            <img src="./歓迎遠足.png" alt="">
+          </a>
+          <a href="##" class="pmd_3_root">
+            <img src="./蜻蛉祭.png" alt="">
+          </a>
+          <a href="##" class="pmd_4_root">
+            <img src="./体育祭.png" alt="">
+          </a>
+          <a href="##" class="pmd_5_root">
+            <img src="./合唱祭.png" alt="">
+          </a>
+          <a href="##" class="pmd_6_root">
+            <img src="./修学旅行.png" alt="">
+          </a>
+          <a href="##" class="pmd_7_root">
+            <img src="./卒業式.png" alt="">
+          </a>
+        </figure>
+        <nav>
+          <button class="nav prev">Prev</button>
+          <button class="nav next">Next</button>
+        </nav>
+      </div>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <section class="section">
+      <div class="container">
 
 
- <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script> -->
- <script  src="./script.js"></script>
- <!-- <script type="text/javascript" src="../header.js"></script> -->
+          <div class="l-wrapper_01">
+              <article class="card_01">
+                <div class="card__header_01">
+                  <p class="card__title_01">学校案内</p>
+                  <figure class="card__thumbnail_01">
+                    <img src="./pamphlet.png" alt="サムネイル" class="card__image_01">
+                </figure>
+                </div>
+                <div class="card__body_01">
+                  <p class="card__text2_01"></p>
+                </div>
+                <div class="card__footer_01">
+                  <p class="card__text_01"><a href="./pamphlet/index.html" class="button_01 -compact"  target="_blank" rel="noopener noreferrer">Read More</a></p>
+                </div>
+              </article>
+          </div>
+
+          <div class="l-wrapper_01">
+            <article class="card_01">
+              <div class="card__header_01">
+                <p class="card__title_01">グラジュエーションポリシー</p>
+                <figure class="card__thumbnail_01">
+                  <img src="./policy.jpg" alt="サムネイル" class="card__image_01">
+              </figure>
+              </div>
+              <div class="card__body_01">
+                <p class="card__text2_01"></p>
+              </div>
+              <div class="card__footer_01">
+                <p class="card__text_01"><a href="./PDF.js viewer.pdf" class="button_01 -compact" target="_blank" rel="noopener noreferrer">Read More</a></p>
+              </div>
+            </article>
+        </div>
+
+        <div class="l-wrapper_01">
+          <article class="card_01">
+            <div class="card__header_01">
+              <p class="card__title_01">校歌</p>
+              <figure class="card__thumbnail_01">
+                <img src="./sing.png" alt="サムネイル" class="card__image_01">
+            </figure>
+            </div>
+            <div class="card__body_01">
+              <p class="card__text2_01"></p>
+            </div>
+            <div class="card__footer_01">
+              <p class="card__text_01"><a href="##" class="js-modal-open button_01 -compact" data-target="modal02">Read More</a></p>
+            </div>
+          </article>
+      </div>
+
+      <div class="l-wrapper_01">
+        <article class="card_01">
+          <div class="card__header_01">
+            <p class="card__title_01">校是・沿革</p>
+            <figure class="card__thumbnail_01">
+              <img src="./mark.png" alt="サムネイル" class="card__image_01">
+          </figure>
+          </div>
+          <div class="card__body_01">
+            <p class="card__text2_01"></p>
+          </div>
+          <div class="card__footer_01">
+            <p class="card__text_01"><a href="##" class="js-modal-open button_01 -compact" data-target="modal03">Read More</a></p>
+          </div>
+        </article>
+    </div>
+
+    <div class="l-wrapper_01">
+      <article class="card_01">
+        <div class="card__header_01">
+          <p class="card__title_01">歴史</p>
+          <figure class="card__thumbnail_01">
+            <img src="./history.png" alt="サムネイル" class="card__image_01">
+        </figure>
+        </div>
+        <div class="card__body_01">
+          <p class="card__text2_01"></p>
+        </div>
+        <div class="card__footer_01">
+          <p class="card__text_01"><a href="./history/index.html" class="button_01 -compact" target="_blank" rel="noopener noreferrer">Read More</a></p>
+        </div>
+      </article>
+  </div>
+
+  <div class="l-wrapper_01">
+    <article class="card_01">
+      <div class="card__header_01">
+        <p class="card__title_01">キャラクター</p>
+        <figure class="card__thumbnail_01">
+          <img src="./monster.png" alt="サムネイル" class="card__image_01">
+      </figure>
+      </div>
+      <div class="card__body_01">
+        <p class="card__text2_01"></p>
+      </div>
+      <div class="card__footer_01">
+        <p class="card__text_01"><a href="##" class="js-modal-open button_01 -compact" data-target="modal04">Read More</a></p>
+      </div>
+    </article>
+</div>
+
+      </div>
+  </section>
+
+
+      <!----------------------------------modal window----------------------------------------------------->
+      <div id="modal02" class="PopUp modal js-modal">
+        <div class="PopUp modal-bg js-modal-close">
+        </div>
+        <div class="PopUp modal-content">
+          <div class="PopUp modal-padding">
+            <div class="PopUp closed_cover_PopUp">
+              <div class="PopUp closed_div_chr_PopUp">校歌</div>
+              <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp">
+                      <p class="PopUp closed_p_PopUp">✕</p>
+                  </div>
+              </a>
+            </div>
+            <div class="PopUp closed_div_p_scroll">
+              <br>
+              <p class="PopUp PopUp-content">
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div id="modal03" class="PopUp modal js-modal">
+        <div class="PopUp modal-bg js-modal-close">
+        </div>
+        <div class="PopUp modal-content">
+          <div class="PopUp modal-padding">
+            <div class="PopUp closed_cover_PopUp">
+              <div class="PopUp closed_div_chr_PopUp">校是</div>
+              <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp">
+                      <p class="PopUp closed_p_PopUp">✕</p>
+                  </div>
+              </a>
+            </div>
+            <div class="PopUp closed_div_p_scroll">
+              <br>
+              <p class="PopUp PopUp-content">
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <br>
+      <br>
+      <div id="modal04" class="PopUp modal js-modal">
+        <div class="PopUp modal-bg js-modal-close">
+        </div>
+        <div class="PopUp modal-content">
+          <div class="PopUp modal-padding">
+            <div class="PopUp closed_cover_PopUp">
+              <div class="PopUp closed_div_chr_PopUp">オリジナルキャラクター</div>
+              <a href="#" class="PopUp js-modal-close">
+                  <div class="PopUp closed_div_PopUp">
+                      <p class="PopUp closed_p_PopUp">✕</p>
+                  </div>
+              </a>
+            </div>
+            <div class="PopUp closed_div_p_scroll">
+              <br>
+              <p class="PopUp PopUp-content">
+
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!----------------------------------modal window----------------------------------------------------->
+
+           <!--Daily Life modal js start-->
+           <script>
+            // モーダルウィンドウを開く
+            $('.js-modal-open').on('click', function(){
+              var target = $(this).data('target');
+              var modal = document.getElementById(target);
+              scrollPosition = $(window).scrollTop();
+        
+              $('body').addClass('fixed').css({'top': -scrollPosition});
+              $(modal).fadeIn();
+              return false;
+            });
+        
+            // モーダルウィンドウを閉じる
+            $('.js-modal-close').on('click', function(){
+              $('body').removeClass('fixed');
+              window.scrollTo( 0 , scrollPosition );
+              $('.js-modal').fadeOut();
+              return false;
+            });
+          </script>
+          <!--Daily Life modal js END-->
+    <script  src="./scroll_effect.js"></script>
+    <script  src="./script.js"></script>
+    <script type="text/javascript" src="../header.js"></script>
 </body>
 </html>
