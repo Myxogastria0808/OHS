@@ -97,32 +97,7 @@
     from { transform: rotateZ(0deg); opacity: 1 }
     to { transform: rotateZ(360deg); opacity: .2 }
   }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+    /*---------------------------------------------------------------*/
   body {
     background-color: (rgb(243, 241, 231));
   }
@@ -690,10 +665,10 @@
     color: #fff;
   }
   .item01{
-    background-image: url(./top.jpg);
+    background-image: url(./top.webp);
   }
   .item02{
-    background-image: url(./second.jpg);
+    background-image: url(./second.webp);
   }
   
   .item01,
