@@ -771,6 +771,7 @@ div.PC {
     margin-left: auto;
     margin-right: auto;
   }
+
 /*=========================================================================================================*/
 html, body {
     margin: 0;
@@ -956,4 +957,9 @@ span {
   display: block;
   margin: auto;
   text-align: center;
+}
+.caution {
+  text-align: center;
+  font-size: 18px;
+  color: white;
 }

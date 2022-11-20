@@ -192,10 +192,45 @@ html, body {
     margin-top: 2rem;
   }
 
-
-
-
-
+/*img*/
+#Outline_img {
+  width: 90vw;
+  max-width: 560px;
+  text-align: center;
+  margin: 0;
+}
+#Outline_img_middle {
+  width: 90vw;
+  max-width: 400px;
+  text-align: center;
+  margin: 0;
+}
+.img_div {
+  display: block;
+  margin: auto;
+  text-align: center;
+}
+.content-center {
+  width: 90%;
+  max-width: 800px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+  text-align: center;
+}
+.content-middle-left {
+  width: 90%;
+  max-width: 500px;
+  font-size: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: white;
+}
 
 
 

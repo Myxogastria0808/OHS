@@ -804,3 +804,59 @@ max-width: 600px;
     text-align: center;
     font-size: 40px;
   }
+
+/* ③tableレイアウトとvertical-alignで中央配置 */
+.topicNews {
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.695), 0 3px 6px rgba(0,0,0,.08);
+  height:100px;
+  display:table;
+  text-align:center;
+  width: 90%;
+  max-width: 1024px;
+  background-image: url(./backgraund.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: #7178a7;
+  color: #fff;
+  font-size: 25px;
+  border-radius: 5px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.topicNews .div-inline {
+  display:table-cell;
+  vertical-align:middle;
+}
+.a-topicNews {
+  text-decoration: none;
+}
+span {
+  display: inline-block;
+}
+
+
+
+
+
+
+
+
+  /* .topicNews {
+    text-align: center;
+    padding: 25px 0px;
+    font-size: 30px;
+    width: 95%;
+    max-width: 1024px;
+    height: 100px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url();
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #4f96f6;
+  } */
