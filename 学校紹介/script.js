@@ -43,28 +43,28 @@ var wavesurfer = WaveSurfer.create({
 	container: '#waveform',
 	  // waveColor: '#137a7f',
 	  // progressColor: 'purple',
-	  waveColor: [ // an array of colors, to be applied as gradient color stops to the waveform.
+	  waveColor: [
 	  "red",
 	  "green",
 	  "purple",
 	  "yellow",
 	  "rgba(0,255,255,.5)",
 	],
-	  progressColor: [ // the gradient fill styles are also available on the progressColor option
+	  progressColor: [
 	  "orange",
 	  "blue",
 	  "cyan",
 	  "black",
 	  "rgba(0,255,255,.5)",
 	],
-	  backgroundColor: 'skyblue',
+	  backgroundColor: 'white',
 	  audioRate: 1,
 	  splitChannels: false,
 	  normalize: true,
 	  autoCenter: true,
-	  barWidth: 3,
+	  barWidth: 1,
 	  barGap: 3,
-	  barRadius: 3,
+	  barRadius: 0,
 	  cursorColor: 'green',
 	  cursorWidth: 5,
 	  forceDecode: true,
@@ -87,16 +87,23 @@ var wavesurfer = WaveSurfer.create({
 		WaveSurfer.markers.create({
 		  markers: [
 			  {
-				  time: 1.0,
-				  label: "V1",
-				  color: '#ff990a'
+				  time: 0,
+				  label: "1番",
+				  color: '#000861',
+				  position: 'top'
 			  },
 			  {
-				  time: 5.0,
-				  label: "V2",
-				  color: '#00ffcc',
+				  time: 54.0,
+				  label: "2番",
+				  color: '#000861',
 				  position: 'top'
-			  }
+			  },
+			  {
+				time: 97.1,
+				label: "3番",
+				color: '#000861',
+				position: 'top'
+			}
 		  ]
 		})
 	],
