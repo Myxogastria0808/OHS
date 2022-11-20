@@ -1297,6 +1297,15 @@
     }
 
 /*modal button*/
+.music-button {
+  margin-left: auto;
+  margin-right: auto;
+  background-color: #000861;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
 .container-btn {
   position: relative;
   width: 100%;
@@ -1318,10 +1327,10 @@
   transition: border 0.1s ease-in-out;
 }
 .btn-modal:hover {
-  border: #333 3px solid;
+  border: rgb(189, 189, 189) 3px solid;
 }
 .btn-modal:hover .bar {
-  background-color: #333;
+  background-color: rgb(189, 189, 189);
 }
 .btn-modal .bar {
   display: inline-block;
