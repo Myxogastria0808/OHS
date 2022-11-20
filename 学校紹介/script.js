@@ -49,9 +49,9 @@ var wavesurfer = WaveSurfer.create({
 		"#add8e6",
 	],
 	  progressColor: [
+		"#7FFFD4",
 		"#00032d",
-		"#000861",
-		"#00032d",
+		"#7FFFD4",
 	],
 	  backgroundColor: 'white',
 	  audioRate: 1,
@@ -62,7 +62,7 @@ var wavesurfer = WaveSurfer.create({
 	  barGap: 3,
 	  barRadius: 0,
 	  cursorColor: 'black',
-	  cursorWidth: 5,
+	  cursorWidth: 2,
 	  forceDecode: true,
 	  height: 300,
 	  hideCursor: false,
@@ -89,13 +89,13 @@ var wavesurfer = WaveSurfer.create({
 				  position: 'top'
 			  },
 			  {
-				  time: 54.0,
+				  time: 54.29,
 				  label: "2番",
 				  color: '#000861',
 				  position: 'top'
 			  },
 			  {
-				time: 97.1,
+				time: 98.093,
 				label: "3番",
 				color: '#000861',
 				position: 'top'

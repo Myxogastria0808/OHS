@@ -1297,7 +1297,11 @@
     }
 
 /*modal button*/
+.div-modal-button {
+  width: 100%;
+}
 .music-button {
+  display: block;
   margin-left: auto;
   margin-right: auto;
   background-color: #000861;
