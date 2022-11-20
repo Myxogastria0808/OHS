@@ -58,7 +58,6 @@
     position: absolute; 
     right: 0;   
     border-radius: 10px;
-    /* text-align: center; */
   }
   
   .closed_cover_PopUp {
@@ -96,7 +95,6 @@
     border-radius: 10px;
     padding-left: 5px;
     padding-right: 5px;
-  
     scrollbar-color: #6969dd #e0e0e0;
     scrollbar-width: auto;
   }
@@ -113,15 +111,6 @@
     border-radius: 100px;
   }
   
-
-
-
-
-
-
-
-
-
 /*shutter animation loading*/
 .shutter_1 {
   padding: 0;

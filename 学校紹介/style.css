@@ -757,6 +757,12 @@
   text-align: center;
   margin: 0;
 }
+#Outline_img_modal {
+  width: 90vw;
+  max-width: 500px;
+  text-align: center;
+  margin: 0;
+}
 .img_div {
   display: block;
   margin: auto;
@@ -1268,4 +1274,28 @@
     
     .section > * + * {
       margin-top: 2rem;
+    }
+
+    .h1-modal-title {
+      text-align: center !important;
+      font-size: 27px;
+    }
+    .h1-modal-subtitle {
+      text-align: center !important;
+      font-size: 22px;
+    }
+    .p-modal-center {
+      text-align: center !important;
+      font-size: 18px;
+    }
+    .p-modal-left {
+      text-align: left !important;
+      font-size: 18px;
+    }
+    .a-modal-content {
+      text-align: left !important;
+      font-size: 18px;
+    }
+    span {
+      display: inline-block;
     }
