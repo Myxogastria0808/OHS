@@ -1260,10 +1260,6 @@
       grid-template-columns: repeat(auto-fit, minmax(min(280px, 100%), 1fr));
       gap: 1rem;
     }
-    
-    * {
-      box-sizing: border-box;
-    }
   
     .section {
       max-width: 1024px;
