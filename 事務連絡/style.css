@@ -122,11 +122,6 @@
 
 
 
-
-body {
-  background-color: (rgb(243, 241, 231));
-}
-
 /*Page leap animation*/
 .fluid {
   width: 80px;
@@ -666,6 +661,9 @@ div.PC {
   }
   
 /*---------------------------------------------------------------*/
+body {
+  background-color: (rgb(243, 241, 231));
+}
 html {
     overflow-x: hidden;
 }
@@ -677,8 +675,6 @@ html {
     margin-right: 0px;
     object-fit: cover;
 }
-  /*respose of h1*/
-  /*main label*/
 .main_label {
     text-align: center;
     color: rgb(0,8,97);
@@ -686,10 +682,10 @@ html {
 }
 
 
-.flex_test-box {
+/* .flex_test-box {
     background-color: #eee;
-    padding:  10px;          /* 余白指定 */
-    align-items:stretch;        /* 縦の位置指定 */
+    padding:  10px;
+    align-items:stretch;
     justify-content:center;
 }
 @media screen and (min-width: 800px) {
@@ -697,24 +693,20 @@ html {
         display: flex;
     }
 }
- 
+  */
 .flex_test-item {
     padding: 10px;
-    color:  #fff;               /* 文字色 */
-    margin:  10px;              /* 外側の余白 */
+    color:  #fff;
+    margin:  10px;
+    flex-grow: 1;
+    background-color: rgb(0, 8, 97);
     /* border-radius:  10px; */
 }
  
-.flex_test-item:nth-child(1) {
+/* .flex_test-item:nt {
     background-color: rgb(0, 8, 97);
     flex-grow: 1;
-}
- 
-.flex_test-item:nth-child(2) {
-    background-color:  #4CAF50;
-    flex-grow: 1;
-}
-
+} */
 
 .flex_title {
     text-align: center;
@@ -744,3 +736,17 @@ html {
     margin-left: auto;
     margin-right: auto;
   }
+
+
+  @media screen and (max-width: 799px) {
+    #grade3, #student, #graduate, #parent {
+      padding-top: 67px;
+      margin-top:-67px;
+    }
+   }
+   @media screen and (min-width: 799px) {
+    #grade3, #student, #graduate, #parent {
+      padding-top: 137px;
+      margin-top:-137px;
+    }
+   }
