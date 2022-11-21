@@ -1479,7 +1479,7 @@ li.calender {
  color: white;
 }
 
-/*-------------------------------------------OHS HighLigh------------------------------------------*/
+/*-------------------------------------------Card Elements------------------------------------------*/
 .img-container {
   display: flex;
   justify-content: space-around;
@@ -1527,7 +1527,7 @@ li.calender {
   padding-left: 0px;
   padding-right: 0px;
 }
-@media screen and (max-width: 630px) {
+@media screen and (max-width: 800px) {
   .img-container .img-container_div {
       width: 50%;
       width: calc(100% / 2);
@@ -1535,15 +1535,15 @@ li.calender {
       padding-right: 0px;
   }
 }
-@media screen and (min-width: 631px) and (max-width: 940px) {
+/* @media screen and (min-width: 631px) and (max-width: 940px) {
   .img-container .img-container_div {
       width: 33.33333%;
       width: calc(100% / 3);
       padding-left: 0px;
       padding-right: 0px;
   }
-}
-@media screen and (min-width: 941px) {
+} */
+@media screen and (min-width: 801px) {
   .img-container .img-container_div {
       width: 25%;
       width: calc(100% / 4);

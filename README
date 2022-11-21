@@ -1,6 +1,3 @@
-OHS HighLightの画像の大きさ
-250.8 × 131.67
-
 美術部のページと学校紹介のcssのリンク先を
 style.min.cssにすることを忘れない
 
@@ -12,11 +9,9 @@ style.min.cssにすることを忘れない
 
 navbar_logo.pngとfooter_logo.png以外のpngは、未定かまとめてやるもの
 
-部活動の画像を考える。
-
 ソフトボール考える。
 
-Archiveのシステムを考える。
+Archiveのシステムを考える。 <-実験中
 
 図書館と食堂を終わらせる。
 
