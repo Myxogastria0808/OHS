@@ -666,85 +666,52 @@ div.PC {
   }
   
 /*---------------------------------------------------------------*/
-html {
-    overflow-x: hidden;
-}
-  
-#top_img {
-    height: 500px;
-    margin-top: -10px;
-    margin-left: -10px;
-    margin-right: 0px;
-    object-fit: cover;
-}
-  /*respose of h1*/
-  /*main label*/
-.main_label {
-    text-align: center;
-    color: rgb(0,8,97);
-    font-family: Roman;
-}
-/* 
-
-.flex_test-box {
-    background-color: #eee;
-    padding:  10px;         
-    align-items:stretch;      
-    justify-content:center;
-}
-@media screen and (min-width: 800px) {
-    .flex_test-box {
-        display: flex;
-    }
-}
- 
-.flex_test-item {
-    padding: 10px;
-    color:  #fff;             
-    margin:  10px;         
-    border-radius:  10px;     
-}
- 
-.flex_test-item:nth-child(1) {
-    background-color:  #2196F3;
-    flex-grow: 1;
-}
- 
-.flex_test-item:nth-child(2) {
-    background-color:  #4CAF50;
-    flex-grow: 1;
-}
-
-
-.flex_title {
-    text-align: center;
-    background-color: chartreuse;
-    border-radius:  10px;        
-    font-size: 30px;
-}
-
-.office_ul {
+html, body {
+    margin: 0;
     padding: 0;
-    position: relative;
+    width: 100%;
+    background-color: #ffffff;
+    overflow-x: hidden;
   }
-  
-  .office_ul .office_li {
-    color: #2d8fdd;
-    border-left: solid 6px #2d8fdd;
-    background: #f1f8ff;
-    margin-bottom: 3px;
-     line-height: 1.5;
-    padding: 0.5em;
-    list-style-type: none!important;
-  } */
+  .top {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    background-image: url(./top.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .top-section {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+  }
+  #title-img {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: 100%;
+  max-width: 600px;
+  }
 
-  .width {
+.width {
     max-width: 1024px;
     text-align: left;
     margin-left: auto;
     margin-right: auto;
-  }
-  iframe {
+}
+iframe {
     height: 100vh;
     width: 100%;
+}
+
+.main_label {
+  text-align: center;
+  color: rgb(0,8,97);
+  font-size: 40px;
 }
