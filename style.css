@@ -1736,6 +1736,9 @@ margin-top: -10px;
   width:100%;
   transition:800ms ease all;
 }
+.a-more-button {
+  text-decoration: none;
+}
 
 /*--------------------------------------------Topic--------------------------------------------------*/
 .blog-card {
