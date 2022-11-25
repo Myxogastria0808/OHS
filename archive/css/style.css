@@ -642,7 +642,7 @@ div.PC {
     margin-right: auto;
 }
 /*---------------------------------------------------------------*/
-body {
+body,html {
   background-color: #f2f4f8;
   overflow-x: hidden;
   padding: 0;
