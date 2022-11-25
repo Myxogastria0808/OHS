@@ -3,6 +3,12 @@ html, body {
     left: 0;
     margin: 0;
     font-family: 游明朝;
+    height: 100vh;
+    width: 100%;
+    background-image: url(../img/top.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 }
 .area{
     overflow: hidden;
@@ -15,13 +21,13 @@ html, body {
     align-items: center;
     color: #fff;
   }
+  span.span-card {
+    display: inline-block;
+  }
   .item01{
     height: 100vh;
     width: 100%;
-    background-image: url(../img/top.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+    background-color: #ffffff00;
   }
   .item02{ 
     height: 100vh;
