@@ -661,11 +661,9 @@ div.PC {
   }
   
 /*---------------------------------------------------------------*/
-body {
-  background-color: (rgb(243, 241, 231));
-}
-html {
+html,body {
     overflow-x: hidden;
+    background-color: (rgb(243, 241, 231));
 }
   
 #top_img {

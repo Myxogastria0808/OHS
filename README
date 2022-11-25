@@ -22,3 +22,56 @@ Pexel
 Pixabay
 OKUMONO
 
+必要なソフトなど
+git
+scoop <-いらない
+node.js
+github cli
+squoosh cli
+python3
+mkdocs
+Atom
+GitHubアカウント
+Googleアカウント
+
+
+
+
+
+github cli ログイン
+
+https://cli.github.com/
+ダウンローダーをダウンロード
+
+
+gh auth login
+//以下、対話形式で進む
+? What account do you want to log into?
+--> GitHub.com
+? What is your preferred protocol for Git operations?
+--> HTTPS
+? Authenticate Git with your GitHub credentials? (Y/n)
+--> y
+? How would you like to authenticate GitHub CLI?
+--> Login with a web browser
+Press Enter to open github.com in your browser...
+ブラウザーが起動し、ワンタイムパスワードがcmd上に表示される。
+! First copy your one-time code: AA00-AA00
+
+正常に終了した場合の、表示
+✓ Authentication complete.
+- gh config set -h github.com git_protocol https
+✓ Configured git protocol
+✓ Logged in as Myxogastria0808
+
+
+repositoryの作成
+gh gh repo create Repository名 --public
+
+
+
+
+事務室　overflow-x 入れる
+在校生のリンクバグ
+headerのリンクバグの修正
+蜻蛉の軌跡　スマホ判定にならない
