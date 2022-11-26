@@ -58,7 +58,10 @@
   position: absolute; 
   right: 0;   
   border-radius: 10px;
-  /* text-align: center; */
+  background-image: url(../img/close.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .closed_cover_PopUp {
@@ -97,7 +100,7 @@
   padding-left: 5px;
   padding-right: 5px;
 
-  scrollbar-color: #6969dd #e0e0e0;
+  scrollbar-color: rgb(0, 8, 97);
   scrollbar-width: auto;
 }
 .closed_div_p_scroll::-webkit-scrollbar {
@@ -108,7 +111,7 @@
   border-radius: 100px;
 }
 .closed_div_p_scroll::-webkit-scrollbar-thumb {
-  background-image: linear-gradient(180deg, #D0368A 0%, #708AD4 99%);
+  background-image: linear-gradient(180deg, rgb(0, 8, 97) 0%, rgb(0, 8, 97) 99%);
   box-shadow: inset 2px 2px 5px 0 rgba(#fff, 0.5);
   border-radius: 100px;
 }
