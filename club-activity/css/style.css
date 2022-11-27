@@ -833,6 +833,11 @@ max-width: 600px;
 .a-topicNews {
   text-decoration: none;
 }
+.topicNews:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.549), 0 3px 6px rgba(0,0,0,.08);
+  transition: all .5s;
+}
 span {
   display: inline-block;
 }

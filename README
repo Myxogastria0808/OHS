@@ -1,6 +1,3 @@
-美術部のページと学校紹介のcssのリンク先を
-style.min.cssにすることを忘れない
-
 コメントアウト全部消して、説明を加える
 
 先生用のスニペットページを完成させる。
@@ -9,11 +6,10 @@ navbar_logo.pngとfooter_logo.png以外のpngは、未定かまとめてやる�
 
 ソフトボール考える。
 
-Archiveのシステムを考える。 <-実験中
-
 ---->>>>>>>>>>>headerをすべて最新にする。 <----各部活動を直す
 
 imgタグをalt="No Image" と表示する
+
 
 使用した画像のサイト
 AC photo
@@ -67,9 +63,3 @@ Press Enter to open github.com in your browser...
 
 repositoryの作成
 gh gh repo create Repository名 --public
-
-
-
-
-
-蜻蛉の軌跡　スマホ判定にならない

@@ -1530,6 +1530,11 @@ li.calender {
   padding-left: 0px;
   padding-right: 0px;
 }
+.img-container_div:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(50,50,93,.1), 0 3px 6px rgba(0,0,0,.08);
+  transition: all .5s;
+}
 @media screen and (max-width: 800px) {
   .img-container .img-container_div {
       width: 50%;

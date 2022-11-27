@@ -662,12 +662,40 @@ div.PC {
   
 /*---------------------------------------------------------------*/
 html,body {
+  margin: 0;
+  padding: 0;
     overflow-x: hidden;
     background-color: (rgb(243, 241, 231));
 }
+.top {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  width: 100%;
+  background-image: url(../img/top.webp);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.top-section {
+margin: 0;
+padding: 0;
+height: 100vh;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+#title-img {
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+width: 100%;
+max-width: 600px;
+}
   
-#top_img {
+/* #top_img {
     height: 500px;
+    margin: 0;
     margin-top: -10px;
     margin-left: -10px;
     margin-right: 0px;
@@ -677,7 +705,7 @@ html,body {
     text-align: center;
     color: rgb(0,8,97);
     font-family: Roman;
-}
+} */
 
 
 /* .flex_test-box {
