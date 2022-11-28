@@ -61,5 +61,15 @@ Press Enter to open github.com in your browser...
 ✓ Logged in as Myxogastria0808
 
 
-repositoryの作成
-gh gh repo create Repository名 --public
+github cli Api 登録
+gh auth refresh -h github.com -s delete_repo
+
+? Authenticate Git with your GitHub credentials? Yes
+? Authenticate Git with your GitHub credentials? (Y/n)
+--> y
+ブラウザーが起動し、ワンタイムパスワードがcmd上に表示される。
+! First copy your one-time code: BB00-BB00
+Press Enter to open github.com in your browser...
+
+正常に終了した場合の、表示
+✓ Authentication complete.
