@@ -1063,14 +1063,14 @@
   }
   
   
-.closed_p_PopUp {
+/* .closed_p_PopUp {
   margin-left: 8px;
   margin-top: -5.0px;
   font-size: 30px;
   color: white;
   position: fixed;
 }
-  
+   */
   .closed_div_chr_PopUp {
     font-size: 24px;
   }
@@ -1356,3 +1356,100 @@
 .btn-modal.play .bar-2 {
   transform: translateX(20px) translateY(5px) rotate(-125deg);
 }
+
+
+
+
+
+
+
+
+.container_event {
+  width: 100%;
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+.container__wrapper_event {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  padding:0 20px;
+  gap: 30px;
+}
+.card_event {
+  box-shadow: 1px 1px 3px rgba(106, 131, 152, 0.2);
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  height: 200px;
+  border-radius: 100px 100px 100px 100px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.entrance_ceremony {
+  background-image: url(../img/entrance_ceremony.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.field_trip {
+  background-image: url(../img/field_trip.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.school_festival {
+  background-image: url(../img/school_festival.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ball_game {
+  background-image: url(../img/ball_game.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.sports_day {
+  background-image: url(../img/sports_day.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.school_trip {
+  background-image: url(../img/school_trip.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.chorus_contest {
+  background-image: url(../img/chorus_contest.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.graduation_ceremony {
+  background-image: url(../img/graduation_ceremony.webp);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.card_event:hover {
+  animation: skew 2.0s linear infinite;
+}
+   @keyframes skew {
+       0% {transform: skew(0deg, 0deg);}
+       5% {transform: skew(5deg, 4.2deg);}
+       10% {transform: skew(-4deg, -3deg);}
+       15% {transform: skew(3deg, 2.2deg);}
+       20% {transform: skew(-2deg, -1.5deg);}
+       25% {transform: skew(0.9deg, 0.9deg);}
+       30% {transform: skew(-0.6deg, -0.6deg);}
+       35% {transform: skew(0.3deg, 0.3deg);}
+       40% {transform: skew(-0.2deg, -0.2deg);}
+       45% {transform: skew(0.1deg, 0.1deg);}  
+       50% {transform: skew(0deg, 0deg);}
+   }
