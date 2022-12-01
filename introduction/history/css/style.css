@@ -3,7 +3,7 @@ html, body {
     left: 0;
     margin: 0;
     font-family: 游明朝;
-    height: 100vh;
+    height: 130%; /*変更済み----------------------------------------------------------------*/
     width: 100%;
     background-image: url(../img/top.png);
     background-repeat: no-repeat;
