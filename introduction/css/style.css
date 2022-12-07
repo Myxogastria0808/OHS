@@ -1060,17 +1060,18 @@
     display: flex;
     justify-content: center;
     text-decoration: none;
+    height: 43.2px;
   }
   
   
-/* .closed_p_PopUp {
-  margin-left: 8px;
-  margin-top: -5.0px;
-  font-size: 30px;
-  color: white;
-  position: fixed;
-}
-   */
+  /* .closed_p_PopUp {
+    margin-left: 8px;
+    margin-top: -6.5px;
+    font-size: 30px;
+    color: white;
+    position: fixed;
+  } */
+  
   .closed_div_chr_PopUp {
     font-size: 24px;
   }
@@ -1091,7 +1092,7 @@
     padding-left: 5px;
     padding-right: 5px;
   
-    scrollbar-color: rgb(0, 8, 97) #e0e0e0;
+    scrollbar-color: rgb(0, 8, 97);
     scrollbar-width: auto;
   }
   .closed_div_p_scroll::-webkit-scrollbar {

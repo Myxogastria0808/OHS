@@ -69,16 +69,17 @@
   display: flex;
   justify-content: center;
   text-decoration: none;
+  height: 43.2px;
 }
 
 
-.closed_p_PopUp {
+/* .closed_p_PopUp {
   margin-left: 8px;
   margin-top: -6.5px;
   font-size: 30px;
   color: white;
   position: fixed;
-}
+} */
 
 .closed_div_chr_PopUp {
   font-size: 24px;
