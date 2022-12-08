@@ -805,7 +805,6 @@ max-width: 600px;
     font-size: 40px;
   }
 
-/* ③tableレイアウトとvertical-alignで中央配置 */
 .topicNews {
   box-shadow: 0 7px 14px rgba(0, 0, 0, 0.695), 0 3px 6px rgba(0,0,0,.08);
   height:100px;
