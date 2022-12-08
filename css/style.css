@@ -674,9 +674,9 @@ html {
   .a_PC:hover::after {
     transform: scale(1, 1);
   }
-.li_header {
+/* .li_header {
   font-family: "Arial Black", serif;
-}
+} */
 #nav_header {
   margin-bottom: -10px;
   margin-right: 5px;
@@ -926,7 +926,7 @@ html {
   transition-delay: 50ms;
 }
 .nav_mobile .ul_mobile .li_mobile .a_mobile{
-  font-family: 'Montserrat', sans-serif;
+  /* font-family: 'Montserrat', sans-serif; */
   font-size: 5vh;
   text-transform: uppercase;
   line-height: 1.2;
@@ -1137,7 +1137,7 @@ html {
   margin: auto;
   padding-left: 0px;
   padding-right: 0px;
-  font-family: "Arial Black", serif;
+  /* font-family: "Arial Black", serif; */
 }
 .content-box a {
   flex-grow: 1;
@@ -1178,8 +1178,8 @@ html {
 .main_label {
   text-align: center;
   color: rgb(0,8,97);
-  font-family: Roman;
-  font-family: 30px;
+  /* font-family: Roman;
+  font-family: 30px; */
 }
 
 /*subtitle*/
@@ -1187,7 +1187,7 @@ html {
   font-size: 20px;
   text-align: center;
   color: rgb(0,8,97);
-  font-family: Roman;
+  /* font-family: Roman; */
 }
 
 
@@ -1252,7 +1252,7 @@ z-index: 1;
 }
 
 #features-card-1 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
-#features-card-1 .text-block .features_h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
+#features-card-1 .text-block .features_h1{font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
 #features-card-1 .text-block .features_h1 .features_small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
 #features-card-1 .text-block .features_h3{margin:0;font-weight:700;}
 #features-card-1 .text-block p{font-weight:300; width:60%}
@@ -1286,7 +1286,7 @@ z-index: 1;
 }
 
 #features-card-2 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
-#features-card-2 .text-block .features_h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
+#features-card-2 .text-block .features_h1{font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
 #features-card-2 .text-block .features_h1 .features_small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
 #features-card-2 .text-block .features_h3{margin:0;font-weight:700;}
 #features-card-2 .text-block p{font-weight:300; width:60%}
@@ -1319,7 +1319,7 @@ z-index: 1;
 }
 
 #features-card-3 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
-#features-card-3 .text-block .features_h1{font-family: 'Rubik', sans-serif; font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
+#features-card-3 .text-block .features_h1{font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
 #features-card-3 .text-block .features_h1 .features_small{font-size: .4em;color:#ccc;position:relative;bottom:10px}
 #features-card-3 .text-block .features_h3{margin:0;font-weight:700;}
 #features-card-3 .text-block p{font-weight:300; width:60%}
@@ -1364,13 +1364,13 @@ z-index: 1;
   margin-top: 12px;
   /* margin-left: -15px; */
   font-size: 18px;
-  font-family: "游明朝";
+  /* font-family: "游明朝"; */
   border-radius: 4px;
 }
 .time_box {
     margin-left: 13px;
     margin-top: 20px;
-    font-family: "游明朝";
+    /* font-family: "游明朝"; */
     font-size: 15px;
 }
 .time_box_margin {
@@ -1383,7 +1383,7 @@ z-index: 1;
   overflow-wrap: normal;
   margin-top: 7px;
   /* margin-left: -8px; */
-  font-family: "游明朝";
+  /* font-family: "游明朝"; */
   font-size: 16px;
   text-align: left;
   padding-left: 0px;
@@ -1513,7 +1513,7 @@ li.calender {
   padding-bottom: 20px;
   font-size: 16px;
   color: white;
-  font-family: "游明朝";
+  /* font-family: "游明朝"; */
   background-color: rgb(0,8,97);
   border-radius: 0px 0px 5px 5px;
   width: 100%;
@@ -1580,14 +1580,14 @@ li.calender {
   margin-bottom: -2px;
   font-size: 16px;
   color: white;
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
 }
 .p_footer_num {
   margin-top: -2px;
   margin-bottom: -2px;
   font-size: 16px;
   color: white;
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
 }
 .br_footer {
   display: block;
@@ -1623,7 +1623,7 @@ margin-top: -10px;
 }
 .a_footer {
   font-size: 150%;
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
 }
 .inner-content-box_footer {
   font-size: 16px;
@@ -1691,12 +1691,12 @@ margin-top: -10px;
 .small_footer {
   font-size: 12px;
   color: white;
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
 }
 .small_footer_en {
   font-size: 16px;
   color: white;
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
 }
 
 /*----------------------------------------More button---------------------------------*/
@@ -1711,7 +1711,7 @@ margin-top: -10px;
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
-  font-family: "Times New Roman";
+  /* font-family: "Times New Roman"; */
   border-radius: 5px 5px 5px 5px;
 }
 .buttonMoreDiv {
@@ -1755,7 +1755,7 @@ margin-top: -10px;
   width:100%;
   height: 500px;
   position: absolute;
-  font-family: 'Droid Serif', serif;
+  /* font-family: 'Droid Serif', serif; */
   color:#fff;
   top: 20%;
   right: 0;
@@ -1827,7 +1827,7 @@ color:#fff;
   font-size: 1.9em;
   font-weight: 400;
   letter-spacing: 1px;
-  font-family: 'Abril Fatface', serif;
+  /* font-family: 'Abril Fatface', serif; */
   margin-bottom: 0;
   display:inline-block;
 }
@@ -2031,7 +2031,7 @@ color:#fff;
 /* ignore this bit :P */
 #profile-badges:after {
     content: "BRO";
-    font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif;
+    /* font-family: "Lato", "Lucida Grande", "Lucida Sans Unicode", Tahoma, Sans-Serif; */
     font-size:13px;
     font-weight: 500;
     text-transform: uppercase;
@@ -2058,7 +2058,7 @@ color:#fff;
   z-index:0
 }
 #profile-links .Top_a{
-  font-family: 'Abril Fatface', serif;
+  /* font-family: 'Abril Fatface', serif; */
   font-size:1.2em
 }
 
@@ -2116,7 +2116,7 @@ color:#fff;
     font-size: 1.2rem
 }
 .meta .pen-title {
-  font-family: 'Droid Serif', serif;
+  /* font-family: 'Droid Serif', serif; */
   text-align:center
 }
 .pagination-button{

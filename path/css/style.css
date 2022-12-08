@@ -333,9 +333,9 @@ div.PC {
     .a_PC:hover::after {
       transform: scale(1, 1);
     }
-  .li_header {
+  /* .li_header {
     font-family: "Arial Black", serif;
-  }
+  } */
   #nav_header {
     margin-bottom: -10px;
     margin-right: 5px;
@@ -585,7 +585,7 @@ div.PC {
     transition-delay: 50ms;
   }
   .nav_mobile .ul_mobile .li_mobile .a_mobile{
-    font-family: 'Montserrat', sans-serif;
+    /* font-family: 'Montserrat', sans-serif; */
     font-size: 5vh;
     text-transform: uppercase;
     line-height: 1.2;

@@ -308,9 +308,9 @@
       .a_PC:hover::after {
         transform: scale(1, 1);
       }
-    .li_header {
+    /* .li_header {
       font-family: "Arial Black", serif;
-    }
+    } */
     #nav_header {
       margin-bottom: -10px;
       margin-right: 5px;
@@ -560,7 +560,7 @@
       transition-delay: 50ms;
     }
     .nav_mobile .ul_mobile .li_mobile .a_mobile{
-      font-family: 'Montserrat', sans-serif;
+      /* font-family: 'Montserrat', sans-serif; */
       font-size: 5vh;
       text-transform: uppercase;
       line-height: 1.2;
@@ -651,7 +651,7 @@
     top: 0;
     left: 0;
     margin: 0;
-    font-family: 游明朝;
+    /* font-family: 游明朝; */
 }
 .area{
     overflow: hidden;
@@ -883,7 +883,7 @@
 } */
 
 .card-title {
-  font-family: 'Cormorant Garamond', serif;
+  /* font-family: 'Cormorant Garamond', serif; */
   font-size: 60px;
   font-weight: 300;
   line-height: 60px;
