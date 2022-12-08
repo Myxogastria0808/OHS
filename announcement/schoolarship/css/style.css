@@ -867,6 +867,11 @@ div.PC {
   margin-left: auto;
   margin-right: auto;
 }
+.body__card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 7px 14px rgba(0, 0, 0, 0.549), 0 3px 6px rgba(0,0,0,.08);
+  transition: all .5s;
+}
 .body__card {
   background-color: white;
   border-radius: 0.25rem;
