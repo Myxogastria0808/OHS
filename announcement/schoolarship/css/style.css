@@ -837,6 +837,9 @@ div.PC {
   -moz-font-feature-settings: "liga" on;
   box-sizing: border-box;
 }
+.body__left {
+  text-align: left;
+}
 .body__btn {
   background-color: white;
   border: 1px solid #cccccc;
