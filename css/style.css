@@ -1192,91 +1192,114 @@ html {
 
 
 /*---------------------------------------Features-----------------------------------------------*/
-/* @import url(https://fonts.googleapis.com/css?family=Lato:400,300,700);
-@import url(https://fonts.googleapis.com/css?family=Rubik:400,900); */
-
-.features{box-sizing: border-box;}
-/* body, html { height: 100%; min-height: 100%; } */
-/* body {
-   background: linear-gradient(#f6f7fc 0%, #d5e1e8 40%);
-   transform-style: preserve-3d;
-   transform: perspective(800px);
-   font-family: 'Lato', sans-serif;
-} */
+.text-block{
+  position:relative;
+  z-index:2;
+  text-shadow: 0px 3px 10px rgba(0, 0, 0, .7);
+  margin:0;
+  color:#ccc;
+  position:relative;
+  bottom:10px
+}
+span {
+  display: inline-block;
+}
+@media screen and (min-width: 450px) {
+  .features_h1 {
+    font-size: 45px;
+  }
+}
+@media screen and (max-width: 450px) and (min-width: 404px) {
+  .features_h1 {
+    font-size: 40px;
+  }
+}
+@media screen and (max-width: 404px) and (min-width: 380px) {
+  .features_h1 {
+    font-size: 35px;
+  }
+}
+@media screen and (max-width: 380px) and (min-width: 372px){
+  .features_h1 {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 372px){
+  .features_h1 {
+    font-size: 27px;
+  }
+}
+.features_h3{
+  margin:0;
+}
+@media screen and (min-width: 400px){
+  .features_h3 {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px){
+  .features_h3 {
+    font-size: 14px;
+  }
+}
+.features{
+  box-sizing: border-box;
+}
 .features_a {
   text-decoration: none;
 }
-
 .dummy {
   display: none;
 }
-
 #card-container{
   max-width: 1200px;
    width: 100%;
-   /* height: 350px; */
-   /* position:absolute; */
    top: 50%; left: 50%;
-   /* margin: -175px 0 0 -350px; */
    padding-left: 0px;
    padding-right: 0px;
 }
-
-#card-container .pg{position:absolute;height:450px; width:40%; right:-10px;bottom:0px;z-index:2}
-#card-container .pg > img{height:450px;}
-
-.shine {
-/* position: absolute; */
-top: 0; left: 0; right: 0; bottom: 0;
-background: linear-gradient(90deg, rgba(0,0,0,.4) 0%,rgba(0,0,0,.2) 60%);
-z-index: 1;
+#card-container .pg{
+  position:absolute;
+  height:450px;
+  width:40%;
+  right:-10px;
+  bottom:0px;
+  z-index:2
 }
-/* button{color:#fff;} */
-
+#card-container .pg > img{
+  height:450px;
+}
 
 /*G*/
 #features-card-1 {
-   animation: backG 60s infinite;
+   animation: ack_science 60s infinite;
    color:#fff;
    padding:30px;
    width:100%;
    height:100%;
    padding-top: 0px;
    padding-bottom: 5px;
-   /* position:absolute; */
    z-index:1;
    background:url(../img/science.webp) 100% center;
    box-shadow: 
      0px 45px 100px rgba(0, 0, 0, .4),
      inset 0 0 0 1000px rgba(27, 49, 156, 0.6);
 }
-
-#features-card-1 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
-#features-card-1 .text-block .features_h1{font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
-#features-card-1 .text-block .features_h1 .features_small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
-#features-card-1 .text-block .features_h3{margin:0;font-weight:700;}
-#features-card-1 .text-block p{font-weight:300; width:60%}
-/* #features-card-1 .text-block .features_button{transition: all .35s cubic-bezier(.37,.26,.35,1);border:4px solid #fff; padding:10px; background:transparent;font-family: 'Rubik', sans-serif;text-transform:uppercase; font-weight:700; cursor:pointer;}
-#features-card-1 .text-block .features_button:hover{background:#251db5} */
-
-@keyframes backG {
+@keyframes back_science {
    0%   { background-size:100% }
    50%   { background-size:130% }
    100%   { background-size:100% }
  }
 
-
-
 /*IH*/
 #features-card-2 {
-   animation: backIH 60s infinite;
+   animation: back_business 60s infinite;
    color:#fff;
    padding:30px;
    width:100%;
    height:100%;
    padding-top: 0px;
    padding-bottom: 5px;
-   /* position:absolute; */
    z-index:1;
    background:url(../img/business.webp) 100% center;
    box-shadow: 
@@ -1284,49 +1307,28 @@ z-index: 1;
      inset 0 0 0 1000px rgba(156,27,27,.6);
   text-align: center;
 }
-
-#features-card-2 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
-#features-card-2 .text-block .features_h1{font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
-#features-card-2 .text-block .features_h1 .features_small{font-size:.4em;color:#ccc;position:relative;bottom:10px}
-#features-card-2 .text-block .features_h3{margin:0;font-weight:700;}
-#features-card-2 .text-block p{font-weight:300; width:60%}
-/* #features-card-2 .text-block .features_button{transition: all .35s cubic-bezier(.37,.26,.35,1);border:4px solid #fff; padding:10px; background:transparent;font-family: 'Rubik', sans-serif;text-transform:uppercase; font-weight:700; cursor:pointer;}
-#features-card-2 .text-block .features_button:hover{background:#B51D2A} */
-
-@keyframes backIH {
+@keyframes back_business {
    0%   { background-size:150% }
    50%   { background-size:350% }
    100%   { background-size:150% }
  }
 
-
-
 /*normal*/
 #features-card-3 {
-   animation: backA_F 60s infinite;
+   animation: back_general 60s infinite;
    color:#fff;
    padding:30px;
    width:100%;
    height:100%;
    padding-top: 0px;
    padding-bottom: 5px;
-   /* position:absolute; */
    z-index:1;
    background:url(../img/general.webp) 100% center;
    box-shadow: 
      0px 45px 100px rgba(0, 0, 0, .4),
      inset 0 0 0 1000px rgba(94, 27, 156, 0.6);
 }
-
-#features-card-3 .text-block{position:relative;z-index:2;text-shadow: 0px 3px 10px rgba(0, 0, 0, .7)}
-#features-card-3 .text-block .features_h1{font-size:3em; margin:0; text-transform:uppercase; font-weight:700;}
-#features-card-3 .text-block .features_h1 .features_small{font-size: .4em;color:#ccc;position:relative;bottom:10px}
-#features-card-3 .text-block .features_h3{margin:0;font-weight:700;}
-#features-card-3 .text-block p{font-weight:300; width:60%}
-/* #features-card-3 .text-block .features_button{transition: all .35s cubic-bezier(.37,.26,.35,1);border:4px solid #fff; padding:10px; background:transparent;font-family: 'Rubik', sans-serif;text-transform:uppercase; font-weight:700; cursor:pointer;}
-#features-card-3 .text-block .features_button:hover{background:#b51dab} */
-
-@keyframes backA_F {
+@keyframes back_general {
    0%   { background-size:100% }
    50%   { background-size:130% }
    100%   { background-size:100% }
