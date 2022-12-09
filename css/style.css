@@ -1752,6 +1752,22 @@ margin-top: -10px;
 }
 
 /*--------------------------------------------Topic--------------------------------------------------*/
+/*img*/
+#DailyLifeImgId {
+  width: 90vw;
+  max-width: 560px;
+  text-align: center;
+  margin: 0;
+}
+.DailyLifeImgClass {
+  display: block;
+  margin: auto;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+
 .blog-card {
   max-width: 550px;
   width:100%;
