@@ -860,6 +860,7 @@ html, body {
     height: 92%;/* これが無いと「overflow:scroll」が利かない */
     width: 100%;/* これが無いと「overflow:scroll」が利かない */
     max-width: 600px;
+    max-height: 580px;
     background: white;
     padding-top: 20px;
     padding-bottom: 10px;
