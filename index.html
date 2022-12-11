@@ -727,18 +727,20 @@
         <br class="br_footer"></br>
         <!-- 3 contents of footer -->
         <div class="content-box_footer">
-          <a class="a_footer" href="./img_box.html">
+          <a class="js-modal-open  a_footer" data-target="access">
             <div class="inner-content-box_footer right_footer">アクセス</div>
           </a>
-          <a class="a_footer" href="./img_box.html">
-            <div class="inner-content-box_footer center_footer">警報発令時に<br class="br_new_line">ついて</div>
+          <a class="js-modal-open a_footer" data-target="alert">
+            <div class="inner-content-box_footer center_footer">警報発令時</div>
           </a>
-          <a class="a_footer" href="./img_box.html">
-            <div class="inner-content-box_footer left_footer">学校感染症に<br class="br_new_line">ついて</div>
+          <a class="a_footer" href="./PDF/gakko-kansensyo.pdf" target="_blank" rel="noreferrer noopener">
+            <div class="inner-content-box_footer left_footer">学校感染症</div>
           </a>
         </div>
         <br class="big_br_footer"></br>
         <small class="small_footer_en">Created by Yuuki Osada. <br class="br_new_line">Designed by Yusei Nishimura.</small>
+        <br>
+        <small class="small_footer_en">Supported by Kotaro Miki<br class="br_new_line"> and Rintaro Kobayashi.</small>
         <br class="last_br_footer"></br>
         <small class="small_footer">無断引用・転載を禁じます。</small>
         <br class="small_br_footer"></br>
@@ -748,6 +750,52 @@
     </div>
   </div>
 
+  <!--------------------------------------------modal----------------------------------------------------->
+  <div id="access" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">アクセス</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+            <div class="DailyLifeImgClass">
+              <img alt="No Image" id="DailyLifeImgId" src="./img/access_map.webp">
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="alert" class="PopUp modal js-modal">
+    <div class="PopUp modal-bg js-modal-close">
+    </div>
+    <div class="PopUp modal-content">
+      <div class="PopUp modal-padding">
+        <div class="PopUp closed_cover_PopUp">
+          <div class="PopUp closed_div_chr_PopUp">警報発令時</div>
+          <a href="#" class="PopUp js-modal-close">
+              <div class="PopUp closed_div_PopUp"></div>
+          </a>
+        </div>
+        <div class="PopUp closed_div_p_scroll">
+          <br>
+          <p class="PopUp PopUp-content">
+            <div class="DailyLifeImgClass">
+              <img alt="No Image" id="DailyLifeImgId" src="./img/alert.webp">
+            </div>
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
