@@ -811,18 +811,60 @@ iframe {
     padding-top: 66.6%;
   }
 }
-.body__card__image--benefit {
-  background-image: url(./benefit.webp);
+.body__card__image--1 {
+  background-image: url(../img/library1.webp);
 }
-.body__card__image--loan {
-  background-image: url(./loan.webp);
+.body__card__image--2 {
+  background-image: url(../img/library2.webp);
 }
-.body__card__image--other {
-  background-image: url(./other.webp);
+.body__card__image--3 {
+  background-image: url(../img/library3.webp);
 }
-/* .body__card__title {
+.body__card__image--4 {
+  background-image: url(../img/library4.webp);
+}
+.body__card__image--5 {
+  background-image: url(../img/library5.webp);
+}
+.body__card__image--6 {
+  background-image: url(../img/library6.webp);
+}
+.body__card__image--7 {
+  background-image: url(../img/library7.webp);
+}
+.body__card__image--8 {
+  background-image: url(../img/library8.webp);
+}
+.body__card__image--9 {
+  background-image: url(../img/library9.webp);
+}
+.body__card__image--10 {
+  background-image: url(../img/library10.webp);
+}
+.body__card__image--11 {
+  background-image: url(../img/library11.webp);
+}
+.body__card__image--12 {
+  background-image: url(../img/library12.webp);
+}
+.body__card__image--coffee1 {
+  background-image: url(../img/coffee1.webp);
+}
+.body__card__image--coffee2 {
+  background-image: url(../img/coffee2.webp);
+}
+.body__card__image--coffee3 {
+  background-image: url(../img/coffee3.webp);
+}
+.body__card__image--coffee4 {
+  background-image: url(../img/coffee4.webp);
+}
+.body__card__image--coffee5 {
+  background-image: url(../img/coffee5.webp);
+}
+.body__card__title {
   color: #696969;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   letter-spacing: 2px;
   text-transform: uppercase;
@@ -833,4 +875,4 @@ iframe {
   flex: 1 1 auto;
   font-size: 0.875rem;
   line-height: 1.5;
-} */
+}
