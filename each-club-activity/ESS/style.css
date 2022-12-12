@@ -98,31 +98,7 @@
   to { transform: rotateZ(360deg); opacity: .2 }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*======================header============================*/
 body {
   background-color: (rgb(243, 241, 231));
 }
@@ -333,9 +309,9 @@ div.PC {
     .a_PC:hover::after {
       transform: scale(1, 1);
     }
-  /* .li_header {
+  .li_header {
     font-family: "Arial Black", serif;
-  } */
+  }
   #nav_header {
     margin-bottom: -10px;
     margin-right: 5px;
@@ -585,7 +561,7 @@ div.PC {
     transition-delay: 50ms;
   }
   .nav_mobile .ul_mobile .li_mobile .a_mobile{
-    /* font-family: 'Montserrat', sans-serif; */
+    font-family: 'Montserrat', sans-serif;
     font-size: 5vh;
     text-transform: uppercase;
     line-height: 1.2;
@@ -665,172 +641,174 @@ div.PC {
     transition-delay: 2280ms;
   }
   
-/*---------------------------------------------------------------*/
+  .width {
+    max-width: 1024px;
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+  }
+/*=========================================================================================================*/
 html, body {
     margin: 0;
     padding: 0;
     width: 100%;
-    background-color: #ffffff;
-    overflow-x: hidden;
-  }
-  .top {
+    background-color: #d08009;
+}
+.width {
+  max-width: 1024px;
+  text-align: center;
+  margin: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.top {
     margin: 0;
     padding: 0;
     height: 100vh;
     width: 100%;
-    background-image: url(../img/top.webp);
+    background-image: url(./top.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-  }
-  .top-section {
+}
+section {
   margin: 0;
   padding: 0;
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center; 
-  }
-  #title-img {
+}
+#title-img {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
   max-width: 600px;
+}
+span {
+  display: inline-block;
+}
+  .sub-title {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 30px;
   }
-
-.width {
+  .sub-sub-title {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 22px;
+  }
+  /* .caution {
+    padding-top: 10px;
+    text-align: center;
+    color: white;
+    font-size: 25px;
+  } */
+  /* .div-url {
+    width: 100%;
+    text-align: center;
+  }
+  .url {
+    padding-top: 10px;
+    text-align: center;
+    color: rgb(235, 235, 235);
+    font-size: 25px;
+  } */
+  .content {
+    width: 90%;
     max-width: 1024px;
-    text-align: left;
+    font-size: 18px;
     margin-left: auto;
     margin-right: auto;
-}
-iframe {
-    height: 100vh;
-    width: 100%;
-}
-
-.main_label {
-  text-align: center;
-  color: rgb(0,8,97);
-  font-size: 40px;
-}
-.sub_label {
-  text-align: center;
-  color: rgb(0,8,97);
-  font-size: 30px;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-.body__element {
-  color: #999999;
-  font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -moz-font-feature-settings: "liga" on;
-  box-sizing: border-box;
-}
-.body__btn {
-  background-color: white;
-  border: 1px solid #cccccc;
-  color: #696969;
-  margin-top: 15px;
-  padding: 0.5rem;
-  display: block;
-  width: 100%;
-}
-.body__cards {
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
-  margin-bottom: 0;
-  margin-top: 15px;
-  margin-left: auto;
-  margin-right: auto;
-  padding: 0;
-  max-width: 1024px;
-}
-.body__cards__item {
-  display: flex;
-  padding: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-.body__card {
-  background-color: white;
-  border-radius: 0.25rem;
-  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
-  display: flex;
-  flex-direction: column;
-  overflow: hidden;
-  width: 300px;
-}
-.body__card__content {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-  padding: 1rem;
-}
-.body__card__image {
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-  overflow: hidden;
-  position: relative;
-}
-.body__card__image::before {
-  content: "";
-  display: block;
-  padding-top: 56.25%;
-}
-@media (min-width: 40rem) {
-  .body__card__image::before {
-    padding-top: 66.6%;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
   }
-}
-.body__card__image--benefit {
-  background-image: url(./benefit.webp);
-}
-.body__card__image--loan {
-  background-image: url(./loan.webp);
-}
-.body__card__image--other {
-  background-image: url(./other.webp);
-}
-/* .body__card__title {
-  color: #696969;
-  font-size: 18px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-}
-.body__card__text {
-  margin-top: 0;
-  margin-bottom: 0;
-  flex: 1 1 auto;
-  font-size: 0.875rem;
-  line-height: 1.5;
-} */
+  .center {
+    text-align: center;
+  }
+  .left {
+    text-align: left;
+  }
+  .small {
+    width: 90%;
+    max-width: 1024px;
+    font-size: 16px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  }
+
+
+
+  .ul {
+    list-style:none;/*デフォルトの指定を解除*/
+    margin:0;/*デフォルトの指定を解除*/
+    padding:0;/*デフォルトの指定を解除*/
+    display:table;
+    width:100%;/*幅を指定*/
+    max-width: 1024px;
+    table-layout:fixed;/*中の要素の幅を均等に*/
+  }
+  .li {
+    padding: 10px;
+    display:table-cell;
+    vertical-align:middle;/*縦方向を中央揃え*/
+    text-align:center;/*横方向を中央揃え*/
+  }
+  .img-li {
+    width: 95%;
+    max-width: 250px;
+  }
+
+  .p-schedule {
+    width: 90%;
+    max-width: 1024px;
+    font-size: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-align: left;
+    text-decoration:underline;
+  }
+  .div-schedule {
+    max-width: 450px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 10px;
+    background-color: #d59e4b;
+  }
+
+  .year-cover {
+    width: 100%;
+    max-width: 300px;
+    height: 28px;
+    background-color: cadetblue;
+    box-shadow: 0 10px 15px 0 rgba(43, 43, 43, 0.5);
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .u {
+    width: 90%;
+    max-width: 1024px;
+    font-size: 22px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+    text-decoration: none;
+  }
