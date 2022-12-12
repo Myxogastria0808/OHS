@@ -1,14 +1,14 @@
 //button
-$('.container-btn').on('click', '.btn-modal', function(e){
-	e.preventDefault();
-	if ( $(this).hasClass('play') ) {
-		$(this).removeClass('play');
-		$(this).addClass('pause');
-	} else {
-		$(this).removeClass('pause');
-		$(this).addClass('play');
-	}
-});
+// $('.container-btn').on('click', '.btn-modal', function(e){
+// 	e.preventDefault();
+// 	if ( $(this).hasClass('play') ) {
+// 		$(this).removeClass('play');
+// 		$(this).addClass('pause');
+// 	} else {
+// 		$(this).removeClass('pause');
+// 		$(this).addClass('play');
+// 	}
+// });
 
 //audio
 const audio = document.getElementsByTagName("audio")[0]

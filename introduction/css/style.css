@@ -1541,10 +1541,10 @@
 .btn-modal:hover {
   border: rgb(189, 189, 189) 3px solid;
 }
-.btn-modal:hover .bar {
+.btn-modal:hover .bar-media {
   background-color: rgb(189, 189, 189);
 }
-.btn-modal .bar {
+.btn-modal .bar-media {
   display: inline-block;
   position: absolute;
   top: 10px;
@@ -1569,6 +1569,22 @@
   transform: translateX(20px) translateY(5px) rotate(-125deg);
 }
 
+@media screen and (max-width: 535px) {
+  .bottom_audio_time {
+    display: none;
+  }
+  .media-control {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 535px) {
+  .top_audio_time {
+    display: none;
+  }
+  .media-control {
+    margin-top: -38px;
+  }
+}
 .media-control {
   width: 250px;
   margin-left: auto;

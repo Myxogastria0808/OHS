@@ -401,7 +401,33 @@
         <div class="PopUp closed_div_p_scroll">
           <br>
           <p class="PopUp PopUp-content">
-
+            <div id="time" class="top_audio_time">
+              <span id="current" class="top_audio_time">00:00</span>
+              <span class="top_audio_time"> / </span>
+              <span id="duration" class="top_audio_time">00:00</span>
+            </div>
+            <audio preload="metadata" src="./[K-ON AMV] 天使にふれたよ！.mp3"></audio>
+            <div id="seekbar"></div>
+            <div id="time" class="bottom_audio_time">
+              <span id="current" class="bottom_audio_time">00:00</span>
+              <span class="bottom_audio_time"> / </span>
+              <span id="duration" class="bottom_audio_time">00:00</span>
+            </div>
+            <div class="media-control">
+              <div class="div-modal-button">
+                <button id="play" class="music-button">
+                  <div class="container-btn">
+                  <div class="btn-modal play">
+                    <span class="bar-media bar-1"></span>
+                    <span class="bar-media bar-2"></span>				
+                  </div>
+                  </div>
+                </button>
+              </div>
+              <div id="stop">
+                <i class="reload-icon fa-solid fa-arrow-rotate-right" style="color: #000861;"></i>
+              </div>
+            </div>
           </p>
         </div>
       </div>
@@ -559,21 +585,25 @@
             <div class="PopUp closed_div_p_scroll">
               <br>
               <p class="PopUp PopUp-content">
-
-                <audio preload="metadata" src="./audio.mp3"></audio>
-                <div id="time">
-                  <span id="current">00:00</span>
-                  <span> / </span>
-                  <span id="duration">00:00</span>
+                <div id="time" class="top_audio_time">
+                  <span id="current" class="top_audio_time">00:00</span>
+                  <span class="top_audio_time"> / </span>
+                  <span id="duration" class="top_audio_time">00:00</span>
                 </div>
+                <audio preload="metadata" src="./audio.mp3"></audio>
                 <div id="seekbar"></div>
+                <div id="time" class="bottom_audio_time">
+                  <span id="current" class="bottom_audio_time">00:00</span>
+                  <span class="bottom_audio_time"> / </span>
+                  <span id="duration" class="bottom_audio_time">00:00</span>
+                </div>
                 <div class="media-control">
                   <div class="div-modal-button">
                     <button id="play" class="music-button">
                       <div class="container-btn">
                       <div class="btn-modal play">
-                        <span class="bar bar-1"></span>
-                        <span class="bar bar-2"></span>				
+                        <span class="bar-media bar-1"></span>
+                        <span class="bar-media bar-2"></span>				
                       </div>
                       </div>
                     </button>
