@@ -1381,53 +1381,49 @@ span {
   display: flex;
   flex-wrap: wrap;
   -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
-  box-shadow: 0px 0px 15px rgb(80, 80, 80);
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-top: 17px;
-  margin-bottom: 17px;
-  border-radius: 4px;
-  padding-right: 12px;
-  padding-left: 12px;
+  box-shadow: 0px 0px 10px rgb(80, 80, 80);
+  border-radius: 20px;
+  padding: 10px 15px;
 }
+@media screen and (max-width: 512px) {
+  .big_box {
+    margin: 10px 20px;
+  }
+}
+@media screen and (min-width: 512px) {
+  .big_box {
+    margin: 20px;
+  }
+}
+
 .title_box {
   color: #fff;
   background: rgb(0,8,97);
   -webkit-box-shadow: 0px 0px 0 rgb(80, 80, 80);
-  box-shadow: 0px 0px 20px rgb(80, 80, 80);
+  box-shadow: 0px 0px 10px rgb(80, 80, 80);
   display: table;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  padding-left: 1rem;
-  padding-right: 1rem;
-  margin-top: 12px;
-  /* margin-left: -15px; */
-  font-size: 18px;
-  /* font-family: "游明朝"; */
-  border-radius: 4px;
+  border-radius: 10px;
+  padding: 0px 15px;
+  font-size: 20px;
+  font-family: 'Zen Old Mincho', serif;
 }
 .time_box {
-    margin-left: 13px;
-    margin-top: 20px;
-    /* font-family: "游明朝"; */
-    font-size: 15px;
+  margin-left: 20px;
+  margin-top: 8px;
+  font-family: "Times";
+  font-size: 16px;
 }
 .time_box_margin {
   padding-right: 100%;
 }
 .content_box {
-  /* padding-left: 10px; */
-  /* padding-right: 10px; */
-  padding-bottom: 2px;
   overflow-wrap: normal;
-  margin-top: 7px;
-  /* margin-left: -8px; */
-  /* font-family: "游明朝"; */
+  margin-top: 10px;
+  font-family: 'Zen Old Mincho', serif;
   font-size: 16px;
   text-align: left;
-  padding-left: 0px;
-  padding-right: 0px;
 }
+
 
 
 /*----------------------------------OHS Events---------------------------------------*/
@@ -1747,12 +1743,12 @@ margin-top: -10px;
   position:relative;
   height:40px;
   width: 180px;
-  font-size:1.6em;
+  font-size: 25px;
+  font-family: "arial";
   cursor:pointer;
   transition:800ms ease all;
   outline:none;
-  /* font-family: "Times New Roman"; */
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 10px;
 }
 .buttonMoreDiv {
   text-align: center;
@@ -1785,10 +1781,6 @@ margin-top: -10px;
   width:100%;
   transition:800ms ease all;
 }
-.a-more-button {
-  text-decoration: none;
-}
-
 /*--------------------------------------------Topic--------------------------------------------------*/
 /*img*/
 #DailyLifeImgId {
