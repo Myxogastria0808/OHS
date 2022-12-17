@@ -752,6 +752,7 @@ iframe {
   box-sizing: border-box;
 }
 .body__btn {
+  cursor: pointer;
   background-color: white;
   border: 1px solid #cccccc;
   color: #696969;

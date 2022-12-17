@@ -710,6 +710,7 @@ html, body {
     transition: background-color .3s ease-in-out;
     text-align: center;
     font-size: 18px;
+    cursor: pointer;
   }
   
   .button_01 a {
