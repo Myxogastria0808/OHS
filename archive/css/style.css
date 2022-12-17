@@ -813,3 +813,8 @@ box-sizing: border-box;
 width: 100%;
 max-width: 600px;
 }
+.archive-caution {
+  text-align: center;
+  font-size: 14px;
+  font-weight: 100;
+}

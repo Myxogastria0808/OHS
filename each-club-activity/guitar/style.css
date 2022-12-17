@@ -764,7 +764,8 @@ span {
   .img-li {
     width: 95%;
     max-width: 250px;
-  }.youtube {
+  }
+  .youtube {
     width: 100%;
     aspect-ratio: 16 / 9;
   }
@@ -777,11 +778,11 @@ span {
     margin-left: auto;
     margin-right: auto;
   }
-  .youtube-width-schedule {
+  /* .youtube-width-schedule {
     max-width: 450px;
     margin-left: auto;
     margin-right: auto;
-  }
+  } */
 
 /*button*/
 .a-button {
