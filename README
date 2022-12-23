@@ -33,8 +33,11 @@ github cli
 squoosh cli
 python3
 mkdocs (python library)
-pykakasi (python library)
-re (python library)
+PySimpleGUI (python library)
+pillow (python library)
+pyperclip (python library)
+filecmp (python library)
+
 Atom
 GitHubアカウント
 Googleアカウント

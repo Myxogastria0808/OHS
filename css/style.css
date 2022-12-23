@@ -20,7 +20,12 @@
   position: absolute;
   height: 100vh;
   width: 100vw;
-  background: rgba(0, 0, 0, 0.8);
+}
+.modal-bg-nomal {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+.modal-bg-daily-life {
+  background-color: rgba(248, 248, 248, 0.8);
 }
 
 /* モーダル本体 */
@@ -2548,12 +2553,12 @@ main {
   .controller {
     display: none;
   }
-  .swiper-pagination-bullet {
+  /* .swiper-pagination-bullet {
     display: none;
   }
   .swiper-pagination-bullets {
     display: none;
-  }
+  } */
 }
 
 @media only screen and (max-width: 599px) {
